@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iconny Browser </title>
+
+  <link rel="stylesheet" href="../styles/dropdown.css">
+</head>
+
+
+
+
+  <nav>
+
+    <div id="buttons">
+      <div id="minimize"><span>&dash;</span></div>
+      <div id="maximize" oncanplay=""><span>&square;</span></div>
+    <a href="#" onclick="window.close()" >  <div id="quit"><span>&times;</span></div></a>
+
+  </div>
+  <div style="height: 15%; "
+
+  ></div>
+  <div id="titleshown">    <div id="nav-body-tabs" style="overflow: hidden; "></div></div>
+  <div class="sep" style="height: 19px; "></div>
+  <div class="sep" style="height: 19px; "></div>
+  <div style="width: 100%;">    <div id="nav-body-ctrls" style="width: 100%;"></div>
+   <div style="background: #1c1c1c; width: 100%; height: 25px;" id="tabla">
+    
+    
+  </nav></div>
+  </div>
+  </nav>
+
+  </header>
+
+  <body style="background: black;"  >
+
+     <dd>
+
+     </dd>
+
+
+          <style>
+
+
+          </style>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div style="height: 10px;"></div>
+
+ <div style="height: 10px;"></div>
+ <div style="height: 5px;" ></div>
+
+
+
+  <div id="nav-body-views" class="contenedor"  ></div>
+
+
+
+
+
+</body>
+<script src="components/navbar.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<link rel="stylesheet" href="../styles/navbar.css">
+<link rel="stylesheet" href="../styles/icons/all.css">
+<script src="../wdk-core/icons/all.js"></script>
+<link rel="stylesheet" href="../styles/view.css">
+<link rel="stylesheet" href="../styles/theme.css">
+<link rel="stylesheet" href="../styles/index.css">
+
+<link rel="stylesheet" href="../styles/monocromatix/monocromatix.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>const enav = new (require('electron-navigation'))();</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+  const options = {
+  bottom: '64px', // default: '32px'
+  right: 'unset', // default: '32px'
+  left: '32px', // default: 'unset'
+  time: '0.5s', // default: '0.3s'
+  mixColor: '#fff', // default: '#fff'
+  backgroundColor: '#fff',  // default: '#fff'
+  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  buttonColorLight: '#fff', // default: '#fff'
+  saveInCookies:  true, // default: true,
+  label: '🌓', // default: ''
+  autoMatchOsTheme: true // default: true
+}
+
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
+
+</script>
+
+
+</html>

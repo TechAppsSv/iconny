@@ -1,0 +1,356 @@
+* {
+    color: #f2f3f4;
+    font-family: 'Poppins', sans-serif;
+  
+}
+body {
+    overflow: hidden;
+}
+@media screen and (min-width: 600px) {
+    #cambio button {
+    top: 25;
+    }
+  }
+  body {
+     
+  text-align: center;
+   
+  background: white;
+  overflow: hidden;
+  
+  }
+  * {
+  color: white;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  }
+  #oculto1{
+      display: none;
+    }
+    #oculto2{
+      display: none;
+    }
+    #oculto3{
+      display: none;
+    }
+    #oculto4{
+      display: none;
+    }
+    #oculto5{
+      display: none;
+    }
+    #oculto6{
+      display: none;
+    }
+    #tabla {
+      height:100%;
+    }  
+  
+  
+      /* Vista de facebook */
+      #foouno{
+        width: 500px;
+        height: 87vh;
+      }
+      /* Contenedor de facebook */
+      #oculto1{
+          width: 500px;
+          height: 93vh;
+  
+      }
+      /* Vista de messenger */
+      #foodos{
+        width: 500px;
+        height: 87vh;
+      }
+      /* Contenedor de messenger */
+      #oculto2{
+        width: 500px;
+        height: 93vh;
+      }
+                    /* Vista de github */
+      #footres{
+        width: 800px;
+        height: 87vh;
+      }
+                    /* Contenedor de github */
+      #oculto3{
+        width: 800px;
+        height: 93vh;
+  
+      }
+                 /* Vista de Sync */
+      #foocuatro{
+        width: 800px;
+        height: 81vh;
+      }
+                    /* Contenedor de Sync */
+      #oculto4{
+        width: 800px;
+        height: 93vh;
+  
+      }
+      #foocinco{
+        width: 1000px;
+        height: 87vh;
+      }
+      /* Contenedor de discord */
+      #oculto5{
+          width: 1000px;
+          height: 93vh;
+  
+      }
+      #fooseis{
+        width: 500px;
+        height: 87vh;
+      }
+      /* Contenedor de facebook */
+      #oculto6{
+          width: 500px;
+          height: 93vh;
+  
+      }
+   nav {
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    -webkit-app-region: drag;
+    -webkit-user-select: none;
+    position: fixed;
+    z-index: 1;
+  }
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    height: 33px;
+  }
+  nav #titleshown {
+    width: 83%;
+    height: 100%;
+  
+    color: #f7f7f7;
+    float: left;
+    padding: 0 0 0 1em;
+  }
+  
+  nav #buttons {
+    float: right;
+    width: 150px;
+    height: 130%;
+    line-height: 30px;
+    background-color: #222222;
+    -webkit-app-region: no-drag;
+  }
+  
+  nav #buttons #minimize,
+  nav #buttons #maximize,
+  nav #buttons #quit {
+    float: left;
+    height: 100%;
+    width: 33%;
+    text-align: center;
+    color: #f7f7f7;
+    cursor: default;
+  }
+  
+  nav #buttons #minimize:hover {
+    background-color: #333333aa;
+  }
+  nav #buttons #maximize:hover {
+    background-color: #333333aa;
+  }
+  nav #buttons #quit:hover {
+    background-color: #ff0000dd;
+  }
+  
+  main {
+    padding-top: 30px;
+    overflow: auto;
+    height: calc(100vh - 30px);
+    position: absolute;
+    top: 30px;
+    left: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .contenedor::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+  
+  .contenedor::-webkit-scrollbar:vertical {
+    width:10px;
+  }
+  
+  .contenedor::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+  } 
+  
+  .contenedor::-webkit-scrollbar:horizontal {
+    height: 10px;
+  }
+  
+  .contenedor::-webkit-scrollbar-thumb {
+    background-color: #1D1D1D;
+    border-radius: 20px;
+    border: 2px solid #1D1D1D;
+  }
+  
+  .contenedor::-webkit-scrollbar-track {
+    border-radius: 10px;  
+  }
+  .sep {
+    background: #000000;
+  }
+  .border-right {
+    background: black;
+  }
+  .sidebar-heading{
+  background: black; 
+  border: black; 
+  color:white;
+  }
+  .listcore{
+  background: black; 
+  background-color: black;
+  border: black; 
+  color:black;
+  }
+  .reloj {
+  background: #333; border: #333; height: 20px;
+  color: white;
+  }
+  @media all and (max-width: 1920px){
+    #nav-body-views{
+     width:100%; 
+    height: 88vh;
+    }
+    }
+    @media all and (max-width: 1600px){
+      #nav-body-views{
+       width:100%; 
+      height: 86vh;
+      }
+      }
+    @media all and (max-width: 1440px){
+      #nav-body-views{
+       width:100%; 
+      height: 86vh;
+      }
+      }
+    @media all and (max-width: 1920px){
+      #devtools{
+       width:100%; 
+      height: 88vh;
+      }
+      }
+      @media all and (max-width: 1366px){
+        #devtools{
+         width:100%; 
+        height: 83vh;
+        }
+        }
+        @media all and (max-width: 1920px){
+          #devtools2{
+           width:100%; 
+          height: 88vh;
+          }
+          }
+          @media all and (max-width: 1366px){
+            #devtools2{
+             width:100%; 
+            height: 83vh;
+            }
+            }
+    @media all and (max-width: 1920px){
+      #flotante{
+       width:50%; 
+      height: 88vh;
+      float: right;
+    
+      }
+      }
+      @media all and (max-width: 1366px){
+        #flotante{
+         width:50%; 
+        height: 83vh;
+        float: right;
+       
+        }
+        }
+        @media all and (max-width: 1440px){
+          #flotante{
+           width:50%; 
+          height: 85vh;
+          float: right;
+       
+          }
+          }
+          @media all and (max-width: 1600px){
+            #flotante{
+             width:50%; 
+            height: 85vh;
+            float: right;
+         
+            }
+            }
+        @media all and (max-width: 1920px){
+          #flotante2{
+           width:50%; 
+          height: 88vh;
+          float: right;
+        
+          }
+          }
+          @media all and (max-width: 1366px){
+            #flotante2{
+             width:50%; 
+            height: 83vh;
+            float: right;
+          
+            }
+            }
+            @media all and (max-width: 1440px){
+              #flotante2{
+               width:50%; 
+              height: 85vh;
+              float: right;
+            
+              }
+              }
+              @media all and (max-width: 1600px){
+                #flotante2{
+                 width:50%; 
+                height: 85vh;
+                float: right;
+              
+                }
+                }
+        
+    
+  
+    @media all and (max-width: 1366px){
+      #nav-body-views{
+         width:100%; 
+      height: 83vh;
+      }
+      }
+  .list-group-item list-group-item-action  {
+    background: black;
+  }
+  .vote {
+    background: black;
+    color: white;
+  }
+  .newtab {
+    background: #111211;
+  }
+  /* WEBVIEW */
+  .circulo {
+    width: 18px;
+    height: 18px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #FF5959;
+}

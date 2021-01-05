@@ -1,0 +1,65 @@
+{
+	"name": "iconny",
+	"productName": "Iconny Browser Linux",
+	"version": "0.2.0",
+	"description": "Maxima rapidez y ligereza",
+	"main": "src/wdk-core/index.js",
+	"scripts": {
+		"pack": "build --dir",
+		"dist": "build",
+		"build-linux": "electron-builder --linux --publish always",
+		"build-win": "electron-builder --win --publish always",
+		"build-mac": "electron-builder --mac --publish always",
+		"start": "electron src/wdk-core/index.js"
+	},
+	"author": "Techapps Software <techappsv@hotmail.com>",
+	"license": "ALUF",
+	"build": {
+		"appId": "com.techapps.iconny",
+		"productName": "Iconny Browser Linux",
+		"win": {
+			"target": [
+				"nsis",
+				"zip"
+			],
+			"icon": "build/icon.ico"
+		},
+		"mac": {
+			"category": "productivity",
+			"target": [
+				"pkg"
+			],
+			"icon": "build/icon.icns"
+		},
+		"linux": {
+			"category": "Network",
+			"target": [
+				"AppImage"
+			],
+			"icon": "build/background.png"
+		},
+		"publish": [
+			{
+				"provider": "generic",
+				"url": "https://gitlab.com"
+			}
+		],
+		"nsis": {
+			"oneClick": "false",
+			"allowToChangeInstallationDirectory": "true",
+			"perMachine": "true"
+		}
+	},
+	"dependencies": {
+		"@cliqz/adblocker-electron": "^1.18.3",
+		"cross-fetch": "^3.0.6",
+		"electron-navigation": "^1.5.8",
+		"monaco-editor": "^0.21.2",
+		"node-fetch": "^2.6.1"
+	},
+	"devDependencies": {
+		"electron": "^11.1.1",
+		"electron-builder": "^22.6.1",
+		"electron-devtools-installer": "^3.1.1"
+	}
+}
