@@ -30,7 +30,7 @@
 
 ## Instrucciones de compilacion y desarrollo 
 ### Clonar el repositorio
-#### https://github.com/TechAppsSv/iconny.git
+#### git clone https://github.com/TechAppsSv/iconny.git
 ### Ir al directorio
 #### cd iconny
 ### Instalar las dependencias con NPM
