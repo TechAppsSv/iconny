@@ -27,6 +27,8 @@
 #### Iconny a pesar de ser muy basico siempre es codigo abierto que puede servir para mejorar el navegador o servir de base para otros
 ### Multiplataforma 
 #### A pesar que solo proveemos una version en AppImage para linux se puede compilar facilmente para Mac y Windows
+### Modo Oscuro para las paginas
+#### Iconny gracias a darkmode-js puedes cambiar las paginas con un solo boton entre Light y Dark Mode
 
 ## Instrucciones de compilacion y desarrollo 
 ### Clonar el repositorio
