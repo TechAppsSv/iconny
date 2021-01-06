@@ -1,7 +1,7 @@
 {
 	"name": "iconny",
 	"productName": "Iconny Browser Linux",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"description": "Maxima rapidez y ligereza",
 	"main": "src/wdk-core/index.js",
 	"scripts": {
