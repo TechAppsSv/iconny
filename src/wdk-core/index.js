@@ -20,8 +20,7 @@ function createWindow () {
   const win = new BrowserWindow({
     width: 1920,
     height: 1080,
-   frame:false,
-    webPreferences: {
+   webPreferences: {
       nodeIntegration: true,
       webviewTag: true
     
@@ -50,7 +49,7 @@ function createWindow () {
   {
     label: 'View',
     submenu: [
-    //{ role: 'reload'},      
+   // { role: 'reload'},      
       { role: 'forcereload' },
     // { role: 'toggledevtools' },
       { type: 'separator' },
@@ -70,7 +69,7 @@ function createWindow () {
   
   const menu = Menu.buildFromTemplate(template)
   Menu.setApplicationMenu(menu)
-  win.loadURL(`file://${__dirname}/index.html`,
+  win.loadURL(`file://${__dirname}/init.html`,
   {userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4261.0 Safari/537.36'});
 
   

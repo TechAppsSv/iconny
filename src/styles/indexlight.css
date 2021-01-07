@@ -5,7 +5,7 @@
 }
 body {
     overflow: hidden;
-    background: #000000 ;
+
 }
 @media screen and (min-width: 600px) {
     #cambio button {
@@ -24,7 +24,7 @@ body {
   
   text-align: center;
   font-family: 'Poppins', sans-serif;
-
+color: black;
   }
   #oculto1{
       display: none;

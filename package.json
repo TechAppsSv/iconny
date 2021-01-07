@@ -1,7 +1,7 @@
 {
 	"name": "iconny",
 	"productName": "Iconny Browser Linux",
-	"version": "0.3.0",
+	"version": "0.5.0",
 	"description": "Maxima rapidez y ligereza",
 	"main": "src/wdk-core/index.js",
 	"scripts": {
@@ -12,7 +12,7 @@
 		"build-mac": "electron-builder --mac --publish always",
 		"start": "electron src/wdk-core/index.js"
 	},
-	"author": "Techapps Software <techappsv@hotmail.com>",
+	"author": "Iconny <techappsv@hotmail.com>",
 	"license": "ALUF",
 	"build": {
 		"appId": "com.techapps.iconny",
@@ -55,7 +55,8 @@
 		"cross-fetch": "^3.0.6",
 		"electron-navigation": "^1.5.8",
 		"monaco-editor": "^0.21.2",
-		"node-fetch": "^2.6.1"
+		"node-fetch": "^2.6.1",
+		"wdk":"1.0.3"
 	},
 	"devDependencies": {
 		"electron": "^11.1.1",

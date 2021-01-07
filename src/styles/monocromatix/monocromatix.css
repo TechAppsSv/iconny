@@ -1,5 +1,5 @@
 body {
-    background: #1c1c1c;
+
     font-family: 'Poppins', sans-serif;
     color: white;
 }
@@ -27,3 +27,4 @@ overflow: hidden;}
 .nav-tabs-title:hover{color:#c2c2c2}
 .nav-tabs-close{width:20px;height:20px;margin:6px;margin-left:2px}
 .nav-tabs-close:hover{fill:#A0A0A0!important}
+
