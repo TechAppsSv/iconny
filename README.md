@@ -13,7 +13,7 @@
 ### Bloqueador de anuncios
 #### Iconny posee un bloqueador de anuncios integrado 
 ###  Market WDK
-#### Gracias al codigo de WDK Iconny posee Market que un sistema muy basico de notas y que si estas son links puedes abrirlas 
+#### Gracias al codigo de WDK Iconny posee Market que un sistema muy basico de notas y que si estas son links puedes abrirlas todo esto guardado en LocalStorage
 ###  Devtools WDK 
 ####  Gracias al codigo de WDK Iconny posee Devtools WDK que es una serie de pestañas webs para el desarrollo ademas de herramientas como abrir paginas para 
 #### el desarrollo web habitual , buscadores y todo esto administrado mediantes pestañas de Boostrap
@@ -32,6 +32,9 @@
 #### A pesar que solo proveemos una version en AppImage para linux se puede compilar facilmente para Mac y Windows
 ### Modo Oscuro para las paginas
 #### Iconny gracias a darkmode-js puedes cambiar las paginas con un solo boton entre Light y Dark Mode
+
+### Modo Secundario
+#### Iconny posee una sesion para usarlo como un perfil diferente al inicial
 
 ## Instrucciones de compilacion y desarrollo 
 ### Clonar el repositorio
