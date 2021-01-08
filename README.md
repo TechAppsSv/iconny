@@ -59,4 +59,4 @@
 #### npm run build-mac
 
 #### Ultima Actualizacion de este documento
-##### 7 de enero del 2021
+##### 8 de enero del 2021
