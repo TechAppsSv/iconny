@@ -12,8 +12,8 @@
 #### Iconny esta hecho para que no se guarde tu historial pero sin perder tu informacion al cerrar el navegador
 ### Bloqueador de anuncios
 #### Iconny posee un bloqueador de anuncios integrado 
-###  Market WDK
-#### Gracias al codigo de WDK Iconny posee Market que un sistema muy basico de notas y que si estas son links puedes abrirlas todo esto guardado en LocalStorage
+###  Notely WDK
+#### Gracias al codigo de WDK Iconny posee Notely que un sistema muy basico de notas y que si estas son links puedes abrirlas todo esto guardado en LocalStorage
 ###  Devtools WDK 
 ####  Gracias al codigo de WDK Iconny posee Devtools WDK que es una serie de pestañas webs para el desarrollo ademas de herramientas como abrir paginas para 
 #### el desarrollo web habitual , buscadores y todo esto administrado mediantes pestañas de Boostrap
