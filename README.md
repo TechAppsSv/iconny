@@ -1,8 +1,14 @@
 # Iconny Browser
 ### Goodbye spying and welcome privacy
 
+## Pagina Web Oficial
+###  https://techappssv.github.io/iconnybrowser/
+
 ## Ultima Version 0.05 Stable
 ###  https://github.com/TechAppsSv/iconny/releases/tag/0.05
+
+## Blog de lanzamientos
+### https://techappssv.github.io/iconnybrowser/html/blog.html
 
 #### Iconny es un navegador de codigo abierto construido de a partir de ElectronJS Y WDK como controlador y nucleo
 #### Hecho para ser un navegador ligero y rapido 
