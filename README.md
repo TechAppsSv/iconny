@@ -1,12 +1,14 @@
 # Iconny Browser
 ### Goodbye spying and welcome privacy
 
-## Descarga Aqui
-### https://github.com/TechAppsSv/iconny/releases
+## NUEVO LANZAMIENTO Pagina Web Oficial
+###  https://techappssv.github.io/iconnybrowser/
 
+## Ultima Version 0.05 Stable
+###  https://github.com/TechAppsSv/iconny/releases/tag/0.05
 
-## Ultima Version 0.04 Alpha
-###  https://github.com/TechAppsSv/iconny/releases/tag/0.04
+## Blog de lanzamientos
+### https://techappssv.github.io/iconnybrowser/html/blog.html
 
 #### Iconny es un navegador de codigo abierto construido de a partir de ElectronJS Y WDK como controlador y nucleo
 #### Hecho para ser un navegador ligero y rapido 
@@ -16,8 +18,8 @@
 #### Iconny esta hecho para que no se guarde tu historial pero sin perder tu informacion al cerrar el navegador
 ### Bloqueador de anuncios
 #### Iconny posee un bloqueador de anuncios integrado 
-###  Market WDK
-#### Gracias al codigo de WDK Iconny posee Market que un sistema muy basico de notas y que si estas son links puedes abrirlas 
+###  Notely WDK
+#### Gracias al codigo de WDK Iconny posee Notely que un sistema muy basico de notas y que si estas son links puedes abrirlas todo esto guardado en LocalStorage
 ###  Devtools WDK 
 ####  Gracias al codigo de WDK Iconny posee Devtools WDK que es una serie de pestañas webs para el desarrollo ademas de herramientas como abrir paginas para 
 #### el desarrollo web habitual , buscadores y todo esto administrado mediantes pestañas de Boostrap
@@ -37,6 +39,9 @@
 ### Modo Oscuro para las paginas
 #### Iconny gracias a darkmode-js puedes cambiar las paginas con un solo boton entre Light y Dark Mode
 
+### Modo Secundario
+#### Iconny posee una sesion para usarlo como un perfil diferente al inicial
+
 ## Instrucciones de compilacion y desarrollo 
 ### Clonar el repositorio
 #### git clone https://github.com/TechAppsSv/iconny.git
@@ -54,4 +59,4 @@
 #### npm run build-mac
 
 #### Ultima Actualizacion de este documento
-##### 6 de enero del 2021
+##### 8 de enero del 2021
