@@ -101,7 +101,7 @@ background: linear-gradient(to right, #E7E9BB, #403B4A); /* W3C, IE 10+/ Edge, F
  color: white;
  font-family: 'Poppins', sans-serif;
  text-align: center;
- overflow: hidden;
+
     }
 </style>
 <body  style="width: 500; height: 320;">
@@ -109,10 +109,7 @@ background: linear-gradient(to right, #E7E9BB, #403B4A); /* W3C, IE 10+/ Edge, F
     
 
     <br>
-    <br>
-    <a href="indexlight.html" class="btn btn-secondary"   onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;" >Iniciar Sin Interfaz Oscura </a>
-    <br>
-    <br>
+   
    <br>
    <a href="../wdk-core/oculto/secundary.html" class="btn btn-dark"   onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;" >Perfil Secundario </a>
    <a href="../wdk-core/oculto/secundary-force-dark-mode.html" class="btn btn-dark"   onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;" >Perfil Secundario + Dark Mode</a>
@@ -121,11 +118,37 @@ background: linear-gradient(to right, #E7E9BB, #403B4A); /* W3C, IE 10+/ Edge, F
     <br>
 
 <br>
+<h1>Preferencia de interfaz</h1>
+<br>
+<br>
+<h5>Iniciar con interfaz Dark : <strong>index.html</strong></h5>
+<br>
+<h5>Iniciar con interfaz Light : <strong>indexlight.html</strong></h5>
+<br>
+<br>
+<form id="formTask2">
+  <div class="form-group">
+    <input type="text" id="title" placeholder="Buscador" value="index.html" class="form-control">
+  </div>
+<br>
+
+ <div class="form-group">
+    <input type="text" id="description" hidden placeholder="Link de la pagina" class="form-control">
+
+ 
+  </div> 
+  <button type="submit" class="btn btn-primary btn-block">Guardar</button>
+</form>
+<br>
+<div class="col-md-8">
+          <div id="tasks2" style="padding-left: 5%;"></div>
+        </div>
     <br>
     <br>
   <br>
   
   <br>
   <a href="init.html" style="color: white; float: right;"  >Volver</a>
+  <script src="config/config.js"></script>
 </body>
 </html>

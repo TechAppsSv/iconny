@@ -42,7 +42,28 @@
 
 
 
+<div id="flotante" style=" background: white; display: none;">
+  <div id="close" style="background: #1c1c1c;"><a href="javascript:cerrar();" onclick="cerrar2()">Cerrar GitHub<i class="fab fa-github"></i></a> </div>
+  <webview  id="devtools" src="https://github.com/"  useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edg/83.0.478.61
+  "style="  display:inline-flex; width:100%;"height="625px"></webview>
 
+</div>
+<div id="flotante2" style=" background: white; display: none;">
+  <div id="close" style="background: #1c1c1c;"><a href="javascript:cerrar3();" onclick="cerrar2()">Cerrar Web Panels<i class="fas fa-pager"></i></a> </div>
+
+  <div style="background: #1c1c1c;"> 
+  <div style="padding-left: 2%;" style="background: #1c1c1c;">
+    <button onclick="backView()"style="width: 100px; background: #1c1c1c; border:#1c1c1c;"  class="btn btn-dark"><h3 class="fas fa-backward" style="color: white;"></h3></button>
+    <button onclick="forwardView()"style="width: 100px; background: #1c1c1c; border:#1c1c1c; "  class="btn btn-dark"><h3 class="fas fa-forward" style="color: white;"></h3></button>
+    <button onclick="reloadView()" style="width: 100px; background: #1c1c1c; border:#1c1c1c;" class="btn btn-dark"><h3 class="fas fa-redo" style="color: white;"></h3></button>
+    <button hidden style="width: 100px; background: #1c1c1c; border:#1c1c1c;  " class="btn btn-dark"><h3 class="fas fa-home" style="color: white;"></h3></button></div>
+
+
+ </div>
+  <webview  id="devtools2" src="devtools/social.html"  useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edg/83.0.478.61
+  "style="  display:inline-flex; width:100%;"height="625px"></webview>
+
+</div>
 
   <div id="nav-body-views" class="contenedor"  ></div>
 
@@ -60,6 +81,8 @@
 <link rel="stylesheet" href="../styles/view.css">
 <link rel="stylesheet" href="../styles/theme.css">
 <link rel="stylesheet" href="../styles/index.css">
+<script src="webpanels/webpanel.js"></script>
+<script src="webpanels/controller.js"></script>
 
 <link rel="stylesheet" href="../styles/monocromatix/monocromatix.css">
 
@@ -97,6 +120,13 @@ darkmode.showWidget();
     
   enav.newTab(`file:///${__dirname}/newtab.html `, {
         title: 'Welcome',
+      
+        close: true,
+        
+      })
+  
+      enav.newTab(`https://techappssv.github.io/iconnybrowser/html/blog.html `, {
+       
       
         close: true,
         

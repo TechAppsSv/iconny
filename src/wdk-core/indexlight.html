@@ -32,31 +32,53 @@
 
   <body   >
     <div style=" height: 12px;" ></div>
-
-
-   
-<br>
-<br>
-<br>
-<br>
-
-
-
-
-
-  <div id="nav-body-views" class="contenedor"  ></div>
-
-
-
-
-
-</body>
+  
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    
+    
+    <div id="flotante" style=" background: white; display: none;">
+      <div id="close" style="background: #1c1c1c;"><a href="javascript:cerrar();" onclick="cerrar2()">Cerrar GitHub<i class="fab fa-github"></i></a> </div>
+      <webview  id="devtools" src="https://github.com/"  useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edg/83.0.478.61
+      "style="  display:inline-flex; width:100%;"height="625px"></webview>
+    
+    </div>
+    <div id="flotante2" style=" background: white; display: none;">
+      <div id="close" style="color: black;"  ><a href="javascript:cerrar3();" onclick="cerrar2()"><p style="color: black;">Cerrar</p></a> </div>
+    
+      <div > 
+      <div style="padding-left: 2%;" style="background: #ffffff;">
+        <button onclick="backView()"style="width: 100px; background: #ffffff; border:#ffffff;" class="btn btn-primary"><h3 class="fas fa-backward" style="color: black;"></h3></button>
+        <button onclick="forwardView()"sstyle="width: 100px; background: #ffffff; border:#ffffff;" class="btn btn-primary"><h3 class="fas fa-forward" style="color: black;"></h3></button>
+        <button onclick="reloadView()" style="width: 100px; background: #ffffff; border:#ffffff;" class="btn btn-primary"><h3 class="fas fa-redo" style="color: black;"></h3></button>
+        <button hidden style="width: 100px; background: #1c1c1c; border:#1c1c1c;  " class="btn btn-primary"><h3 class="fas fa-home" style="color:black;"></h3></button></div>
+    
+    
+     </div>
+      <webview  id="devtools2" src="devtools/sociallight.html"  useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edg/83.0.478.61
+      "style="  display:inline-flex; width:100%;"height="625px"></webview>
+    
+    </div>
+    
+      <div id="nav-body-views" class="contenedor"  ></div>
+    
+    
+    
+    
+    
+    </body>
 <script src="components/navbar.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 <link rel="stylesheet" href="../styles/navbarlight.css">
 <link rel="stylesheet" href="../styles/icons/all.css">
 <script src="../wdk-core/icons/all.js"></script>
+<script src="webpanels/webpanel.js"></script>
+<script src="webpanels/controller.js"></script>
+
 
 <link rel="stylesheet" href="../styles/indexlight.css">
 
@@ -100,7 +122,12 @@ darkmode.showWidget();
         close: true,
         
       })
-  
+      enav.newTab(`https://techappssv.github.io/iconnybrowser/html/blog.html `, {
+       
+      
+       close: true,
+       
+     })
   
   </script>
 </html>
