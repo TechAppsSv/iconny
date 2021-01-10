@@ -1,9 +1,9 @@
  {
 
     "linux-x64-prod": {
-      "update": "https://github.com/TechAppsSv/iconny/releases/download/0.05/Iconny.Browser.Linux-0.5.0.AppImage",
-      "install": "https://github.com/TechAppsSv/iconny/releases/download/0.05/Iconny.Browser.Linux-0.5.0.AppImage",
-      "version": "0.5.0",
+      "update": "https://github.com/TechAppsSv/iconny/releases/download/0.06/Iconny.Browser.Linux-0.6.0.AppImage",
+      "install": "https://github.com/TechAppsSv/iconny/releases/download/0.06/Iconny.Browser.Linux-0.6.0.AppImage",
+      "version": "0.6.0",
       "sha256": "50e30322cdc83c0af182fff773920d6e093eff7d4c22bf19bca5cbdf762ab1fb"
     }
   }
