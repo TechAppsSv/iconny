@@ -1,0 +1,28 @@
+* {
+
+    font-family: 'Poppins', sans-serif;
+  
+}
+body {
+  
+    background: #000000 ;
+}
+@media screen and (min-width: 600px) {
+    #cambio button {
+    top: 25;
+    }
+  }
+  body {
+     
+  text-align: center;
+   
+
+  
+  }
+  * {
+  
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+
+  }
+

@@ -1,6 +1,6 @@
 {
 	"name": "iconny",
-	"productName": "Iconny Browser Linux Beta",
+	"productName": "Iconny Browser Linux ",
 	"version": "0.0.7",
 	"description": "Maxima rapidez y ligereza",
 	"main": "src/wdk-core/index.js",
@@ -13,7 +13,7 @@
 		"start": "electron src/wdk-core/index.js"
 	},
 	"author": "Iconny <techappsv@hotmail.com>",
-	"license": "ALUF",
+	"license": "MIT",
 	"build": {
 		"appId": "com.techapps.iconny",
 		"productName": "Iconny Browser Linux",
@@ -48,15 +48,19 @@
 			"oneClick": "false",
 			"allowToChangeInstallationDirectory": "true",
 			"perMachine": "true"
-		}
+		},
+		"repository": {
+			"type": "git",
+			"url": "git+https://github.com/TechAppsSv/iconny.git"
+		  }
 	},
 	"dependencies": {
 		"@cliqz/adblocker-electron": "^1.18.3",
 		"cross-fetch": "^3.0.6",
 		"electron-navigation": "^1.5.8",
-		"monaco-editor": "^0.21.2",
-		"node-fetch": "^2.6.1",
-		"wdk":"1.0.3"
+	
+		"node-fetch": "^2.6.1"
+	
 	},
 	"devDependencies": {
 		"electron": "^11.1.1",

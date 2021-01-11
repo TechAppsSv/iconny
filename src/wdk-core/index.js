@@ -51,7 +51,7 @@ function createWindow () {
     submenu: [
    // { role: 'reload'},      
       { role: 'forcereload' },
-    // { role: 'toggledevtools' },
+     { role: 'toggledevtools' },
       { type: 'separator' },
       { role: 'resetzoom' },
       { role: 'zoomin' },

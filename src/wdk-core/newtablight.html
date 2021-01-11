@@ -4,17 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
-    <link rel="stylesheet" href="../styles/indexlight.css">
+    <link rel="stylesheet" href="../styles/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
-
+<link rel="stylesheet" href="../styles/icons/all.css">
+<script src="icons/all.js"></script>
 </head>
-<body style="color: white;">
+<style>
+ body {
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+</style>
+<body style="color: white;" onload="reloj()">
 
     <br>
     <br>
-    <br>
+    <form name="form_reloj" style="padding-left: 60%;">
+   <input style=" background: #1c1c1c; border: #1c1c1c; color: white; height: 130px; width: 70%; font-size: 80px; border-radius: 50px;" type="text" name="reloj" size="5">
+        </form>
+   
+    <h1 style="text-align: left; font-size: 60px; padding-left: 2%;">Iconny</h1>
+    <h5 style="text-align:left; padding-left: 2%;">Goodbye spying and welcome privacy</h5>  
+  
+   
     <br>
     <br>
     <br
@@ -23,29 +39,35 @@
     <br>
     <br>
 
-    <h1 style="text-align: center; font-size: 60px;">Iconny</h1>
-    <h5 style="text-align:center;">Goodbye spying and welcome privacy</h5>
-   <div style="padding-left:37%;">
+
+   <div style="padding-left:2%;">
     <FORM method=GET action="https://www.google.com/search" >
 
 
-        <INPUT type="text" style="width: 40%; background: white; border: white; color: black;" placeholder="Search With Google" class="form-control" name=q size=31 maxlength=255 value="">
-            <br>
-            <br>
-            <a href="ducklight.html" class="btn btn-warning" style="text-align: center; color: black;">Search With DuckDuckGo</a>
-            <br>
-            <br>
-            <a href="acercadelight.html" target="_blank" style="text-align: center; color: white;" class="btn btn-dark">About</a>
-
-            <br>
-            <br>
-            <a href="market/market.html" target="_blank" style="text-align: center; color: white;" class="btn btn-danger">Notely</a>
-
+        <INPUT type="text" style="width: 40%; background: black; border: black; color: white;" placeholder="Search With Google" class="form-control" name=q size=31 maxlength=255 value="">
+        
         </FORM>
-        
+      
         <br>
-        
+        <br>
 
+        <FORM method=GET action="https://duckduckgo.com/?q="  >
+
+
+            <INPUT type="text" style="width: 40%; background: black; border: black; color: white;" placeholder="Search With DuckDuckGo" class="form-control" name=q size=31 maxlength=255 value="">
+                
+            </FORM>
+           <div style="padding-right: 10%;"> <a href="acercadelight.html" target="_blank" class="btn btn-primary" style=" float: right;">About <i class="fas fa-exclamation-circle"></i></a></div>
+           <br>
+           <br>
+           <div style="padding-right: 10%;"> <a href="market/market.html" target="_blank" class="btn btn-danger" style=" float: right;">Notely <i class="far fa-sticky-note"></i></a></div>
+           <br>
+           <br>
+           <div style="padding-right: 10%;"> <a href="config.html" target="_blank" class="btn btn-warning" style=" float: right;">Configuracion  <i class="fas fa-cog"></i></a></div>
+           <br>
+           <br>
+           <div style="padding-right: 10%;"> <a href="https://techappssv.github.io/iconnybrowser/html/blog.html" target="_blank" class="btn btn-dark" style=" float: right;">Blog de Iconny  <i class="fas fa-blog"></i></a></div>
+           <script src="../wdk-core/clock/clock.js"></script>
 </div>
 </body>
-</html>	
+</html>
