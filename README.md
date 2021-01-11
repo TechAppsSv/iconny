@@ -1,4 +1,4 @@
-# ![Esta es una imagen de ejemplo](https://ejemplo.com/imagen.jpg)
+# ![Esta es una imagen de ejemplo](https://github.com/TechAppsSv/iconnybrowser/blob/gh-pages/logo%20de%20iconny.png)
 # Iconny Browser
 ### Goodbye spying and welcome privacy
 
