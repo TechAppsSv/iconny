@@ -1,11 +1,12 @@
+# ![Esta es una imagen de ejemplo](https://github.com/TechAppsSv/iconnybrowser/blob/gh-pages/logo%20de%20iconny.png)
 # Iconny Browser
 ### Goodbye spying and welcome privacy
 
 ## NUEVO LANZAMIENTO Pagina Web Oficial
 ###  https://techappssv.github.io/iconnybrowser/
 
-## Ultima Version 0.05 Stable
-###  https://github.com/TechAppsSv/iconny/releases/tag/0.05
+## Ultima Version 0.07 Stable
+###  https://github.com/TechAppsSv/iconny/releases/tag/0.07
 
 ## Blog de lanzamientos
 ### https://techappssv.github.io/iconnybrowser/html/blog.html
