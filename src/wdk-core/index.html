@@ -6,13 +6,13 @@
   <title>Iconny Browser </title>
 
   <link rel="stylesheet" href="../styles/dropdown.css">
+
 </head>
 
 
 
-
   <nav>
-
+<script src="clock/clock.js"></script>
   
   <div style="height: 15%; "
 
@@ -21,17 +21,53 @@
   <div class="sep" style="height: 19px; "></div>
   <div class="sep" style="height: 19px; "></div>
   <div style="width: 100%;">    <div id="nav-body-ctrls" style="width: 100%;"></div>
-   <div style="background: #1c1c1c; width: 100%; height: 25px;" id="tabla">
+   <div style="background:#191724; width: 100%; height: 25px;" id="tabla">
     
     
-  </nav></div>
-  </div>
-  </nav>
+    <nav style="background: #191724;"> 
+      <ul class="nav" style="float: right;" >
+        <form name="form_reloj" style="float: left;">
+          <i class="fas fa-clock"></i>  <input style=" background: #191724; border: #191724; color: white; height: 25px;" type="text" name="reloj" size="10">
+          </form>
+          <form name="form_fecha" style="float: left;">
+            <i class="fas fa-calendar-alt"></i>
+            <script>
+              var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+              var f=new Date();
+              document.write( f.getDate() + " de " + meses[f.getMonth()] + " del " + f.getFullYear());
+              </script> 
+            </form>
+          <script src="../functions/js/clock.js"></script>
+        <li><a href="" style="float: right; height: 30px;">Mas Opciones <span class="fas fa-grip-lines"></span></a>
+          <ul>
+            <li><a href="#"  > </a></li>
+  
+            <li><a href="oculto/secundary.html" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;" > <i class="fas fa-user-secret"></i> Pefil Secundario</a></li>
+            <li><a href="oculto/secundary-force-dark-mode.html" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;"><i class="fas fa-user-secret"></i>Perfil Secundario Force Dark Mode</a></li>
+           <li><a href="acercade.html" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;"><i class="fas fa-exclamation-circle"></i>Acerca Sobre Iconny</a></li> 
+            <li><a href="devtools/index.html" onclick="window.open(this.href, this.target, 'width=500,height=1980'); return false;"><i class="fab fa-dev"></i>WDK Dev Tools</a></li>
+           <li><a href="https://techappssv.github.io/iconnyupdates/" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;"><i class="far fa-check-circle"></i>Actualizaciones</a></li> 
+            <li><a href="inspect/menupure.html" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;" ><i class="fas fa-tools"></i>Inspector </a></li>
+            <li><a href="market/market.html" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;" ><i class="far fa-sticky-note"></i>Notely</a></li>
+            <li><a href="../functions/gitpod/index.html" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;"><i class="fas fa-rocket"></i>WebApps Preconfiguradas</a></li>
+        <li><a href="config.html" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;"><i class="fas fa-cog"></i>Configuracion</a></li> 
+   
+
+   <li><a href="" onclick="window.reload()"><i class="fas fa-redo-alt" style="color: red;"></i><i style="color: red;">Forzar Recarga  </i></a></li>
+ 
+          </ul>
+        </li>
+  
+      </ul>
+    </nav></div>
+    </div>
+    </nav>
+  
 
   </header>
 
-  <body style="background: black;"  >
-    <div style="background: #1c1c1c; height: 12px;" ></div>
+  <body style="background: #191724;" onload="reloj()" > 
+    <div style="background: #191724; height: 12px;" ></div>
 
 
    
@@ -44,7 +80,7 @@
 
 <div id="flotante" style=" background: white; display: none;">
   <div id="close" style="background: #1c1c1c;"><a href="javascript:cerrar();" onclick="cerrar2()">Cerrar LastPass</a> </div>
-  <webview  id="devtools" src="https://lastpass.com/?ac=1&lpnorefresh=1"  useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edg/83.0.478.61
+  <webview  id="devtools" src="https://lastpass.com/?ac=1&lpnorefresh=1" preload="contextual.js" useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/83.0.478.61
   "style="  display:inline-flex; width:100%;"height="625px"></webview>
 
 </div>
@@ -56,11 +92,20 @@
     <button onclick="backView()"style="width: 100px; background: #1c1c1c; border:#1c1c1c;"  class="btn btn-dark"><h3 class="fas fa-backward" style="color: white;"></h3></button>
     <button onclick="forwardView()"style="width: 100px; background: #1c1c1c; border:#1c1c1c; "  class="btn btn-dark"><h3 class="fas fa-forward" style="color: white;"></h3></button>
     <button onclick="reloadView()" style="width: 100px; background: #1c1c1c; border:#1c1c1c;" class="btn btn-dark"><h3 class="fas fa-redo" style="color: white;"></h3></button>
+    <button onclick="reboot3()" style="width: 100px; background: #1c1c1c; border:#1c1c1c;" class="btn btn-dark"><h3 class="fas fa-home" style="color: white;"></h3></button>
+   
     <button hidden style="width: 100px; background: #1c1c1c; border:#1c1c1c;  " class="btn btn-dark"><h3 class="fas fa-home" style="color: white;"></h3></button></div>
 
-
+    <script>
+     
+      function reboot3(){
+        document.getElementById("devtools2").src="devtools/social.html";
+      }
+    
+    
+    </script>
  </div>
-  <webview  id="devtools2" src="devtools/social.html"  useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edg/83.0.478.61
+  <webview  id="devtools2" src="devtools/social.html" allowpopups preload="contextual.js" useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edg/83.0.478.61
   "style="  display:inline-flex; width:100%;"height="625px"></webview>
 
 </div>
@@ -83,6 +128,7 @@
 <link rel="stylesheet" href="../styles/index.css">
 <script src="webpanels/webpanel.js"></script>
 <script src="webpanels/controller.js"></script>
+<link rel="stylesheet" href="../styles/darkmodeconfig.css">
 
 <link rel="stylesheet" href="../styles/monocromatix/monocromatix.css">
 

@@ -1,7 +1,7 @@
 {
 	"name": "iconny",
 	"productName": "Iconny Browser Linux ",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"description": "Maxima rapidez y ligereza",
 	"main": "src/wdk-core/index.js",
 	"scripts": {
@@ -34,7 +34,7 @@
 		"linux": {
 			"category": "Network",
 			"target": [
-				"AppImage"
+				"deb"
 			],
 			"icon": "build/background.png"
 		},
@@ -48,19 +48,15 @@
 			"oneClick": "false",
 			"allowToChangeInstallationDirectory": "true",
 			"perMachine": "true"
-		},
-		"repository": {
-			"type": "git",
-			"url": "git+https://github.com/TechAppsSv/iconny.git"
-		  }
+		}
 	},
 	"dependencies": {
 		"@cliqz/adblocker-electron": "^1.18.3",
 		"cross-fetch": "^3.0.6",
+		"electron-context-menu": "^0.9.1",
 		"electron-navigation": "^1.5.8",
-	
-		"node-fetch": "^2.6.1"
-	
+		"node-fetch": "^2.6.1",
+		"wdk-lts": "1.01"
 	},
 	"devDependencies": {
 		"electron": "^11.1.1",

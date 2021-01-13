@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Iconny Browser </title>
-
-  <link rel="stylesheet" href="../styles/dropdown.css">
+<script src="clock/clock.js"></script>
+  <link rel="stylesheet" href="../styles/dropdownlight.css">
 </head>
 
 
@@ -21,16 +21,50 @@
   <div class="sep" style="height: 19px; background: white;"></div>
   <div class="sep" style="height: 19px; background: white; "></div>
   <div style="width: 100%;">    <div id="nav-body-ctrls" style="width: 100%;"></div>
-   <div style=" width: 100%; height: 25px;" id="tabla">
+  <div style="background:#D8D1CF; width: 100%; height: 25px;" id="tabla">
     
     
-  </nav></div>
-  </div>
-  </nav>
+    <nav style="background: #D8D1CF;"> 
+      <ul class="nav" style="float: right;" >
+        <form name="form_reloj" style="float: left;">
+          <i class="fas fa-clock"></i>  <input style=" background: #D8D1CF; border: #D8D1CF; color: black; height: 25px;" type="text" name="reloj" size="10">
+          </form>
+          <form name="form_fecha" style="float: left;">
+            <i class="fas fa-calendar-alt"></i>
+            <script>
+              var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+              var f=new Date();
+              document.write( f.getDate() + " de " + meses[f.getMonth()] + " del " + f.getFullYear());
+              </script> 
+            </form>
+          <script src="../functions/js/clock.js"></script>
+        <li><a href="" style="float: right; height: 30px;">Mas Opciones <span class="fas fa-grip-lines"></span></a>
+          <ul>
+            <li><a href="#"  > </a></li>
+  
+            <li><a href="oculto/secundary.html" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;" > <i class="fas fa-user-secret"></i> Pefil Secundario</a></li>
+            <li><a href="oculto/secundary-force-dark-mode.html" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;"><i class="fas fa-user-secret"></i>Perfil Secundario Force Dark Mode</a></li>
+           <li><a href="acercadelight.html" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;"><i class="fas fa-exclamation-circle"></i>Acerca Sobre Iconny</a></li> 
+            <li><a href="devtools/index.html" onclick="window.open(this.href, this.target, 'width=500,height=1980'); return false;"><i class="fab fa-dev"></i>WDK Dev Tools</a></li>
+           <li><a href="https://techappssv.github.io/iconnyupdates/" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;"><i class="far fa-check-circle"></i>Actualizaciones</a></li> 
+            <li><a href="inspect/menupurelight.html" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;" ><i class="fas fa-tools"></i>Inspector </a></li>
+            <li><a href="market/marketlight.html" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;" ><i class="far fa-sticky-note"></i>Notely</a></li>
+            <li><a href="#" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;"><i class="fas fa-rocket"></i>WebApps Preconfiguradas</a></li>
+        <li><a href="config.html" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;"><i class="fas fa-cog"></i>Configuracion</a></li> 
+   
 
-  </header>
+   <li><a href="" onclick="window.reload()"><i class="fas fa-redo-alt" style="color: red;"></i><i style="color: red;">Forzar Recarga  </i></a></li>
+ 
+          </ul>
+        </li>
+  
+      </ul>
+    </nav></div>
+    </div>
+    </nav>
+  
 
-  <body   >
+  <body onload="reloj()"  >
     <div style=" height: 12px;" ></div>
   
     <br>
@@ -42,7 +76,7 @@
     
     <div id="flotante" style=" background: white; display: none;">
       <div id="close" style="background: #1c1c1c;"><a href="javascript:cerrar();" onclick="cerrar2()">Cerrar LastPass</i></a> </div>
-      <webview  id="devtools" src="https://lastpass.com/?ac=1&lpnorefresh=1"  useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edg/83.0.478.61
+      <webview  id="devtools" src="https://lastpass.com/?ac=1&lpnorefresh=1" preload="contextual.js"  useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edg/83.0.478.61
       "style="  display:inline-flex; width:100%;"height="625px"></webview>
     
     </div>
@@ -51,14 +85,25 @@
     
       <div > 
       <div style="padding-left: 2%;" style="background: #ffffff;">
+
         <button onclick="backView()"style="width: 100px; background: #ffffff; border:#ffffff;" class="btn btn-primary"><h3 class="fas fa-backward" style="color: black;"></h3></button>
         <button onclick="forwardView()"sstyle="width: 100px; background: #ffffff; border:#ffffff;" class="btn btn-primary"><h3 class="fas fa-forward" style="color: black;"></h3></button>
+        <button onclick="reboot3()" style="width: 100px; background: #ffffff; border:#ffffff;" class="btn btn-primary"><h3 class="fas fa-home" style="color: black;"></h3></button>
+      
         <button onclick="reloadView()" style="width: 100px; background: #ffffff; border:#ffffff;" class="btn btn-primary"><h3 class="fas fa-redo" style="color: black;"></h3></button>
         <button hidden style="width: 100px; background: #1c1c1c; border:#1c1c1c;  " class="btn btn-primary"><h3 class="fas fa-home" style="color:black;"></h3></button></div>
     
     
      </div>
-      <webview  id="devtools2" src="devtools/sociallight.html"  useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edg/83.0.478.61
+     <script>
+     
+      function reboot3(){
+        document.getElementById("devtools2").src="devtools/sociallight.html";
+      }
+    
+    
+    </script>
+      <webview  id="devtools2" src="devtools/sociallight.html" allowpopups preload="contextual.js"  useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edg/83.0.478.61
       "style="  display:inline-flex; width:100%;"height="625px"></webview>
     
     </div>
@@ -90,29 +135,7 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-<script>
-  function addDarkmodeWidget() {
-    new Darkmode().showWidget();
-  }
-  window.addEventListener('load', addDarkmodeWidget);
-  const options = {
-  bottom: '64px', // default: '32px'
-  right: 'unset', // default: '32px'
-  left: '32px', // default: 'unset'
-  time: '0.5s', // default: '0.3s'
-  mixColor: '#fff', // default: '#fff'
-  backgroundColor: '#fff',  // default: '#fff'
-  buttonColorDark: '#100f2c       ',  // default: '#100f2c'
-  buttonColorLight: '#fff', // default: '#fff'
-  saveInCookies:  true, // default: true,
-  label: 'O', // default: ''
-  autoMatchOsTheme: true // default: true
-}
 
-const darkmode = new Darkmode(options);
-darkmode.showWidget();
-
-</script>
 
 <script>
     

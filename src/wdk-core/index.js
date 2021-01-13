@@ -7,14 +7,38 @@ const { ElectronBlocker, fullLists, Request } = require('@cliqz/adblocker-electr
 ElectronBlocker.fromPrebuiltAdsAndTracking(fetch).then((blocker) => {
   blocker.enableBlockingInSession(session.defaultSession);
 });
+// ./main.js
+
+const contextMenu = require('electron-context-menu');
+("web-contents-created", (e, contents) => {
+  contextMenu({
+     window: contents,
+     showSaveImageAs: true,
+     showInspectElement: false
+  });
+})
+
+
+
+
+contextMenu({
+  prepend: (params, WebViewTag) => [
+      {
+          role: "zoomIn"
+      },
+      {
+          role: "zoomOut"
+      },
+  ],
+});
 
 
 
 
 
-const { app, BrowserWindow, Menu , webContents, session } = require('electron')
+const { app, BrowserWindow, Menu , webContents, session, remote } = require('electron')
 
-
+app.commandLine.appendSwitch('enable-features', 'WebContentsForceDark');
 function createWindow () {
   
   const win = new BrowserWindow({
@@ -22,7 +46,8 @@ function createWindow () {
     height: 1080,
    webPreferences: {
       nodeIntegration: true,
-      webviewTag: true
+      webviewTag: true,
+      enableBlinkFeatures: "WebContentsForceDark"
     
      
 
@@ -70,7 +95,7 @@ function createWindow () {
   const menu = Menu.buildFromTemplate(template)
   Menu.setApplicationMenu(menu)
   win.loadURL(`file://${__dirname}/init.html`,
-  {userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4261.0 Safari/537.36'});
+  {userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/83.0.478.61'});
 
   
   

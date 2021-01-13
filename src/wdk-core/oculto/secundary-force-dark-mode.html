@@ -22,13 +22,13 @@
   <script src="../views/all.js"></script>
     
   
-  <webview  id="view" src="newtab.html" partition='persist:webviewsession'  useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edg/83.0.478.61
+  <webview  id="view" src="duckduckgo.html" partition='persist:webviewsession'  useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edg/83.0.478.61
   " height="625px"></webview>
   
   <script>
     var webview = document.getElementById('view');
     webview.addEventListener('dom-ready', function () {
-        webview.insertCSS('html,body,*{color:white; background-color: black !important;}')
+        webview.insertCSS(' body{color:white; background-color: black !important;},h3{color:white; background-color: black !important;},.sfbgg{color:white; background-color: black !important;}')
     });
   
   </script>
