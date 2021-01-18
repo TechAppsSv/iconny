@@ -5,7 +5,7 @@
 }
 body {
     overflow: hidden;
-    background: #000000 ;
+    background: #191724;
 }
 @media screen and (min-width: 600px) {
     #cambio button {
@@ -176,6 +176,7 @@ body {
     height: 89vh;
     }
     }
+    
     @media all and (max-width: 1600px){
       #nav-body-views{
        width:100%; 
