@@ -52,8 +52,8 @@ function getTasks() {
           <br>
          <p style="text-align:center;"> ${description}</p>
           <br>
-          <a href="#" onclick="deleteTask('${title}')" class="btn btn-danger ml-5">Eliminar</a>
-          <a href="${description}" class="btn btn-dark ml-5">Si es un link su nota presione aqui  </a>
+          <a href="#" onclick="deleteTask('${title}')" style="color:white;"class="btn  ml-5">Eliminar</a>
+          <a href="${description}" class="btn ml-10" style="color:white; height:10vh;">Si es un link su nota presione aqui  </a>
           </p>
         </div>
       </div>`;

@@ -48,7 +48,7 @@ function getTasks2() {
     let description = tasks2[i].description;
 
     tasks2View.innerHTML += `
-    <a href="${title}" class="btn btn-primary"  >Iniciar </a>
+    <a href="${title}" class="btn "  style="color:white;" >Iniciar </a>
     
 `;
   }

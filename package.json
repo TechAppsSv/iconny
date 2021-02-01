@@ -1,7 +1,7 @@
 {
 	"name": "iconny",
 	"productName": "Iconny Browser Linux ",
-	"version": "0.0.9",
+	"version": "1.0.0",
 	"description": "Maxima rapidez y ligereza",
 	"main": "src/wdk-core/index.js",
 	"scripts": {
@@ -59,7 +59,7 @@
 		"node-fetch": "^2.6.1"
 	},
 	"devDependencies": {
-		"electron": "^11.2.0",
+		"electron": "^11.2.1",
 		"electron-builder": "^22.6.1",
 		"electron-devtools-installer": "^3.1.1"
 	}

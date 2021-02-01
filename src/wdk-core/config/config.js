@@ -52,7 +52,7 @@ function getTasks2() {
           <p ><p style="text-align:center;">${title}</h4> 
           <br>
         
-          <a href="#" onclick="deleteTask2('${title}')" class="btn btn-danger ml-5">Eliminar Preferencia</a>
+          <a href="#" onclick="deleteTask2('${title}')" style="color:white;" class="btn ml-5">Eliminar Preferencia</a>
          
           </p>
         </div>

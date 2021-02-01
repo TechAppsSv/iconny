@@ -14,7 +14,7 @@ ul, ol {
 }
 
 .nav {
-    width:900px; 
+    width:500px; 
     margin:0 auto; 
 }
 
@@ -23,7 +23,7 @@ ul, ol {
 }
 
 .nav li a {
-    background-color:#191724;;
+    background-color:black;
     color:#fff;
     text-decoration:none;
     padding:3px 50px;
