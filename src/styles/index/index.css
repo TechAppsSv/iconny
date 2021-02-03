@@ -1,0 +1,86 @@
+* {
+
+    font-family: 'Poppins', sans-serif;
+  
+}
+body {
+    overflow: hidden;
+    background: #191724;
+}
+@media screen and (min-width: 600px) {
+    #cambio button {
+    top: 25;
+    }
+  }
+  body {
+     
+  text-align: center;
+   
+
+  overflow: hidden;
+  
+  }
+  * {
+  
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+
+  }
+
+  
+  main {
+    padding-top: 30px;
+    overflow: auto;
+    height: calc(100vh - 30px);
+    position: absolute;
+    top: 30px;
+    left: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .contenedor::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+  
+  .contenedor::-webkit-scrollbar:vertical {
+    width:10px;
+  }
+  
+  .contenedor::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+  } 
+  
+  .contenedor::-webkit-scrollbar:horizontal {
+    height: 10px;
+  }
+  
+  .contenedor::-webkit-scrollbar-thumb {
+    background-color: #1D1D1D;
+    border-radius: 20px;
+    border: 2px solid #1D1D1D;
+  }
+  
+  .contenedor::-webkit-scrollbar-track {
+    border-radius: 10px;  
+  }
+  .sep {
+    background: #000000;
+  }
+  .border-right {
+    background: black;
+  }
+  .sidebar-heading{
+  background: black; 
+  border: black; 
+  color:white;
+  }
+  .listcore{
+  background: black; 
+  background-color: black;
+  border: black; 
+  color:black;
+  }
+  .reloj {
+  background: #333; border: #333; height: 20px;
+  color: white;
+  }
