@@ -3,7 +3,7 @@
 	"productName": "Iconny Browser Linux ",
 	"version": "1.1.0",
 	"description": "Maxima rapidez y ligereza",
-	"main": "src/wdk/wdk-init-webvi/index.js",
+	"main": "src/wdk-core/index.js",
 	"scripts": {
 		"pack": "build --dir",
 		"dist": "build",
@@ -34,9 +34,7 @@
 		"linux": {
 			"category": "Browser",
 			"target": [
-				"AppImage",
-				"rpm",
-				"deb"
+				"snap"
 			],
 			"icon": "build/background.png"
 		},
