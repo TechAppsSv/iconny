@@ -10,7 +10,7 @@ function mostrar3() {
 
 function mostrar2() {
     div = document.getElementById('nav-body-views');
-    div.style.width = '50%';
+    div.style.width = '70%';
 }
 function cerrar() {
     div = document.getElementById('flotante');

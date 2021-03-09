@@ -36,9 +36,10 @@ contextMenu({
 
 
 
-const { app, BrowserWindow, Menu , webContents, session, remote } = require('electron')
+const { app, BrowserWindow, Menu , session, } = require('electron')
 
 app.commandLine.appendSwitch('enable-features', 'WebContentsForceDark');
+app.disableHardwareAcceleration ();
 function createWindow () {
   
   const win = new BrowserWindow({
@@ -93,7 +94,7 @@ function createWindow () {
   ]
   
   const menu = Menu.buildFromTemplate(template)
-  Menu.setApplicationMenu(menu)
+  Menu.setApplicationMenu(null)
   win.loadURL(`file://${__dirname}/init.html`,
   {userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/83.0.478.61'});
 

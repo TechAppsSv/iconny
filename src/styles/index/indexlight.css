@@ -1,6 +1,15 @@
 * {
 
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+#flotante::-webkit-scrollbar {
+
+  width: 8px;     /* Tamaño del scroll en vertical */
+
+  height: 8px;    /* Tamaño del scroll en horizontal */
+
+  display: none;  /* Ocultar scroll */
 
 }
 body {
@@ -23,7 +32,7 @@ overflow: hidden;
 * {
 
 text-align: center;
-font-family: 'Poppins', sans-serif;
+font-family: 'Ubuntu', sans-serif;
 
 }
 

@@ -20,24 +20,7 @@
   
 <div style="background: black;"> <ul class="nav" style="padding-left: 40%;" >
   
-  <li><a href="" style="float: right; height: 6px;"> <span class="fas fa-grip-lines"></span></a>
-    <ul>
-   
-
-      <li><a href="../oculto/secundary.html" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;" > <i class="fas fa-user-secret"></i> Pefil Secundario</a></li>
-      <!-- <li><a href="oculto/secundary-force-dark-mode.html" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;"><i class="fas fa-user-secret"></i>Perfil Secundario Force Dark Mode</a></li> -->
-     <li><a href="../../wdk/about/acercade.html" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;"><i class="fas fa-exclamation-circle"></i>Acerca Sobre Iconny</a></li> 
-      <li><a href="../../wdk/devtools/index.html" onclick="window.open(this.href, this.target, 'width=500,height=1980'); return false;"><i class="fab fa-dev"></i>WDK Dev Tools</a></li>
-     <li><a href="https://techappssv.github.io/iconnyupdates/" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;"><i class="far fa-check-circle"></i>Actualizaciones</a></li> 
-      <li><a href="../../wdk/inspect/menupure.html" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;" ><i class="fas fa-tools"></i>Inspector </a></li>
-      <li><a href="../market/market.html" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;" ><i class="far fa-sticky-note"></i>Notely</a></li>
-      <!-- <li><a href="../functions/gitpod/index.html" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;"><i class="fas fa-rocket"></i>WebApps Preconfiguradas</a></li> -->
-  <li><a href="../../wdk/settings/config.html" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;"><i class="fas fa-cog"></i>Configuracion</a></li> 
-  <li><a href="../../wdk/wdk-init-webvi/init.html" ><i class="fas fa-backward"></i> Volver a WDK Init</a></li> 
-
-
-<li><a href="" onclick="window.reload()"><i class="fas fa-redo-alt" style="color: red;"></i><i style="color: red;">Forzar Recarga  </i></a></li>
-
+  
     </ul>
   </li>
 
@@ -61,14 +44,67 @@
 
 
 
-<div id="flotante" style=" background: white; display: none;">
-  <div id="close" style="background: #1c1c1c;"><a href="javascript:cerrar();" onclick="cerrar2()">Cerrar LastPass</a> </div>
-  <webview  id="devtools" src="https://lastpass.com/?ac=1&lpnorefresh=1" preload="contextual.js" useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/83.0.478.61
-  "style="  display:inline-flex; width:100%;"height="625px"></webview>
+<div id="flotante" style="  display: none; width:30%; background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1c1c1c, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1c1c1c, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ overflow: auto; ">
+  <div id="close" style="background: #1c1c1c;"><a href="javascript:cerrar();" onclick="cerrar2()">Cerrar Panel De Control</a> </div>
+  <br>
+
+  <h1 style="text-align: center; font-size: 200%;">Bienvenido a Iconny</h1>
+  <br>
+  <h2 style="text-align: center;">Hora Actual</h2>
+  <br>
+  <form name="form_reloj" style="float: right;">
+
+    <input style=" background: black; border: #191724; color: white; height: 30px;" readonly type="text" name="reloj" size="30">
+          </form>
+          
+          <br>
+          <script src="../clock/clock.js"></script>
+          <br>
+          <br>
+      <button>    <a href="../oculto/secundary.html" class="b" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;" > <i class="fas fa-user-secret"></i> Pefil Secundario</a></li></button>
+         <br>
+          <!-- <li><a href="oculto/secundary-force-dark-mode.html" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;"><i class="fas fa-user-secret"></i>Perfil Secundario Force Dark Mode</a></li> -->
+          
+<button>
+<a href="../../wdk/about/acercade.html" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;"><i class="fas fa-exclamation-circle"></i>Acerca Sobre Iconny</a></li> 
+
+</button>
+          <br>          
+<button>
+<a href="../../wdk/devtools/index.html" onclick="window.open(this.href, this.target, 'width=500,height=1980'); return false;"><i class="fab fa-dev"></i>WDK Dev Tools</a></li>
+
+</button>
+          <br>    
+<button>
+<a href="https://techappssv.github.io/iconnyupdates/" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;"><i class="far fa-check-circle"></i>Actualizaciones</a></li> 
+
+</button>
+          <br>  
+<button>
+<a href="../../wdk/inspect/menupure.html" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;" ><i class="fas fa-tools"></i>Inspector </a></li>
+
+</button>  
+<br>    
+<button>
+<a href="../market/market.html" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;" ><i class="far fa-sticky-note"></i>Notely</a></li>
+
+</button>          <!-- <li><a href="../functions/gitpod/index.html" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;"><i class="fas fa-rocket"></i>WebApps Preconfiguradas</a></li> -->
+    <br>
+    <button>
+    <a href="../../wdk/settings/config.html" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;"><i class="fas fa-cog"></i>Configuracion</a></li> 
+
+    </button>     <br>
+<button>
+  <a href="../../wdk/wdk-init-webvi/init.html" ><i class="fas fa-backward"></i> Volver a WDK Init</a></li> 
+
+</button>    
+ 
 
 </div>
 
-<div id="flotante2" style=" background: white; display: none;">
+<div id="flotante2" style=" background: white; display: none; width: 30%;">
   <div id="close" style="background: #1c1c1c;"><a href="javascript:cerrar3();" onclick="cerrar2()">Cerrar Web Panels<i class="fas fa-pager"></i></a> </div>
 
   <div style="background: #1c1c1c;"> 
@@ -90,15 +126,14 @@
     </script>
  </div>
 
-  <webview  id="devtools2" src="../../wdk/devtools/social.html" allowpopups preload="../contextual.js" useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edg/83.0.478.61
-  "style="  display:inline-flex; width:100%;"height="625px"></webview>
+  <webview  id="devtools2" src="../../wdk/devtools/social.html" allowpopups preload="../contextual.js"   useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  " style="  display:inline-flex; width:100%;"height="625px"></webview>
 
 </div>
 
-  <div id="nav-body-views" class="contenedor"  style="background: white;"  ></div>
+  <div id="nav-body-views" class="contenedor"  style="background: white;"  > </div>
 
 
-  <nav style="background: black"> 
+  <nav style="background: black; height: 10px;"> 
     <ul class="nav" style="padding-right: 150%;" >
       <form name="form_fecha" style="float: right;">
 
@@ -111,12 +146,7 @@
           </script> 
         </form>
      
-      <form name="form_reloj" style="float: right;">
-
-  <input style=" background: black; border: #191724; color: white; height: 10px;" readonly type="text" name="reloj" size="5">
-        </form>
-        
-        <script src="../clock/clock.js"></script>
+     
      
         </ul>
       </li>
@@ -127,7 +157,9 @@
   </nav>
 
 
-
+  <script>
+   
+</script>
 
 </body>
 <script src="components/navbar.js"></script>

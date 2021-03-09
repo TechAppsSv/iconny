@@ -26,7 +26,15 @@ body {
   font-family: 'Poppins', sans-serif;
 
   }
+  #flotante::-webkit-scrollbar {
 
+    width: 8px;     /* Tamaño del scroll en vertical */
+
+    height: 8px;    /* Tamaño del scroll en horizontal */
+
+    display: none;  /* Ocultar scroll */
+
+}
   
   main {
     padding-top: 30px;

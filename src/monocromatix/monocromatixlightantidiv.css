@@ -171,13 +171,6 @@ border: 10px;
 border-radius: 5px;
 height: 5vh;
 }
-div {
-color: black;
-background: #ececec;
-border: 10px;
-border-radius: 10px;
-
-}
 
 input 				{
 font-size:18px;
@@ -203,13 +196,7 @@ border: 10px;
 border-radius: 5px;
 
 }
-div {
-color: white;
-background: #ececec;
-border: 10px;
-border-radius: 10px;
 
-}
 
 textarea				{
 font-size:18px;
