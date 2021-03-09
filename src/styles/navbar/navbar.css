@@ -2,7 +2,7 @@ nav {
     display: block;
     width: 100%;
     height: 30px;
-    background-color: #191724;
+    background-color:#1c1c1c;
     -webkit-app-region: drag;
     -webkit-user-select: none;
     position: fixed;
@@ -11,7 +11,7 @@ nav {
   }
   .navbar {
     overflow: hidden;
-    background-color: black;
+    background-color: #1c1c1c;
     height: 33px;
   }
   nav #titleshown {
