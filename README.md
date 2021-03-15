@@ -5,8 +5,8 @@
 ## NUEVO LANZAMIENTO Pagina Web Oficial
 ###  https://techappssv.github.io/iconnybrowser/
 
-## Ultima Version 0.09 Stable
-###  https://github.com/TechAppsSv/iconny/releases/tag/0.09
+## Ultima Version  12 Stable
+###  https://github.com/TechAppsSv/iconny/releases/tag/12
 
 ## Blog de lanzamientos
 ### https://techappssv.github.io/iconnybrowser/html/blog.html
