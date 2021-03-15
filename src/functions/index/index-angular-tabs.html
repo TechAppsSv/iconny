@@ -1,0 +1,306 @@
+
+
+<div ng-controller="AppCtrl" class="sample tabsdemoDynamicTabs"style="height: 190vh;" layout="column" ng-app="MyApp">
+
+  <md-content style="height: 100vh; overflow: hidden;">
+
+    <md-tabs md-selected="selectedIndex" id="container" style="height: 1vh;" md-border-bottom="">
+      <!-- label="{{tab.title}}" -->
+      
+      <md-tab ng-repeat="tab in tabs" style="height: 10vh; color: white; background: black;"ng-disabled="tab.disabled" label="Tab{{$index%4}}"  >         
+        <!DOCTYPE html>
+        <html>
+          <head>
+
+            <script src="browser.js"></script>
+          <body>
+            <div id="controls" style="width: 100%;">
+        
+              <button id="back" style="width: 5%; height: 4vh;" title="Go Back" disabled="true">&#9664;</button>
+              <button id="forward"style="width: 5%; height: 4vh;" title="Go Forward" disabled="true">&#9654;</button>
+              <button id="home"style="width: 5%; height: 4vh;" title="Go Home">&#8962;</button>
+              <button id="reload"style="width: 5%; height: 4vh;" title="Reload">&#10227;</button>
+              <md-button class="add-tab " ng-click="addTab(tTitle,tContent)" type="submit" style="width: 5%; height: 3vh; background:#252525;"><i class="bi bi-plus-circle" style="color: white;"></i></md-button>
+
+        
+              <form id="location-form">
+                <div id="center-column">
+                  <input id="location" type="text" style=" background: black; border: black; color: white;  width: 100%; height: 4vh;  border-radius: 10px;" value="http://www.github.com/">
+                </div>
+         
+              </form>
+  
+        
+            </div>
+        
+            <div id="zoom-box" style="display: none;">
+              <form id="zoom-form" style="display: none;">
+                <input id="zoom-text" type="text">
+                <input type="submit" value="&#128270;">
+              
+              </form>
+            </div>
+        
+            <div id="find-box" style="display: none;">
+              <form id="find-form">
+                <input id="find-text" type="text">
+                <div id="find-results"></div>
+                <input type="submit" style="position:absolute; visibility:hidden">
+                <button id="match-case">aA</button>
+                <button id="find-backward">&#60;</button>
+                <button id="find-forward">&#62;</button>
+              </form>
+            </div>
+        
+            <webview src="../../wdk/newtab/newtab.html" id="view" ></webview>
+     
+        
+            <div id="sad-webview" style="display: none;">
+              <div id="sad-webview-icon">&#9762;</div>
+              <h2 id="crashed-label">Aw, Snap!</h2>
+              <h2 id="killed-label">He's Dead, Jim!</h2>
+        
+              <p>Something went wrong while displaying this webpage.
+              To continue, reload or go to another page.</p>
+            </div>
+          </body>
+        </html>
+        <script>
+          
+        </script>
+        
+
+    <script src="js/controller2.js"></script>
+    <script src="browser2.js"></script>
+  </body>
+</html>
+
+  
+        </div>
+      </md-tab>
+    </md-tabs>
+  </md-content>
+
+
+
+</div>
+<style>
+  controls {
+  padding: 3px;
+  border-bottom: solid 1px #ccc;
+  background-color: #eee;
+}
+
+#controls button,
+#controls input {
+  font-size: 14px;
+  line-height: 24px;
+  border-radius: 2px;
+  padding: 0 6px;
+}
+
+button,
+input[type="submit"],
+button[disabled]:hover {
+  border: solid 1px transparent;
+  background: transparent;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  border-color: #ccc;
+  background: -webkit-linear-gradient(bottom, #cccccc 0%, #f2f2f2 99%);
+}
+
+button:active,
+input[type="submit"]:active {
+  border-color: #bbb;
+  background: -webkit-linear-gradient(bottom, #e2e2e2 0%, #bbbbbb 99%);
+}
+
+/* These glyphs are on the small side, make them look more natural when
+compared to the back/forward buttons */
+#controls #home,
+#controls #terminate {
+  font-size: 24px;
+}
+
+#controls #reload {
+  font-size: 20px;
+}
+
+#controls #zoom,
+#controls #find {
+  font-size: 18px;
+}
+
+#location {
+  border: solid 1px #ccc;
+  padding: 2px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+}
+
+#controls {
+  display: -webkit-flex;
+  -webit-flex-direction: column;
+}
+
+#controls #location-form {
+  -webkit-flex: 1;
+  display: -webkit-flex;
+  -webit-flex-direction: column;
+}
+
+#controls #center-column {
+  -webkit-flex: 1;
+}
+
+#zoom-box,
+#find-box {
+  background-color: #eee;
+  border: solid 1px #ccc;
+  border-top: solid 1px #eee;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  padding: 2px;
+
+  position: fixed;
+  top: 36px;
+  height: 25px;
+
+  display: none;
+}
+
+#zoom-box #zoom-form,
+#find-box #find-form {
+  -webkit-flex: 1;
+  display: -webkit-flex;
+  -webit-flex-direction: row;
+}
+
+#zoom-box input,
+#zoom-box button,
+#find-box button {
+  border-radius: 2px;
+}
+
+#zoom-box #zoom-text,
+#find-box #find-text {
+  border: solid 1px #ccc;
+  margin-right: 0px;
+  padding: 2px;
+  -webkit-box-sizing: border-box;
+  -webkit-flex: 1;
+}
+
+#zoom-box {
+  left: 5px;
+  width: 125px;
+  z-index: 1;
+}
+
+#zoom-box input[type="submit"] {
+  font-size: 14px;
+  margin: 2px 0px;
+  padding: 0 2px 3px 2px;
+  width: 22px;
+}
+
+#zoom-box button {
+  font-size: 12px;
+  margin: 2px 0px;
+  padding: 0px 1px 0px 0px;
+  width: 20px;
+}
+
+#find-box {
+  right: 5px;
+  width: 280px;
+  z-index: 2;
+}
+
+#find-box #find-text {
+  border-right-style: none;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+#find-box #find-results {
+  color: #888;
+  background-color: #fff;
+  border: solid 1px #ccc;
+  border-left-style: none;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  margin: 2px 0px;
+  padding: 3px 4px 2px 0;
+  text-align: center;
+}
+
+#find-box #match-case {
+  margin: 2px 0px;
+  font-size: 10px;
+  width: 28px;
+}
+
+#find-box #find-backward,
+#find-box #find-forward {
+  font-size: 14px;
+  width: 24px;
+}
+      * {
+  color: white;  border: #1c1c1c;}
+    #container {
+  height: 100vh;}
+  .tabsdemoDynamicTabs md-content {
+  background-color: transparent !important; }
+  .tabsdemoDynamicTabs md-content md-tabs {
+    border: 1px solid  #1c1c1c; }
+    .tabsdemoDynamicTabs md-content md-tabs md-tab-content {
+      background: #1c1c1c; height: 1000000vh; }
+    .tabsdemoDynamicTabs md-content md-tabs md-tabs-canvas {
+      background: black;
+     }
+  .tabsdemoDynamicTabs md-content h1:first-child {
+    margin-top: 0; }
+.tabsdemoDynamicTabs md-input-container {
+  padding-bottom: 0; }
+.tabsdemoDynamicTabs .remove-tab {
+  margin-bottom: 40px; }
+.tabsdemoDynamicTabs .demo-tab > div > div {
+  padding: 25px;
+  box-sizing: border-box; }
+.tabsdemoDynamicTabs .edit-form input {
+  width: 100%; }
+.tabsdemoDynamicTabs md-tabs {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
+.tabsdemoDynamicTabs md-tab[disabled] {
+  opacity: 0.5; }
+.tabsdemoDynamicTabs label {
+  text-align: left; }
+.tabsdemoDynamicTabs .long > input {
+  width: 264px; }
+.tabsdemoDynamicTabs .md-button.add-tab {
+  transform: translateY(5px); }
+
+</style>
+<script>
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-messages.min.js"></script>
+<script src="https://cdn.rawgit.com/angular/bower-material/v0.9.8/angular-material.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/assets-cache.js"></script>
+<script src="js/controller.js"></script>
+<script src="js/"></script>
+<link rel="stylesheet" href="../../WebVI/WebVi(1.0).css">
+
+<link rel="stylesheet" href="../../monocromatix/monocromatixantidiv.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/angular/bower-material/v0.9.8/angular-material.css">
+<link rel="stylesheet" href="../../styles/icons/all.css">
+<script src="../icons/all.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">

@@ -9,7 +9,7 @@ function mostrar3() {
 
 
 function mostrar2() {
-    div = document.getElementById('nav-body-views');
+    div = document.getElementById('view');
     div.style.width = '70%';
 }
 function cerrar() {
@@ -23,6 +23,6 @@ function cerrar3() {
 }
 
 function cerrar2() {
-    div = document.getElementById('nav-body-views');
+    div = document.getElementById('view');
     div.style.width = '100%';
 }

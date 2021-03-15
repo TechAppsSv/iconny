@@ -1,133 +1,305 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modo Secundario </title>
-  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
-  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="../../styles/dropdown/dropdown.css">
+     
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap" rel="stylesheet">
 
-  <!-- <header>
-    <nav>
-        <div id="titleshown">Iconny </div>
-        <div id="buttons">
-            <div id="minimize"></div>
-            <div id="maximize"></div>
-      <a href="#" onclick="window.close()" >      <div id="quit">X</div></a>
-        </div>
-      </nav>
-      <br> 
-  
-  </header> -->
-</head>
+            <script src="browser.js"></script>
+          <body style="background: #1c1c1c;"onclick="reloj()">
+            <div id="controls" style="width: 100%;">
+        
+              <button id="back" style="width: 5%; height: 4vh;" title="Go Back" disabled="true"><i class="bi bi-arrow-left"></i></button>
+              <button id="forward"style="width: 5%; height: 4vh;" title="Go Forward" disabled="true"><i class="bi bi-arrow-right"></i></button>
+              <button id="home"style="width: 5%; height: 4vh;" title="Go Home"><i class="bi bi-house"></i></button>
+              <button id="reload"style="width: 5%; height: 4vh;" title="Reload"><i class="bi bi-arrow-clockwise"></i></button>
+           
+             
+              <form id="location-form">
+                <div id="center-column">
+                  
+                  <input id="location" type="text" style=" background: black; border: black; color: white;  width: 100%; height: 4vh;  border-radius: 5px;font-family: 'Ubuntu', sans-serif; text-align: center;" value="http://www.github.com/">
+                     
+                </div>
+              <a href="secundary.html" target="_blank"style="width: 5%; height: 4vh;" ><h3 class="bi bi-plus-circle" style="text-align: center;"></h3></a>              
+              </form>
+        
+            
+        
+            </div>
+        
+            <div id="zoom-box">
+              <form id="zoom-form">
+                <input id="zoom-text" type="text">
+                <input type="submit" value="&#128270;">
+                <button id="zoom-in">&#10133;</button>
+                <button id="zoom-out">&#10134;</button>
+              </form>
+            </div>
+        
+            <div id="find-box">
+              <form id="find-form">
+                <input id="find-text" type="text">
+                <div id="find-results"></div>
+                <input type="submit" style="position:absolute; visibility:hidden">
+                <button id="match-case">aA</button>
+                <button id="find-backward">&#60;</button>
+                <button id="find-forward">&#62;</button>
+              </form>
+            </div>
+        
 
-
-
-  <nav style="background: black;">
-<script src="../clock/clock.js"></script>
  
+
+
+</div>
+  <webview src="newtab.html"     preload="../contextual.js" partition="persist:websession"  useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  " allowpopups id="view" ></webview>
   
-<div style="background: black;"> <ul class="nav" style="padding-left: 40%;" >
-  
-  
-    </ul>
-  </li>
 
-</ul></div>
-  <div style="width: 100%;">    <div id="nav-body-ctrls" style="width: 100%;"></div>
-  
-<div style="background:#141313">  <div id="nav-body-tabs" style="overflow: hidden; background:#141313;" ></div></div>
-   
-    
-    
-   
+</div>
+        
 
-  </header>
-
-  <body style="background: black;" onload="reloj()" > 
-    
-
-
-   
-
-
-
-
-
-  <div id="nav-body-views" class="contenedor"  style="background: white;"  > </div>
-
-
-  <nav style="background: black; height: 10px;"> 
-    <ul class="nav" style="padding-right: 150%;" >
-      <form name="form_fecha" style="float: right;">
-
+          </div>
+      
+        
+            <div id="sad-webview" style="display: none;">
+              <div id="sad-webview-icon">&#9762;</div>
+              <h2 id="crashed-label">Aw, Snap!</h2>
+              <h2 id="killed-label">He's Dead, Jim!</h2>
+        
+              <p>Something went wrong while displaying this webpage.
+              To continue, reload or go to another page.</p>
+            </div>
+          </body>
+        </html>
         <script>
-          var meses = new Array ("ene","feb","mar","abril","mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
-          var f=new Date();
-          // document.write( f.getDate() + " de " + meses[f.getMonth()] + " del " + f.getFullYear());
-          document.write( f.getDate() + " de " + meses[f.getMonth()] );
-
-          </script> 
-        </form>
-     
-     
-     
-        </ul>
-      </li>
-
-    </ul>
-  </nav></div>
-  </div>
-  </nav>
-
-
-  <script>
-   
-</script>
+          
+        </script>
+        
 
 </body>
-<script src="components/navbar.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-<link rel="stylesheet" href="../../styles/navbar/navbar.css">
-<link rel="stylesheet" href="../../styles/icons/all.css">
-<script src="../wdk-core/icons/all.js"></script>
-<link rel="stylesheet" href="../styles/view.css">
-<link rel="stylesheet" href="../styles/theme.css">
-<link rel="stylesheet" href="../../styles/index/index.css">
-<script src="../webpanels/webpanel.js"></script>
-<script src="../webpanels/controller.js"></script>
-<link rel="stylesheet" href="../styles/darkmodeconfig.css">
-<script src="../icons/all.js"></script>
-<link rel="stylesheet" href="../../WebVI/WebVi(1.0).css">
-<link rel="stylesheet" href="../../monocromatix/monocromatixantidiv.css">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<script>const enav = new (require('electron-navigation-iconny'))();</script>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
-
-
-<script>
-    
-  enav.newTab(`file:///${__dirname}/newtab.html`, {
-        // title: 'Welcome',
-      
-        close: true,
-        
-      })
-  
-      
-  
-  
-  </script>
-
-
-<script>
-  
-</script>
 </html>
+
+  
+<script src="../webpanels/webpanel.js"></script>
+<script src="../clock/clock.js"></script>
+
+
+</div>
+<style>
+    * {
+  overflow: hidden;
+font-family: 'Ubuntu', sans-serif;
+}
+  controls {
+  padding: 3px;
+
+}
+
+#controls button,
+#controls input {
+  font-size: 14px;
+  line-height: 24px;
+  border-radius: 2px;
+  padding: 0 6px;
+}
+
+button,
+input[type="submit"],
+button[disabled]:hover {
+  border: solid 1px transparent;
+  background: transparent;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  border-color: #ccc;
+  background: -webkit-linear-gradient(bottom, #cccccc 0%, #f2f2f2 99%);
+}
+
+button:active,
+input[type="submit"]:active {
+  border-color: #bbb;
+  background: -webkit-linear-gradient(bottom, #e2e2e2 0%, #bbbbbb 99%);
+}
+
+/* These glyphs are on the small side, make them look more natural when
+compared to the back/forward buttons */
+#controls #home,
+#controls #terminate {
+  font-size: 24px;
+}
+
+#controls #reload {
+  font-size: 20px;
+}
+
+#controls #zoom,
+#controls #find {
+  font-size: 18px;
+}
+
+#location {
+  border: solid 1px #ccc;
+  padding: 2px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+}
+
+#controls {
+  display: -webkit-flex;
+  -webit-flex-direction: column;
+}
+
+#controls #location-form {
+  -webkit-flex: 1;
+  display: -webkit-flex;
+  -webit-flex-direction: column;
+}
+
+#controls #center-column {
+  -webkit-flex: 1;
+}
+
+#zoom-box,
+#find-box {
+  background-color: #eee;
+  border: solid 1px #ccc;
+  border-top: solid 1px #eee;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  padding: 2px;
+
+  position: fixed;
+  top: 36px;
+  height: 25px;
+
+  display: none;
+}
+
+#zoom-box #zoom-form,
+#find-box #find-form {
+  -webkit-flex: 1;
+  display: -webkit-flex;
+  -webit-flex-direction: row;
+}
+
+#zoom-box input,
+#zoom-box button,
+#find-box button {
+  border-radius: 2px;
+}
+
+#zoom-box #zoom-text,
+#find-box #find-text {
+  border: solid 1px #ccc;
+  margin-right: 0px;
+  padding: 2px;
+  -webkit-box-sizing: border-box;
+  -webkit-flex: 1;
+}
+
+#zoom-box {
+  left: 5px;
+  width: 125px;
+  z-index: 1;
+}
+
+#zoom-box input[type="submit"] {
+  font-size: 14px;
+  margin: 2px 0px;
+  padding: 0 2px 3px 2px;
+  width: 22px;
+}
+
+#zoom-box button {
+  font-size: 12px;
+  margin: 2px 0px;
+  padding: 0px 1px 0px 0px;
+  width: 20px;
+}
+
+#find-box {
+  right: 5px;
+  width: 280px;
+  z-index: 2;
+}
+
+#find-box #find-text {
+  border-right-style: none;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+#find-box #find-results {
+  color: #888;
+  background-color: #fff;
+  border: solid 1px #ccc;
+  border-left-style: none;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  margin: 2px 0px;
+  padding: 3px 4px 2px 0;
+  text-align: center;
+}
+
+#find-box #match-case {
+  margin: 2px 0px;
+  font-size: 10px;
+  width: 28px;
+}
+
+#find-box #find-backward,
+#find-box #find-forward {
+  font-size: 14px;
+  width: 24px;
+}
+      * {
+  color: white;  border: #1c1c1c;}
+    #container {
+  height: 100vh;}
+  .tabsdemoDynamicTabs md-content {
+  background-color: transparent !important; }
+  .tabsdemoDynamicTabs md-content md-tabs {
+    border: 1px solid  #1c1c1c; }
+    .tabsdemoDynamicTabs md-content md-tabs md-tab-content {
+      background: #1c1c1c; height: 1000000vh; }
+    .tabsdemoDynamicTabs md-content md-tabs md-tabs-canvas {
+      background: black;
+     }
+  .tabsdemoDynamicTabs md-content h1:first-child {
+    margin-top: 0; }
+.tabsdemoDynamicTabs md-input-container {
+  padding-bottom: 0; }
+.tabsdemoDynamicTabs .remove-tab {
+  margin-bottom: 40px; }
+.tabsdemoDynamicTabs .demo-tab > div > div {
+  padding: 25px;
+  box-sizing: border-box; }
+.tabsdemoDynamicTabs .edit-form input {
+  width: 100%; }
+.tabsdemoDynamicTabs md-tabs {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
+.tabsdemoDynamicTabs md-tab[disabled] {
+  opacity: 0.5; }
+.tabsdemoDynamicTabs label {
+  text-align: left; }
+.tabsdemoDynamicTabs .long > input {
+  width: 264px; }
+.tabsdemoDynamicTabs .md-button.add-tab {
+  transform: translateY(5px); }
+
+</style>
+<script>
+
+</script>
+
+<script src="js/controller.js"></script>
+<script src="js/"></script>
+<link rel="stylesheet" href="../../WebVI/WebVi(1.0).css">
+
+<link rel="stylesheet" href="../../monocromatix/monocromatixantidiv.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/angular/bower-material/v0.9.8/angular-material.css">
+<link rel="stylesheet" href="../../styles/icons/all.css">
+<script src="../icons/all.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">

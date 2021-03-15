@@ -18,7 +18,7 @@ var ById = function (id) {
     return document.getElementById(id);
 }
 
-var path = require('path');
+
 
     view = ById('view');
 

@@ -1,229 +1,379 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Iconny Browser </title>
-  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
-  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="../../styles/dropdown/dropdownlight.css">
-
-  <!-- <header>
-    <nav>
-        <div id="titleshown" style="color: black;">Iconny </div>
-        <div id="buttons">
-            <div id="minimize"></div>
-            <div id="maximize"></div>
-            <a href="#" onclick="window.close()" >      <div id="quit" style="color: black;">X</div></a>
-        </div>
-      </nav>
-      <br> 
-  
-  </header> -->
-</head>
-
-
-
-  <nav style="background: white;">
-<script src="../clock/clock.js"></script>
- 
-  
-<div style="background: white;"> <ul class="nav" style="padding-left: 40%;" >
-  
-
-  </div>
-  <div style="width: 100%;">    <div id="nav-body-ctrls" style="width: 100%;"></div>
-  
-<div style="background:#ececec">  <div id="nav-body-tabs" style="overflow: hidden; background:#ececec;" ></div></div>
-   
-    
-    
-   
-
-  </header>
-
-  <body style="background:white;" onload="reloj()" > 
-    
-
-
-   
-
-
-
-    <div id="flotante" style="  display: none; width:30%; overflow: auto;">
-<button>
-  <div id="close"><a href="javascript:cerrar();"  style="color: black;" onclick="cerrar2()">Cerrar Panel De Control</a> </div>
-
-</button>      <br>
-      <div style="filter: blur(1.5rem);width: 100%; height: 100vh; position: absolute; background: white; ">
-    
-      </div>
-    
-      <br>
-      <br>
-<button style="width: 100%;" >        <h1 style="text-align: center; font-size: 200%; color: black;">Bienvenido a Iconny</h1></button>
-      <br>
-<button>       <h2 style="text-align: center; color: black;">Hora Actual</h2></button>
-
-    <br>
-<button><form name="form_reloj" style="float: right;">
-
-  <input style=" background: #ececec; border: #191724; color: black; height: 10px; width: 80%;" readonly type="text" name="reloj" size="5">
-        </form></button>
-    <br>
-    <br>
-
-              <br>
-              <script src="../clock/clock.js"></script>
-              
-              <br>
-          <button>    <a href="../oculto/secundary.html"style="color: black;"  class="b" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;" > <i class="fas fa-user-secret"></i> Pefil Secundario</a></li></button>
-             <br>
-              <!-- <li><a href="oculto/secundary-force-dark-mode.html" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;"><i class="fas fa-user-secret"></i>Perfil Secundario Force Dark Mode</a></li> -->
-    <button>
-    <a href="../../wdk/about/acercadelight.html" style="color: black;" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;"><i class="fas fa-exclamation-circle"></i>Acerca Sobre Iconny</a></li> 
-    
-    </button>
-              <br>          
-    <button>
-    <a href="../../wdk/devtools/index.html" style="color: black;" onclick="window.open(this.href, this.target, 'width=500,height=1980'); return false;"><i class="fab fa-dev"></i>WDK Dev Tools</a></li>
-    
-    </button>
-              <br>    
-    <button>
-   <a href="https://techappssv.github.io/iconnyupdates/"style="color: black;"  onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;"><i class="far fa-check-circle"></i>Actualizaciones</a></li>  
-    
-    </button>
-              <br>  
-    <button>
-    <a href="../../wdk/inspect/menupurelight.html" style="color: black;" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;" ><i class="fas fa-tools"></i>Inspector </a></li>
-    
-    </button>  
-    <br>    
-    <button>
-    <a href="../market/marketlight.html" style="color: black;" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;" ><i class="far fa-sticky-note"></i>Notely</a></li>
-    
-    </button>          <!-- <li><a href="../functions/gitpod/index.html" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;"><i class="fas fa-rocket"></i>WebApps Preconfiguradas</a></li> -->
-        <br>
-        <button>
-        <a href="../../wdk/settings/configlight.html"style="color: black;"  onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;"><i class="fas fa-cog"></i>Configuracion</a></li> 
-    
-        </button>     <br>
-    <button>
-      <a href="../../wdk/wdk-init-webvi/init.html"style="color: black;"  ><i class="fas fa-backward"></i> Volver a WDK Init</a></li> 
-    
-    </button>    
-      <div style="filter: blur(1.5rem);width: 100%; height: 100vh; position: absolute; background: white; ">
-    
-      </div>
-    
-    
-    </div>
-
-    <div id="flotante2" style=" background: white; display: none; width: 30%;">
-  <div id="close" style="background: white;"><a href="javascript:cerrar3();" style="color: black;" onclick="cerrar2()">Cerrar Web Panels<i class="fas fa-pager"></i></a> </div>
-
-  <div style="background: white;"> 
-  <div style="padding-left: 2%;" style="background: white;">
-    <button onclick="backView()"style=" height:30px; width: 100px; background: #1c1c1c;  border:#1c1c1c;  "  class="btn btn-dark"><h3 class="fas fa-backward" style="color: black;"></h3></button>
-    <button onclick="forwardView()"style=" height:30px;  width: 100px; background: #1c1c1c; border:#1c1c1c; "  class="btn btn-dark"><h3 class="fas fa-forward" style="color:black;"></h3></button>
-    <button onclick="reloadView()" style="  height:30px; width: 100px; background: #1c1c1c; border:#1c1c1c;" class="btn btn-dark"><h3 class="fas fa-redo" style="color: black;"></h3></button>
-    <button onclick="reboot3()" style=" height:30px;  width: 100px; background: #1c1c1c; border:#1c1c1c;" class="btn btn-dark"><h3 class="fas fa-home" style="color: black;"></h3></button>
-   
-    <button hidden style="width: 100px; background: #1c1c1c; border:#1c1c1c;  " class="btn btn-dark"><h3 class="fas fa-home" style="color: black;"></h3></button></div>
-
-    <script>
      
-      function reboot3(){
-        document.getElementById("devtools2").src="../../wdk/devtools/sociallight.html";
-      }
-    
-    
-    </script>
- </div>
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-  <webview  id="devtools2" src="../../wdk/devtools/sociallight.html" allowpopups preload="../contextual.js"  useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  "
-  style="  display:inline-flex; width:100%;"height="625px"></webview>
 
+            <script src="browser.js"></script>
+          <body style="background: white;"onclick="reloj()">
+            <div id="controls" style="width: 100%;">
+        
+              <button id="back" style="width: 5%; height: 4vh;" title="Go Back" disabled="true"><i class="bi bi-arrow-left"></i></button>
+              <button id="forward"style="width: 5%; height: 4vh;" title="Go Forward" disabled="true"><i class="bi bi-arrow-right"></i></button>
+              <button id="home"style="width: 5%; height: 4vh;" title="Go Home"><i class="bi bi-house"></i></button>
+              <button id="reload"style="width: 5%; height: 4vh;" title="Reload"><i class="bi bi-arrow-clockwise"></i></button>
+              <a href="javascript:mostrar();" style="width: 5%; height: 4vh;" onclick="mostrar2()"><i style="font-size:25px; text-align: center;" class="bi bi-toggles"></i></a> 
+           
+             
+              <form id="location-form">
+                <div id="center-column">
+                  
+                  <input id="location" type="text" style=" background: white; border: white; color: black;  width: 100%; height: 4vh;  border-radius: 5px;font-family: 'Poppins', sans-serif; text-align: center;" value="http://www.github.com/">
+                     
+                </div>
+              <a href="index.html" target="_blank"style="width: 5%; height: 4vh;" ><h3 class="bi bi-plus-circle" style="text-align: center;"></h3></a>              
+              </form>
+        
+            
+        
+            </div>
+        
+            <div id="zoom-box">
+              <form id="zoom-form">
+                <input id="zoom-text" type="text">
+                <input type="submit" value="&#128270;">
+                <button id="zoom-in">&#10133;</button>
+                <button id="zoom-out">&#10134;</button>
+              </form>
+            </div>
+        
+            <div id="find-box">
+              <form id="find-form">
+                <input id="find-text" type="text">
+                <div id="find-results"></div>
+                <input type="submit" style="position:absolute; visibility:hidden">
+                <button id="match-case">aA</button>
+                <button id="find-backward">&#60;</button>
+                <button id="find-forward">&#62;</button>
+              </form>
+            </div>
+        
+
+            <div id="flotante" style="  display: none; width:30%; overflow: auto;">
+              <button>
+                <div id="close"><a href="javascript:cerrar();"  style="color: black;" onclick="cerrar2()">Cerrar Panel De Control</a> </div>
+              
+              </button>      <br>
+                    <div style="filter: blur(1.5rem);width: 100%; height: 100vh; position: absolute; background: white; ">
+                  
+                    </div>
+                  
+                    <br>
+                    <br>
+              <button style="width: 100%; height: 10vh;" >        <h1 style="text-align: center; font-size: 200%; color: black;">Bienvenido a Iconny</h1></button>
+                    <br>
+              <button>       <h2 style="text-align: center; color: black;">Hora Actual</h2></button>
+              
+                  <br>
+              <button><form name="form_reloj" style="float: right;">
+              
+                <input style=" background: #ececec; border: #191724; color: black; height: 10px; width: 100%;" readonly type="text" name="reloj" size="5">
+                      </form></button>
+                  <br>
+                  <br>
+              
+                            <br>
+                            <script src="../clock/clock.js"></script>
+                            
+                            <br>
+                        <button>    <a href="../oculto/secundary.html"style="color: black;"  class="b" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;" > <i class="fas fa-user-secret"></i> Pefil Secundario</a></li></button>
+                           <br>
+                            <!-- <li><a href="oculto/secundary-force-dark-mode.html" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;"><i class="fas fa-user-secret"></i>Perfil Secundario Force Dark Mode</a></li> -->
+                  <button>
+                  <a href="../../wdk/about/acercadelight.html" style="color: black;" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;"><i class="fas fa-exclamation-circle"></i>Acerca Sobre Iconny</a></li> 
+                  
+                  </button>
+                            <br>          
+                  <button>
+                  <a href="../../wdk/devtools/index.html" style="color: black;" onclick="window.open(this.href, this.target, 'width=500,height=1980'); return false;"><i class="fab fa-dev"></i>WDK Dev Tools</a></li>
+                  
+                  </button>
+                            <br>    
+                  <button>
+                 <a href="https://techappssv.github.io/iconnyupdates/"style="color: black;"  onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;"><i class="far fa-check-circle"></i>Actualizaciones</a></li>  
+                  
+                  </button>
+                            <br>  
+                  <button>
+                  <a href="../../wdk/inspect/menupurelight.html" style="color: black;" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;" ><i class="fas fa-tools"></i>Inspector </a></li>
+                  
+                  </button>  
+                  <br>    
+                  <button>
+                  <a href="../market/marketlight.html" style="color: black;" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;" ><i class="far fa-sticky-note"></i>Notely</a></li>
+                  
+                  </button>          <!-- <li><a href="../functions/gitpod/index.html" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;"><i class="fas fa-rocket"></i>WebApps Preconfiguradas</a></li> -->
+                      <br>
+                      <button>
+                      <a href="../../wdk/settings/configlight.html"style="color: black;"  onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;"><i class="fas fa-cog"></i>Configuracion</a></li> 
+                  
+                      </button>     <br>
+                  <button>
+                    <a href="../../wdk/wdk-init-webvi/init.html"style="color: black;"  ><i class="fas fa-backward"></i> Volver a WDK Init</a></li> 
+                  
+                  </button>    
+                    <div style="filter: blur(1.5rem);width: 100%; height: 100vh; position: absolute; background: white; ">
+                  
+                    </div>
+                  
+                  
+                  </div>
+              
 </div>
 
-<div id="nav-body-views" class="contenedor"  style="background: white;"  ></div>
 
 
-  <nav style="background:#ececec; height: 30px;"> 
-    <ul class="nav" style="padding-right: 150%;" >
-      <form name="form_fecha" style="float: right; color: black;">
 
-        <script>
-          var meses = new Array ("ene","feb","mar","abril","mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
-          var f=new Date();
-          // document.write( f.getDate() + " de " + meses[f.getMonth()] + " del " + f.getFullYear());
-          document.write( f.getDate() + " de " + meses[f.getMonth()] );
+</div>
+  <webview src="../../wdk/newtab/newtablight.html"  style="color: white;"   preload="../contextual.js"   useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  " allowpopups id="view" ></webview>
+  
 
-          </script> 
-        </form>
-     
-    
+</div>
         
-        <script src="../clock/clock.js"></script>
-     
-        </ul>
-      </li>
 
-    </ul>
-  </nav></div>
-  </div>
-  </nav>
-
-
-
+          </div>
+      
+        
+            <div id="sad-webview" style="display: none;">
+              <div id="sad-webview-icon">&#9762;</div>
+              <h2 id="crashed-label"></h2>
+              <h2 id="killed-label"></h2>
+        
+              <p>
+           </p>
+            </div>
+          </body>
+        </html>
+        <script>
+          
+        </script>
+        
 
 </body>
-<script src="components/navbar.js"></script>
+</html>
 
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-<link rel="stylesheet" href="../../styles/navbar/navbarlight.css">
-<link rel="stylesheet" href="../../styles/icons/all.css">
-<script src="../icons/all.js"></script>
-<link rel="stylesheet" href="../styles/view.css">
-<link rel="stylesheet" href="../styles/theme.css">
-<link rel="stylesheet" href="../../styles/indexlight.css">
-<link rel="stylesheet" href="../../WebVI/WebVi(1.0).css">
+  
 <script src="../webpanels/webpanel.js"></script>
-<script src="../webpanels/controller.js"></script>
+<script src="../clock/clock.js"></script>
 
 
-<link rel="stylesheet" href="../../monocromatix/monocromatixlight.css">
+</div>
+<style>
+    * {
+  overflow: hidden;
+font-family: 'Poppins', sans-serif;
+}
+  controls {
+  padding: 3px;
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<script>const enav = new (require('electron-navigation'))();</script>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 }
 
-<script>
-    
-  enav.newTab(`file:///${__dirname}/../../wdk/newtab/newtablight.html `, {
-        // title: 'Welcome',
-      
-        close: true,
-        
-      })
-  
-      enav.newTab(`https://techappssv.github.io/iconnybrowser/html/blog.html `, {
-       
-      
-        close: true,
-        
-      })
-  
-  
-  </script>
+#controls button,
+#controls input {
+  font-size: 14px;
+  line-height: 24px;
 
+  padding: 0 6px;
+}
 
+button,
+input[type="submit"],
+button[disabled]:hover {
+  border: solid 1px transparent;
+  background: transparent;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  border-color: #ccc;
+  background: -webkit-linear-gradient(bottom, #cccccc 0%, #f2f2f2 99%);
+}
+
+button:active,
+input[type="submit"]:active {
+  border-color: #bbb;
+  background: -webkit-linear-gradient(bottom, #e2e2e2 0%, #bbbbbb 99%);
+}
+
+/* These glyphs are on the small side, make them look more natural when
+compared to the back/forward buttons */
+#controls #home,
+#controls #terminate {
+  font-size: 24px;
+}
+
+#controls #reload {
+  font-size: 20px;
+}
+
+#controls #zoom,
+#controls #find {
+  font-size: 18px;
+}
+
+#location {
+  border: solid 1px #ccc;
+  padding: 2px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+}
+
+#controls {
+  display: -webkit-flex;
+  -webit-flex-direction: column;
+}
+
+#controls #location-form {
+  -webkit-flex: 1;
+  display: -webkit-flex;
+  -webit-flex-direction: column;
+}
+
+#controls #center-column {
+  -webkit-flex: 1;
+}
+
+#zoom-box,
+#find-box {
+  background-color: #eee;
+  border: solid 1px #ccc;
+  border-top: solid 1px #eee;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  padding: 2px;
+
+  position: fixed;
+  top: 36px;
+  height: 25px;
+
+  display: none;
+}
+
+#zoom-box #zoom-form,
+#find-box #find-form {
+  -webkit-flex: 1;
+  display: -webkit-flex;
+  -webit-flex-direction: row;
+}
+
+#zoom-box input,
+#zoom-box button,
+#find-box button {
+  border-radius: 2px;
+}
+
+#zoom-box #zoom-text,
+#find-box #find-text {
+  border: solid 1px #ccc;
+  margin-right: 0px;
+  padding: 2px;
+  -webkit-box-sizing: border-box;
+  -webkit-flex: 1;
+}
+
+#zoom-box {
+  left: 5px;
+  width: 125px;
+  z-index: 1;
+}
+
+#zoom-box input[type="submit"] {
+  font-size: 14px;
+  margin: 2px 0px;
+  padding: 0 2px 3px 2px;
+  width: 22px;
+}
+
+#zoom-box button {
+  font-size: 12px;
+  margin: 2px 0px;
+  padding: 0px 1px 0px 0px;
+  width: 20px;
+}
+
+#find-box {
+  right: 5px;
+  width: 280px;
+  z-index: 2;
+}
+
+#find-box #find-text {
+  border-right-style: none;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+#find-box #find-results {
+  color: #888;
+  background-color: #fff;
+  border: solid 1px #ccc;
+  border-left-style: none;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  margin: 2px 0px;
+  padding: 3px 4px 2px 0;
+  text-align: center;
+}
+
+#find-box #match-case {
+  margin: 2px 0px;
+  font-size: 10px;
+  width: 28px;
+}
+
+#find-box #find-backward,
+#find-box #find-forward {
+  font-size: 14px;
+  width: 24px;
+}
+      * {
+  color: white;  border: #1c1c1c;}
+    #container {
+  height: 100vh;}
+  .tabsdemoDynamicTabs md-content {
+  background-color: transparent !important; }
+  .tabsdemoDynamicTabs md-content md-tabs {
+    border: 1px solid  #1c1c1c; }
+    .tabsdemoDynamicTabs md-content md-tabs md-tab-content {
+      background: #1c1c1c; height: 1000000vh; }
+    .tabsdemoDynamicTabs md-content md-tabs md-tabs-canvas {
+      background: black;
+     }
+  .tabsdemoDynamicTabs md-content h1:first-child {
+    margin-top: 0; }
+.tabsdemoDynamicTabs md-input-container {
+  padding-bottom: 0; }
+.tabsdemoDynamicTabs .remove-tab {
+  margin-bottom: 40px; }
+.tabsdemoDynamicTabs .demo-tab > div > div {
+  padding: 25px;
+  box-sizing: border-box; }
+.tabsdemoDynamicTabs .edit-form input {
+  width: 100%; }
+.tabsdemoDynamicTabs md-tabs {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
+.tabsdemoDynamicTabs md-tab[disabled] {
+  opacity: 0.5; }
+.tabsdemoDynamicTabs label {
+  text-align: left; }
+.tabsdemoDynamicTabs .long > input {
+  width: 264px; }
+.tabsdemoDynamicTabs .md-button.add-tab {
+  transform: translateY(5px); }
+
+</style>
 <script>
-  
+
 </script>
-</html>
+
+<script src="js/controller.js"></script>
+<script src="js/"></script>
+<link rel="stylesheet" href="../../WebVI/WebVi(1.0).css">
+
+<link rel="stylesheet" href="../../monocromatix/monocromatixlightantidiv.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/angular/bower-material/v0.9.8/angular-material.css">
+<link rel="stylesheet" href="../../styles/icons/all.css">
+<script src="../icons/all.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
