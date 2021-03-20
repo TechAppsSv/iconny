@@ -16,18 +16,41 @@
               <button id="reload"style="width: 5%; height: 4vh;" title="Reload"><i class="bi bi-arrow-clockwise"></i></button>
               <a href="javascript:mostrar();" style="width: 5%; height: 4vh;" onclick="mostrar2()"><i style="font-size:25px; text-align: center;" class="bi bi-toggles"></i></a> 
            
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
              
               <form id="location-form">
                 <div id="center-column">
-                  
-                  <input id="location" type="text" style=" background: white; border: white; color: black;  width: 100%; height: 4vh;  border-radius: 5px;font-family: 'Poppins', sans-serif; text-align: center;" value="http://www.github.com/">
-                     
+                  <script>
+                    function insertText(elemID, first, second) {
+         var elem = document.getElementById("location");
+         elem.value = second ? first + elem.value + second : first + elem.value;
+     }
+
+                  </script>
+                   <script type="text/javascript">
+                    $(document).ready(function() {
+                        $('#borrador').click(function() {
+                            $('#location').val('https://duckduckgo.com/?q=');
+                        });
+                    });
+                    $(document).ready(function() {
+                        $('#borrador1').click(function() {
+                            $('#location').val('http:/');
+                        });
+                    });
+                </script>
+                                <input id="location" type="text" style=" background: white; border: white; color: black;  width: 100%; height: 4vh;  border-radius: 5px;font-family: 'Poppins', sans-serif; text-align: center;" value="http://www.github.com/">
+
+
                 </div>
-              <a href="index.html" target="_blank"style="width: 5%; height: 4vh;" ><h3 class="bi bi-plus-circle" style="text-align: center;"></h3></a>              
-              </form>
-        
             
-        
+           
+                    
+              </form>
+              <button id="borrador" style="width: 5%; height: 4vh;" onclick="insertText('txt1', 'http:/');"><i class="bi bi-search"></i></button>
+              <button id="borrador1" style="width: 5%; height: 4vh;" onclick="insertText('txt1', 'http:/');"><i class="bi bi-cursor-text"></i></button>
+          
+              <a href="index.html" target="_blank"style="width: 5%; height: 4vh;" ><h3 class="bi bi-plus-circle" style="text-align: center;"></h3></a>    
             </div>
         
             <div id="zoom-box">

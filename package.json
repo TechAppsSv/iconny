@@ -1,7 +1,7 @@
 {
 	"name": "iconny",
 	"productName": "Iconny Browser Linux ",
-	"version": "2.0.3",
+	"version": "2.1.4",
 	"description": "Maxima rapidez y ligereza",
 	"main": "src/wdk/wdk-init-webvi/index.js",
 	"scripts": {
@@ -27,14 +27,15 @@
 		"mac": {
 			"category": "productivity",
 			"target": [
-				"pkg"
+				"dmg"
 			],
 			"icon": "build/icon.icns"
 		},
 		"linux": {
 			"category": "Browser",
 			"target": [
-				"snap"
+				"snap",
+				"AppImage"
 			],
 			"icon": "build/background.png"
 		},
@@ -54,11 +55,10 @@
 		"@cliqz/adblocker-electron": "^1.20.3",
 		"@electron/remote": "^1.0.4",
 		"cross-fetch": "^3.0.6",
-		"electron-context-menu": "^2.5.0",
-		"electron-navigation": "^1.5.8"
+		"electron-context-menu": "^2.5.0"
 	},
 	"devDependencies": {
 		"electron": "^12.0.1",
-		"electron-builder": "^22.10.5"
+		"electron-builder": "^22.9.1"
 	}
 }
