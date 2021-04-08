@@ -48,7 +48,7 @@ function getTasks2() {
     let description = tasks2[i].description;
 
     tasks2View.innerHTML += `<div >
-        <div class="card-body" style="background:black;border:black; border-radius:10px;">
+        <div class="card-body" style="background:#1c1c1c  ;border:black; border-radius:10px;">
           <p ><p style="text-align:center;">${title}</h4> 
           <br>
         
