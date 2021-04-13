@@ -1,7 +1,7 @@
 {
 	"name": "iconny",
-	"productName": "Iconny Browser Linux ",
-	"version": "2.0.5",
+	"productName": "Iconny Browser",
+	"version": "2.1.5",
 	"description": "Maxima rapidez y ligereza",
 	"main": "src/wdk/wdk-init-webvi/index.js",
 	"scripts": {
@@ -16,7 +16,7 @@
 	"license": "MIT",
 	"build": {
 		"appId": "com.techapps.iconny",
-		"productName": "Iconny Browser Linux",
+		"productName": "Iconny Browser ",
 		"win": {
 			"target": [
 				"nsis",
