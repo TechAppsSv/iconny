@@ -18,6 +18,7 @@ onload = function() {
   document.querySelector('#home').onclick = function() {
     navigateTo('../../wdk/newtab/newtab.html');
   };
+  
 
   document.querySelector('#reload').onclick = function() {
     if (isLoading) {

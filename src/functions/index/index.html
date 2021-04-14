@@ -27,11 +27,11 @@
        <!-- control -->
        <div id="controls" style="width: 100%; height: 5vh;background: #252525;">
       
-        <button id="back" style="width: 3%; height: 4vh;" title="Go Back" disabled="true"><i class="bi bi-arrow-left"></i></button>
-        <button id="forward"style="width: 3%; height: 4vh;" title="Go Forward" disabled="true"><i class="bi bi-arrow-right"></i></button>
+        <button id="back" style="width: 3%; height: 4vh;" title="Go Back" disabled="true"><i class="bi bi-chevron-left"></i></button>
+        <button id="forward"style="width: 3%; height: 4vh;" title="Go Forward" disabled="true"><i class="bi bi-chevron-right"></i></button>
 
         <button id="reload"style="width: 3%; height: 4vh;" title="Reload"><i class="bi bi-arrow-clockwise"></i></button>
-        <button id="home"style="width: 3%; height: 4vh;" title="Go Home"><i class="bi bi-house"></i></button>
+        <button id="home"style="width: 3%; height: 4vh;" title="Go Home"><i class="bi bi-house-door"></i></button>
         <!-- <a href="javascript:mostrar();" style="width: 5%; height: 4vh;" onclick="mostrar2()"><i style="font-size:25px; text-align: center;" class="bi bi-toggles"></i></a>  -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
        
@@ -66,7 +66,10 @@
         <button id="borrador" style="width: 2%; height: 4vh;" onclick="insertText('txt1', 'http:/');"><i class="bi bi-search"></i></button>
         <button id="borrador1" style="width: 2%; height: 4vh;" onclick="insertText('txt1', 'http:/');"><i class="bi bi-cursor-text"></i></button>
     
-        <a href="more.html" target="_blank" style="width: 2%; height: 4vh;" ><h3 class="bi bi-plus-circle" style="text-align: center;"></h3></a>    
+<button style="width: 2%; height: 4vh;">
+  <a href="more.html" target="_blank" style="width: 2%; height: 4vh;" ><h3 class="bi bi-plus-circle" style="text-align: center;"></h3></a> 
+</button>   
+        <button style="width: 2%; height: 4vh;"> <a href="../../wdk/wdk-init-webvi/init.html"><i class="bi bi-arrow-right"> </i></a></button>
       </div>
         <!-- control -->
             <div id="zoom-box">
@@ -109,12 +112,8 @@ background: linear-gradient(to right, #1c1c1c, #000000); /* W3C, IE 10+/ Edge, F
           <script src="../clock/clock.js"></script>
           <br>
           <br>
-<div style="padding-left: 40%;">
-  <button>    <a href="../oculto/secundary.html" style="font-family: 'Poppins', sans-serif;" class="b" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;" > <i class="fas fa-user-secret"></i> Pefil Secundario</a></li></button>
-  <br>
-   <!-- <li><a href="oculto/secundary-force-dark-mode.html" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;"><i class="fas fa-user-secret"></i>Perfil Secundario Force Dark Mode</a></li> -->
-   
-<button>
+
+<!-- <button>
 <a href="../../wdk/about/acercade.html" style="font-family: 'Poppins', sans-serif;" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;"><i class="fas fa-exclamation-circle"></i>Acerca Sobre Iconny</a></li> 
 
 </button>
@@ -137,7 +136,7 @@ background: linear-gradient(to right, #1c1c1c, #000000); /* W3C, IE 10+/ Edge, F
 <button>
 <a href="../market/market.html" style="font-family: 'Poppins', sans-serif;"onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;" ><i class="far fa-sticky-note"></i>Notely</a></li>
 
-</button>          <!-- <li><a href="../functions/gitpod/index.html" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;"><i class="fas fa-rocket"></i>WebApps Preconfiguradas</a></li> -->
+</button>          
 <br>
 <button>
 <a href="../../wdk/settings/config.html" style="font-family: 'Poppins', sans-serif;"onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;"><i class="fas fa-cog"></i>Configuracion</a></li> 
@@ -146,7 +145,7 @@ background: linear-gradient(to right, #1c1c1c, #000000); /* W3C, IE 10+/ Edge, F
 <button>
 <a href="../../wdk/wdk-init-webvi/init.html" style="font-family: 'Poppins', sans-serif;" ><i class="fas fa-backward"></i> Volver a WDK Init</a></li> 
 
-</button>    
+</button>     --> 
 
 
 </div>
@@ -156,7 +155,7 @@ background: linear-gradient(to right, #1c1c1c, #000000); /* W3C, IE 10+/ Edge, F
 
 
 </div>
-  <webview src="../../wdk/newtab/newtab.html"  style="background: white; preload="../contextual.js"   useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  " allowpopups id="view" ></webview>
+  <webview src="../../wdk/newtab/newtab.html"  style="background: white;" preload="../contextual.js"   useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  " allowpopups id="view" ></webview>
   
 
 </div>
