@@ -7,8 +7,14 @@ const { ElectronBlocker, fullLists, Request } = require('@cliqz/adblocker-electr
 ElectronBlocker.fromPrebuiltAdsAndTracking(fetch).then((blocker) => {
   blocker.enableBlockingInSession(session.defaultSession);
 });
+
+
 // ./main.js
 
+
+
+
+const { app, BrowserWindow, Menu , session,  } = require('electron')
 const contextMenu = require('electron-context-menu');
 ("web-contents-created", (e, contents) => {
   contextMenu({
@@ -31,13 +37,6 @@ contextMenu({
       },
   ],
 });
-
-
-
-
-
-const { app, BrowserWindow, Menu , session, } = require('electron')
-
 app.commandLine.appendSwitch('enable-features', 'WebContentsForceDark');
 app.disableHardwareAcceleration ();
 function createWindow () {
@@ -47,7 +46,7 @@ function createWindow () {
     height: 1080,
 
    webPreferences: {
-      nodeIntegration: true,
+      contextIsolation:true,
       webviewTag: true,
       enableBlinkFeatures: "WebContentsForceDark",
       
