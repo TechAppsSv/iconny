@@ -4,55 +4,74 @@
           <head>
             <link rel="preconnect" href="https://fonts.gstatic.com">
             <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<title>Iconny</title>   <header>
+  <!-- <nav>
+      <div id="titleshown">Iconny </div>
+      <div id="buttons">
+          <div id="minimize"></div>
+          <div id="maximize"></div>
+    <a href="#" onclick="window.close()" >      <div id="quit" style="color: white;">X</div></a>
+      </div>
+    </nav>
+    <br>  -->
+    <style>
+      
+    </style>
+</header>
+<div style="height: 5px;" id="separator"></div>
 
 
             <script src="browser.js"></script>
-          <body style="background: white;"onclick="reloj()">
-            <div id="controls" style="width: 100%;">
-        
-              <button id="back" style="width: 5%; height: 4vh;" title="Go Back" disabled="true"><i class="bi bi-arrow-left"></i></button>
-              <button id="forward"style="width: 5%; height: 4vh;" title="Go Forward" disabled="true"><i class="bi bi-arrow-right"></i></button>
-              <button id="home"style="width: 5%; height: 4vh;" title="Go Home"><i class="bi bi-house"></i></button>
-              <button id="reload"style="width: 5%; height: 4vh;" title="Reload"><i class="bi bi-arrow-clockwise"></i></button>
-              <a href="javascript:mostrar();" style="width: 5%; height: 4vh;" onclick="mostrar2()"><i style="font-size:25px; text-align: center;" class="bi bi-toggles"></i></a> 
-           
-              <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-             
-              <form id="location-form">
-                <div id="center-column">
-                  <script>
-                    function insertText(elemID, first, second) {
-         var elem = document.getElementById("location");
-         elem.value = second ? first + elem.value + second : first + elem.value;
-     }
-
-                  </script>
-                   <script type="text/javascript">
-                    $(document).ready(function() {
-                        $('#borrador').click(function() {
-                            $('#location').val('https://duckduckgo.com/?q=');
-                        });
-                    });
-                    $(document).ready(function() {
-                        $('#borrador1').click(function() {
-                            $('#location').val('http:/');
-                        });
-                    });
-                </script>
-                                <input id="location" type="text" style=" background: white; border: white; color: black;  width: 100%; height: 4vh;  border-radius: 5px;font-family: 'Poppins', sans-serif; text-align: center;" value="http://www.github.com/">
-
-
-                </div>
+          <body onclick="reloj()" >
             
-           
-                    
-              </form>
-              <button id="borrador" style="width: 5%; height: 4vh;" onclick="insertText('txt1', 'http:/');"><i class="bi bi-search"></i></button>
-              <button id="borrador1" style="width: 5%; height: 4vh;" onclick="insertText('txt1', 'http:/');"><i class="bi bi-cursor-text"></i></button>
-          
-              <a href="index.html" target="_blank"style="width: 5%; height: 4vh;" ><h3 class="bi bi-plus-circle" style="text-align: center;"></h3></a>    
-            </div>
-        
+       <!-- control -->
+       <div id="controls" style="width: 100%; height: 5vh;">
+      
+        <button id="back" style="width: 3%; height: 4vh;" title="Go Back" disabled="true"><i class="bi bi-chevron-left"></i></button>
+        <button id="forward"style="width: 3%; height: 4vh;" title="Go Forward" disabled="true"><i class="bi bi-chevron-right"></i></button>
+
+        <button id="reload"style="width: 3%; height: 4vh;" title="Reload"><i class="bi bi-arrow-clockwise"></i></button>
+        <button id="home"style="width: 3%; height: 4vh;" title="Go Home"><i class="bi bi-house-door"></i></button>
+        <!-- <a href="javascript:mostrar();" style="width: 5%; height: 4vh;" onclick="mostrar2()"><i style="font-size:25px; text-align: center;" class="bi bi-toggles"></i></a>  -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+       
+        <form id="location-form">
+          <div id="center-column">
+            <script>
+              function insertText(elemID, first, second) {
+   var elem = document.getElementById("location");
+   elem.value = second ? first + elem.value + second : first + elem.value;
+}
+
+            </script>
+             <script type="text/javascript">
+              $(document).ready(function() {
+                  $('#borrador').click(function() {
+                      $('#location').val('https://duckduckgo.com/?q=');
+                  });
+              });
+              $(document).ready(function() {
+                  $('#borrador1').click(function() {
+                      $('#location').val('http:/');
+                  });
+              });
+          </script>
+            <input id="location"  type="text"  value="iconny://newtab">
+
+          </div>
+      
+     
+              
+        </form>
+        <button id="borrador" style="width: 2%; height: 4vh;" onclick="insertText('txt1', 'http:/');"><i class="bi bi-search"></i></button>
+        <button id="borrador1" style="width: 2%; height: 4vh;" onclick="insertText('txt1', 'http:/');"><i class="bi bi-cursor-text"></i></button>
+    
+<button style="width: 2%; height: 4vh;">
+  <a href="more.html" target="_blank" style="width: 2%; height: 4vh;" ><h3 class="bi bi-plus-circle" style="text-align: center;"></h3></a> 
+</button>   
+        <button style="width: 2%; height: 4vh;"> <a href="../../wdk/wdk-init-webvi/init.html"><i class="bi bi-arrow-right"> </i></a></button>
+      </div>
+        <!-- control -->
             <div id="zoom-box">
               <form id="zoom-form">
                 <input id="zoom-text" type="text">
@@ -74,83 +93,69 @@
             </div>
         
 
-            <div id="flotante" style="  display: none; width:30%; overflow: auto;">
-              <button>
-                <div id="close"><a href="javascript:cerrar();"  style="color: black;" onclick="cerrar2()">Cerrar Panel De Control</a> </div>
-              
-              </button>      <br>
-                    <div style="filter: blur(1.5rem);width: 100%; height: 100vh; position: absolute; background: white; ">
-                  
-                    </div>
-                  
-                    <br>
-                    <br>
-              <button style="width: 100%; height: 10vh;" >        <h1 style="text-align: center; font-size: 200%; color: black;">Bienvenido a Iconny</h1></button>
-                    <br>
-              <button>       <h2 style="text-align: center; color: black;">Hora Actual</h2></button>
-              
-                  <br>
-              <button><form name="form_reloj" style="float: right;">
-              
-                <input style=" background: #ececec; border: #191724; color: black; height: 10px; width: 100%;" readonly type="text" name="reloj" size="5">
-                      </form></button>
-                  <br>
-                  <br>
-              
-                            <br>
-                            <script src="../clock/clock.js"></script>
-                            
-                            <br>
-                        <button>    <a href="../oculto/secundary.html"style="color: black;"  class="b" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;" > <i class="fas fa-user-secret"></i> Pefil Secundario</a></li></button>
-                           <br>
-                            <!-- <li><a href="oculto/secundary-force-dark-mode.html" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;"><i class="fas fa-user-secret"></i>Perfil Secundario Force Dark Mode</a></li> -->
-                  <button>
-                  <a href="../../wdk/about/acercadelight.html" style="color: black;" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;"><i class="fas fa-exclamation-circle"></i>Acerca Sobre Iconny</a></li> 
-                  
-                  </button>
-                            <br>          
-                  <button>
-                  <a href="../../wdk/devtools/index.html" style="color: black;" onclick="window.open(this.href, this.target, 'width=500,height=1980'); return false;"><i class="fab fa-dev"></i>WDK Dev Tools</a></li>
-                  
-                  </button>
-                            <br>    
-                  <button>
-                 <a href="https://techappssv.github.io/iconnyupdates/"style="color: black;"  onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;"><i class="far fa-check-circle"></i>Actualizaciones</a></li>  
-                  
-                  </button>
-                            <br>  
-                  <button>
-                  <a href="../../wdk/inspect/menupurelight.html" style="color: black;" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;" ><i class="fas fa-tools"></i>Inspector </a></li>
-                  
-                  </button>  
-                  <br>    
-                  <button>
-                  <a href="../market/marketlight.html" style="color: black;" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;" ><i class="far fa-sticky-note"></i>Notely</a></li>
-                  
-                  </button>          <!-- <li><a href="../functions/gitpod/index.html" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;"><i class="fas fa-rocket"></i>WebApps Preconfiguradas</a></li> -->
-                      <br>
-                      <button>
-                      <a href="../../wdk/settings/configlight.html"style="color: black;"  onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;"><i class="fas fa-cog"></i>Configuracion</a></li> 
-                  
-                      </button>     <br>
-                  <button>
-                    <a href="../../wdk/wdk-init-webvi/init.html"style="color: black;"  ><i class="fas fa-backward"></i> Volver a WDK Init</a></li> 
-                  
-                  </button>    
-                    <div style="filter: blur(1.5rem);width: 100%; height: 100vh; position: absolute; background: white; ">
-                  
-                    </div>
-                  
-                  
-                  </div>
-              
+  <div id="flotante" style="  display: none; width:30%; background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1c1c1c, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1c1c1c, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ overflow: auto; font-family: Ubuntu sans-serif; ">
+  <div id="close" style="background: #1c1c1c; text-align: center; font-family: 'Poppins', sans-serif;"><a href="javascript:cerrar();" onclick="cerrar2()" style="font-family: 'Poppins', sans-serif;">Cerrar Panel De Control</a> </div>
+  <br>
+
+  <h1 style="text-align: center; font-size: 200%; font-family: 'Poppins', sans-serif;">Bienvenido a Iconny</h1>
+  <br>
+  <h2 style="text-align: center;font-family: 'Poppins', sans-serif;">Hora Actual</h2>
+  <br>
+  <form name="form_reloj" style="float: right;font-family: 'Poppins', sans-serif;">
+
+    <input style=" background: black; border: #191724; color: white; height: 30px;" readonly type="text" name="reloj" size="30">
+          </form>
+          
+          <br>
+          <script src="../clock/clock.js"></script>
+          <br>
+          <br>
+
+<!-- <button>
+<a href="../../wdk/about/acercade.html" style="font-family: 'Poppins', sans-serif;" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;"><i class="fas fa-exclamation-circle"></i>Acerca Sobre Iconny</a></li> 
+
+</button>
+   <br>          
+<button>
+<a href="../../wdk/devtools/index.html"style="font-family: 'Poppins', sans-serif;" onclick="window.open(this.href, this.target, 'width=500,height=1980'); return false;"><i class="fab fa-dev"></i>WDK Dev Tools</a></li>
+
+</button>
+   <br>    
+<button>
+<a href="https://techappssv.github.io/iconnyupdates/"style="font-family: 'Poppins', sans-serif;" onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;"><i class="far fa-check-circle"></i>Actualizaciones</a></li>  
+
+</button>
+   <br>  
+<button>
+<a href="../../wdk/inspect/menupure.html" style="font-family: 'Poppins', sans-serif;"onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;" ><i class="fas fa-tools"></i>Inspector </a></li>
+
+</button>  
+<br>    
+<button>
+<a href="../market/market.html" style="font-family: 'Poppins', sans-serif;"onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;" ><i class="far fa-sticky-note"></i>Notely</a></li>
+
+</button>          
+<br>
+<button>
+<a href="../../wdk/settings/config.html" style="font-family: 'Poppins', sans-serif;"onclick="window.open(this.href, this.target, 'width=1920,height=1080'); return false;"><i class="fas fa-cog"></i>Configuracion</a></li> 
+
+</button>     <br>
+<button>
+<a href="../../wdk/wdk-init-webvi/init.html" style="font-family: 'Poppins', sans-serif;" ><i class="fas fa-backward"></i> Volver a WDK Init</a></li> 
+
+</button>     --> 
+
+
+</div>
 </div>
 
 
 
 
 </div>
-  <webview src="../../wdk/newtab/newtablight.html"  style="color: white;"   preload="../contextual.js"   useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  " allowpopups id="view" ></webview>
+  <webview src="../../wdk/newtab/newtab.html"  style="background: white;" preload="../contextual.js"   useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  " allowpopups id="view" ></webview>
   
 
 </div>
@@ -165,7 +170,7 @@
               <h2 id="killed-label"></h2>
         
               <p>
-           </p>
+              </p>
             </div>
           </body>
         </html>
@@ -208,17 +213,7 @@ button[disabled]:hover {
   background: transparent;
 }
 
-button:hover,
-input[type="submit"]:hover {
-  border-color: #ccc;
-  background: -webkit-linear-gradient(bottom, #cccccc 0%, #f2f2f2 99%);
-}
 
-button:active,
-input[type="submit"]:active {
-  border-color: #bbb;
-  background: -webkit-linear-gradient(bottom, #e2e2e2 0%, #bbbbbb 99%);
-}
 
 /* These glyphs are on the small side, make them look more natural when
 compared to the back/forward buttons */
@@ -395,7 +390,8 @@ compared to the back/forward buttons */
 <script src="js/"></script>
 <link rel="stylesheet" href="../../WebVI/WebVi(1.0).css">
 
-<link rel="stylesheet" href="../../monocromatix/monocromatixlightantidiv.css">
+<link rel="stylesheet" href="../../monocromatix/monocromatix.css">
+<link rel="stylesheet" href="../../styles/themes/white.css">
 <link rel="stylesheet" href="https://cdn.rawgit.com/angular/bower-material/v0.9.8/angular-material.css">
 <link rel="stylesheet" href="../../styles/icons/all.css">
 <script src="../icons/all.js"></script>
