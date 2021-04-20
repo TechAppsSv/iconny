@@ -48,9 +48,9 @@ function getTasks() {
 
     tasksView.innerHTML += `<div class="card mb-3">
         <div class="card-body" style="background:black;border:black;">
-          <p ><h4 style="text-align:center;">${title}</h4> 
+          <p ><h4 style="text-align:center; color:white;">${title}</h4> 
           <br>
-         <p style="text-align:center;"> ${description}</p>
+         <p style="text-align:center; color:white;"> ${description}</p>
           <br>
           <a href="#" onclick="deleteTask('${title}')" style="color:white;"class="btn  ml-5">Eliminar</a>
           <a href="${description}" class="btn ml-10" style="color:white; height:10vh;">Si es un link su nota presione aqui  </a>
