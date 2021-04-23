@@ -16,7 +16,7 @@ onload = function() {
   };
 
   document.querySelector('#home').onclick = function() {
-    navigateTo('secundary.html');
+    navigateTo('newtab.html');
   };
 
   document.querySelector('#reload').onclick = function() {
