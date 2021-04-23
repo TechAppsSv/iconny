@@ -5,8 +5,8 @@
 ## NUEVO LANZAMIENTO Pagina Web Oficial
 ###  https://techappssv.github.io/iconnybrowser/
 
-## Ultima Version  12 Stable
-###  https://github.com/TechAppsSv/iconny/releases/tag/12
+## Ultima Version  15 Stable
+###  https://github.com/TechAppsSv/iconny/releases/tag/15-stable
 
 ## Blog de lanzamientos
 ### https://techappssv.github.io/iconnybrowser/html/blog.html
@@ -52,11 +52,11 @@
 #### npm i  
 ### Iniciar en modo desarrollo
 #### npm run start
-### Compilar para linux en AppImage
+### Compilar para linux en AppImage y snap
 #### npm run build-linux
 ### Compilar para Windows en .exe
 #### npm run build-win
-### Compilar para Mac en PKG
+### Compilar para Mac en dmg
 #### npm run build-mac
 
 #### Ultima Actualizacion de este documento
