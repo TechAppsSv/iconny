@@ -94,3 +94,11 @@ body {
             100% { background-position: 0 0; }
         }
         
+        #clock {
+            background: white; border: white; color: #FF007C;  height: 130px; width: 70%; font-size: 80px; border-radius: 50px;
+        }
+        
+        #search {
+            width: 40%;   color: #FF007C; 
+        }
+    

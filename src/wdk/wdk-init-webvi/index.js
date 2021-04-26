@@ -37,7 +37,7 @@ contextMenu({
       },
   ],
 });
-app.commandLine.appendSwitch('enable-features', 'WebContentsForceDark');
+
 app.disableHardwareAcceleration ();
 function createWindow () {
   
@@ -48,7 +48,7 @@ function createWindow () {
    webPreferences: {
       contextIsolation:true,
       webviewTag: true,
-      enableBlinkFeatures: "WebContentsForceDark",
+
       
     
      

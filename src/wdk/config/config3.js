@@ -47,16 +47,10 @@ function getTasks2() {
     let title = tasks2[i].title;
     let description = tasks2[i].description;
 
-    tasks2View.innerHTML += `<div >
-        <div class="card-body" style="background:#1c1c1c  ;border:black; border-radius:10px;">
+    tasks2View.innerHTML += `
 
-          <br>
-        
-          <a href="#" onclick="deleteTask2('${title}')" style="color:white;" class="btn ml-5">Toca aqui para eliminar Preferencia</a>
-         
-          </p>
-        </div>
-      </div>`;
+    <link rel="stylesheet" href="${title}">
+`;
   }
 }
 
