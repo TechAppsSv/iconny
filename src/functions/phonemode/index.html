@@ -4,7 +4,7 @@
           <head>
             <link rel="preconnect" href="https://fonts.gstatic.com">
             <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-<title>Iconny</title>   <header>
+<title>PhoneMode</title>   <header>
   <!-- <nav>
       <div id="titleshown">Iconny </div>
       <div id="buttons">
@@ -19,11 +19,10 @@
     </style>
 </header>
 <!-- <div style="height: 0.5vh;" id="separator" class="darkmode-ignore"></div> -->
-<script>
-</script>
+
 
             <script src="browser.js"></script>
-          <body onclick="reloj()" >
+          <body onclick="reloj()" style="background: #252525;" >
             
        <!-- control -->
        <div id="controls"class="darkmode-ignore" style="width: 100%; height: 5vh; padding: 0.2%;">
@@ -68,10 +67,9 @@
         <button id="borrador1" style="width: 2%; height: 4vh;" onclick="insertText('txt1', 'http:/');"><i class="bi bi-cursor-text"></i></button>
     
 <button style="width: 2%; height: 4vh;">
-  <a href="more.html"    onclick="window.open(this.href, this.target, 'width=1366,height=1000'); return false;"
-  style="width: 10%; height: 8vh;" ><i class="bi bi-plus-circle" style="text-align: center;"></i></a> 
+  <a href="index.html" target="_blank" style="width: 10%; height: 8vh;" ><i class="bi bi-plus-circle" style="text-align: center;"></i></a> 
 </button>   
-        <button style="width: 2%; height: 4vh;"> <a href="../../wdk/wdk-init-webvi/init.html"><i class="bi bi-arrow-right"> </i></a></button>
+   
       </div>
         <!-- control -->
             <div id="zoom-box">
@@ -157,8 +155,11 @@ background: linear-gradient(to right, #1c1c1c, #000000); /* W3C, IE 10+/ Edge, F
 
 
 </div>
-  <webview src="../../wdk/newtab/newtab.html"  style="background: white;" preload="../contextual.js"   useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  " allowpopups id="view" ></webview>
-  
+<div style="padding-left: 30%;">
+  <br>
+  <webview src="../../wdk/newtab/newtabphone.html"  style="background: white; width: 50%; height: 90vh;" preload="../contextual.js"   useragent="Mozilla/5.0 (Linux; Android 4.0.4; Galaxy Nexus Build/IMM76B) AppleWebKit/535.19 (KHTML, like Gecko)  Chrome/18.0.1025.133 Mobile Safari/535.19" allowpopups id="viewphone" ></webview>
+
+</div>  
 
 </div>
         

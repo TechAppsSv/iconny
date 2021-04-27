@@ -19,15 +19,7 @@ onload = function() {
     navigateTo('../../wdk/newtab/newtab.html');
   };
   
-//   $('body').on("keydown", function(e) { 
-//     if (e.ctrlKey  && e.which === 82) {
-//       webview.reload();
-//         e.preventDefault();
-//     }
-// });
-// $("#button").on("click", function(e) { 
-//     alert("You clicked button");
-// }); 
+
   document.querySelector('#reload').onclick = function() {
     if (isLoading) {
       webview.stop();
@@ -130,13 +122,7 @@ function doLayout() {
   var webviewWidth = windowWidth;
   var webviewHeight = windowHeight - controlsHeight;
 
-  webview.style.width = webviewWidth + 'px';
-  webview.style.height = webviewHeight + 'px';
-
-  var sadWebview = document.querySelector('#sad-webview');
-  sadWebview.style.width = webviewWidth + 'px';
-  sadWebview.style.height = webviewHeight * 2/3 + 'px';
-  sadWebview.style.paddingTop = webviewHeight/3 + 'px';
+  
 }
 
 function handleExit(event) {

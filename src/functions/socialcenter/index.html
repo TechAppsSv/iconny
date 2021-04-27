@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../monocromatix/monocromatixantidiv.css">
+<link rel="stylesheet" href="../../WebVI/WebVi(1.0).css">
+<title>SocialCenter</title>
+<div id="tasks2" ></div> 
+<script src="../../wdk/config/config2.js"></script>
+<style>
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 0px solid ;
+ 
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+padding: 0.2%;
+  border: 0px solid ;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="tab" style="background: #252525; border-radius: 10px;">
+  <button class="tablinks" style="width: 5%;" onclick="openCity(event, 'London')">
+    <i class="bi bi-youtube"></i>
+</button>
+  <button class="tablinks" style="width: 5%;" onclick="openCity(event, 'Paris')"><i class="bi bi-github"></i></button>
+  <button class="tablinks"style="width: 5%;" onclick="openCity(event, 'Tokyo')"><i class="bi bi-discord"></i></button>
+  <button class="tablinks"style="width: 5%;" onclick="openCity(event, 'Tokyo1')"><i class="bi bi-facebook"></i></button>
+  <button class="tablinks"style="width: 5%;" onclick="openCity(event, 'Tokyo2')"><i class="bi bi-chat-fill"></i></button>
+  <button class="tablinks"style="width: 5%;" onclick="openCity(event, 'Tokyo3')"><i class="bi bi-telegram"></i></button>
+  <button class="tablinks"style="width: 5%;" onclick="openCity(event, 'Tokyo4')"><i class="bi bi-file-earmark-music"></i></button>
+</div>
+
+<div id="London" class="tabcontent">
+    
+    <webview src="https://www.youtube.com/"  style="background: white; width: 100%; height: 90vh;  border-radius: 10px;" preload="../contextual.js"   useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  " allowpopups id="view" ></webview>
+
+</div>
+
+<div id="Paris" class="tabcontent">
+    <webview src="https://github.com/"  style="background: white; width: 100%; height: 90vh;  border-radius: 10px;" preload="../contextual.js"   useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  " allowpopups id="view" ></webview>
+
+</div>
+
+<div id="Tokyo" class="tabcontent">
+    <webview src="https://discord.com/"  style="background: white; width: 100%; height: 90vh;  border-radius: 10px;" preload="../contextual.js"   useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  " allowpopups id="view" ></webview>
+
+</div>
+<div id="Tokyo1" class="tabcontent">
+    <webview src="https://facebook.com/"  style="background: white; width: 100%; height: 90vh;  border-radius: 10px;" preload="../contextual.js"   useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  " allowpopups id="view" ></webview>
+
+</div>
+<div id="Tokyo2" class="tabcontent">
+    <webview src="https://messenger.com/"  style="background: white; width: 100%; height: 90vh;  border-radius: 10px;" preload="../contextual.js"   useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  " allowpopups id="view" ></webview>
+
+</div>
+<div id="Tokyo3" class="tabcontent">
+    <webview src="telegramselect.html"  style="background: white; width: 100%; height: 90vh;  border-radius: 10px;" preload="../contextual.js"   useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  " allowpopups id="view" ></webview>
+
+</div>
+<div id="Tokyo4" class="tabcontent">
+    <webview src="https://music.youtube.com/"  style="background: white; width: 100%; height: 90vh;  border-radius: 10px;" preload="../contextual.js"   useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  " allowpopups id="view" ></webview>
+
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
