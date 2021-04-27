@@ -1,101 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- <head>
-  <header>
-    <nav>
-        <div id="titleshown">Iconny </div>
-        <div id="buttons">
-            <div id="minimize"></div>
-            <div id="maximize"></div>
-            <a href="#" onclick="window.close()" >      <div id="quit">X</div></a>
-        </div>
-      </nav>
-      <br> 
-  
-  </header> -->
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDK Developer Tools</title>
+    <title>WDK Social Tools</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
-<link href="https://techappssv.github.io/upaint/upaint/upaint.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
-<link rel="stylesheet" href="../../styles/icons/all.css">
-<link rel="stylesheet" href="../../styles/navbar.css">
-<script src="../../functions/icons/all.js"></script>
-<link rel="stylesheet" href="../../styles/navbar/navbar.css">
-<style>
-    body {
-        overflow: hidden;
-    }
-    * {
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../wdklib.css">   
 
-font-family: 'Poppins', sans-serif;
-
-}
-</style>
-
-<!-- NAVBAR -->
-<header>
-  <nav>
-      <div id="titleshown"> </div>
-      <div id="buttons">
-          <div id="minimize"></div>
-          <div id="maximize"></div>
-          <a href="#" o>      <div id="quit"></div></a>
-      </div>
-    </nav>
-    <br> 
-
-</header>
-
-<!-- NAVBAR -->
-
-</head>
-<body style="background: #191724; height: 90vh;">
-    <div class="container-dark" style="width: 100%; background:#191724;" >
-        <ul class="nav nav-tabs" id="myTab" role="tablist" style="width: 100%;">
-            <li class="nav-item" role="presentation">
-              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">GitHub</a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Buscadores</a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Web Panels</a>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a class="nav-link" id="home-tab2" data-toggle="tab" href="#home2" role="tab" aria-controls="contact" aria-selected="false">CSS(Bootstrap)</a>
-              </li>
-          </ul>
-          <div class="tab-content" id="myTabContent" style="width: 100%;">
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-
-<webview  id="wv1" src="https://github.com/"  useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4261.0 Safari/537.36"style=" height:92vh; display:inline-flex; width:100%;"height="625px"></webview>
-
-            </div>
-            <div class="tab-pane fade" id="profile" style="background: white;" role="tabpanel" aria-labelledby="profile-tab">
-              <button class="btn btn-primary btn-block" onclick="reboot()"><p class="fas fa-home"></p></button>
-
-              <webview  id="reboot" src="search.html"  useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4261.0 Safari/537.36"style=" height:85vh; display:inline-flex; width:100%;"height="625px"></webview>
-<script src="reboot.js"></script>
-            </div>
-            <div class="tab-pane fade" style="background: white;" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-              <button class="btn btn-primary btn-block" onclick="reboot2()"><p class="fas fa-home"></p></button>
-                <webview  id="reboot2" src="social.html"  useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4261.0 Safari/537.36"style=" height:85vh; display:inline-flex; width:100%;"height="625px"></webview>
- 
-
-            </div>
-            <br>
-         
-            <div class="tab-pane fade show active" id="home2" role="tabpanel" aria-labelledby="home-tab2">
-
-                <webview  id="wv1" src="https://getbootstrap.com/"  useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4261.0 Safari/537.36"style=" height:92vh; display:inline-flex; width:100%;"height="625px"></webview>
-                
-                            </div>
+<!-- <header>
+      <nav>
+          <div id="titleshown">Iconny </div>
+          <div id="buttons">
+              <div id="minimize"></div>
+              <div id="maximize"></div>
+              <a href="#" onclick="window.close()" >      <div id="quit">X</div></a>
           </div>
+        </nav>
+        <br> 
+    
+    </header> -->
+    <style>
+       body {
+
+background: #252525;
+}
+    </style>
+    <link rel="stylesheet" href="../../styles/navbar/navbar.css">
+  </head>
+
+<body >
+<div style="padding-left: 42%;">
+<br>
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="bi bi-window"></i> Web Panels</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="bi bi-search"></i> Buscadores</a>
+  </li>
+  <!-- <li class="nav-item">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="bi bi-camera-reels"></i> Entretenimiento </a>
+  </li> -->
+</ul>
+</div>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" style="padding-left: 5%; border-radius: 30px;">
+
+  <webview src="social.html"  style="background: white; width: 95%; " preload="../contextual.js"   useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  " allowpopups id="view" ></webview>
+
+  </div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">  <webview src="search.html"  style="background: white; width: 95%; " preload="../contextual.js"   useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  " allowpopups id="view" ></webview>
+  </div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+</div>
+ </div>
+      <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...dede</div>
+      <script src="../../functions/icons/all.js"></script>
+<link rel="stylesheet" href="../../styles/icons/all.css">
+<script src="../../wdk/setdates/codename.js"></script>
+<link rel="stylesheet" href="../../WebVI/WebVi(1.0).css">
     </div>
+  </div>
+</div>
+
 </body>
 </html>

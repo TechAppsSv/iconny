@@ -103,3 +103,14 @@ body {
             width: 40%; background: black; border: black; color:#9B8985;
         }
         
+        .darkmode--activated p, .darkmode--activated li {
+            color: #000;
+          }
+           
+          .button {
+            isolation: isolate;
+          }
+           
+          .darkmode--activated .logo {
+            mix-blend-mode: difference;
+          }

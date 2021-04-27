@@ -47,15 +47,18 @@ function getTasks() {
     let description = tasks[i].description;
 
     tasksView.innerHTML += `<div class="card mb-3">
-        <div class="card-body" style="background:black;border:black;">
-          <p ><h4 style="text-align:center; color:white;">${title}</h4> 
+        <div class="card-body" ">
+          <p ><h4 style="text-align:center; ">${title}</h4> 
           <br>
-         <p style="text-align:center; color:white;"> ${description}</p>
-          <br>
-          <a href="#" onclick="deleteTask('${title}')" style="color:white;"class="btn  ml-5">Eliminar</a>
-          <a href="${description}" class="btn ml-10" style="color:white; height:10vh;">Si es un link su nota presione aqui  </a>
+         <p style="text-align:center; "> ${description}</p>
+         
+
           </p>
         </div>
+        <br>
+        <a href="#" onclick="deleteTask('${title}')" class="btn btn-danger  ">Eliminar</a>
+     
+        <a href="${description}" class="btn btn-primary ml-10" >Si es un link su nota presione aqui  </a>
       </div>`;
   }
 }
