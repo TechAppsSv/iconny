@@ -2,7 +2,7 @@
 	"name": "iconny",
 	"productName": "Iconny Browser",
 	"version": "16.0.0",
-	"description": "Maxima rapidez y ligereza",
+	"description": "Maxima rapidez y ligereza y minimalismo",
 	"main": "src/wdk/wdk-init-webvi/index.js",
 	"scripts": {
 		"pack": "build --dir",
@@ -12,7 +12,7 @@
 		"build-mac": "electron-builder --mac --publish always",
 		"package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=build/icon.icns --prune=true --out=release-mac-app",
 		"start": "electron src/wdk/wdk-init-webvi/index.js",
-		    "create-installer-mac": "electron-installer-dmg ./release-builds/Electron\\ tutorial\\ app-darwin-x64/Electron\\ tutorial\\ app.app iconny-mac --out=release-builds --overwrite --icon=build/icon.icns"
+		"create-installer-mac": "electron-installer-dmg ./release-builds/Electron\\ tutorial\\ app-darwin-x64/Electron\\ tutorial\\ app.app iconny-mac --out=release-builds --overwrite --icon=build/icon.icns"
 	},
 	"author": "Iconny <techappsv@hotmail.com>",
 	"license": "MIT",
