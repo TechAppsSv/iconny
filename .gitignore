@@ -2,3 +2,4 @@ node_modules
 dist
 electron-navigation
 .git
+release-builds

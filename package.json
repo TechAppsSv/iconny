@@ -10,7 +10,9 @@
 		"build-linux": "electron-builder --linux --publish always",
 		"build-win": "electron-builder --win --publish always",
 		"build-mac": "electron-builder --mac --publish always",
-		"start": "electron src/wdk/wdk-init-webvi/index.js"
+		"package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=build/icon.icns --prune=true --out=release-mac-app",
+		"start": "electron src/wdk/wdk-init-webvi/index.js",
+		    "create-installer-mac": "electron-installer-dmg ./release-builds/Electron\\ tutorial\\ app-darwin-x64/Electron\\ tutorial\\ app.app iconny-mac --out=release-builds --overwrite --icon=build/icon.icns"
 	},
 	"author": "Iconny <techappsv@hotmail.com>",
 	"license": "MIT",
@@ -58,6 +60,8 @@
 	},
 	"devDependencies": {
 		"electron": "^12.0.5",
-		"electron-builder": "^22.9.1"
+		"electron-builder": "^22.9.1",
+		"electron-installer-dmg": "^3.0.0",
+		"electron-packager": "^15.2.0"
 	}
 }
