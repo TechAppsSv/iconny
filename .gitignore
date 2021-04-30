@@ -3,3 +3,4 @@ dist
 electron-navigation
 .git
 release-builds
+release-mac-app
