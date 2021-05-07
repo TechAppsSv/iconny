@@ -14,14 +14,16 @@
 
 </head>
 <style>
- body {
-    background: #ee0979;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
-  }
+    button{
+      background-color: rgba(105, 104, 104, 0.3);
+      border-radius: 5px;
+     
+      text-align: center;
+      line-height: 1;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    
+        }
 </style>
 <body style="color: white;" onload="reloj()">
 
@@ -31,8 +33,8 @@ background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, F
    <input id="clock" type="text" name="reloj" size="5" style="width: 30%;">
         </form>
    
-    <h1 style="text-align: left; font-size: 150px; padding-left: 38%; color: black;">Iconny <script src="../setdates/codename-newtab.js"></script> <h1 id="codename"></h1> </h1>
-    <h5 style="text-align:left; padding-left: 40%; color: black;">Goodbye spying and welcome privacy</h5>  
+    <h1 style="text-align: left; font-size: 150px; padding-left: 38%; ">Iconny <script src="../setdates/codename-newtab.js"></script> <h1 id="codename"></h1> </h1>
+    <h5 style="text-align:left; padding-left: 40%; ">Goodbye spying and welcome privacy</h5>  
   
    
     <br>
@@ -48,7 +50,7 @@ background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, F
     <FORM method=GET action="https://duckduckgo.com/?q="  >
 
 
-        <INPUT type="text" id="search" placeholder="Search With DuckDuckGo" class="form-control" name=q size=31 maxlength=255 value="">
+        <INPUT type="text" id="search" placeholder="Search With DuckDuckGo"  name=q size=31 maxlength=255 value="">
             
         </FORM>
         <br>
@@ -57,7 +59,7 @@ background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, F
     <FORM method=GET action="https://www.google.com/search" >
 
 
-        <INPUT type="text" id="search"  placeholder="Search With Google" class="form-control" name=q size=31 maxlength=255 value="">
+        <INPUT type="text" id="search"  placeholder="Search With Google" name=q size=31 maxlength=255 value="">
         
         </FORM>
       

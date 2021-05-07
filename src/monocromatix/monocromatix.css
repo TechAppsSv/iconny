@@ -3,7 +3,7 @@
 body {
 
     font-family: 'Poppins', sans-serif;
-    color: white;
+
 
 }
 body {
@@ -160,14 +160,14 @@ a:after {
 
 input {
   color: white;
-  background: #252525;
+
   border: 10px;
   border-radius: 5px;
   height: 5vh;
 }
 input:focus {
   color: white;
-  background: #252525;
+
   border: 10px;
   border-radius: 5px;
   height: 5vh;
@@ -182,8 +182,9 @@ input 				{
   border-bottom:1px solid #757575;
 }
 input:focus 		{ outline:none; }
+button:focus 		{ outline:none; }
 
-textarea {
+/* textarea {
   color: white;
   background: #252525;
   border: 10px;
@@ -196,7 +197,7 @@ textarea:focus {
   border: 10px;
   border-radius: 5px;
 
-}
+} */
 
 
 textarea				{

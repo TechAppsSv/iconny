@@ -1,8 +1,11 @@
 
 body {
-
-
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #303030); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
     color: white;
+
 
 }
 .darkmode--activated p, .darkmode--activated li {
@@ -17,24 +20,72 @@ body {
     mix-blend-mode: difference;
   }
 #controls{
-    background: #252525;
-    
+  background-color: rgba(19, 0, 0, 0.3);
+  border-radius: 5px;
+ 
+  text-align: center;
+  line-height: 1;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
     }
+    button{
+      background-color: rgba(105, 104, 104, 0.3);
+      border-radius: 5px;
+     
+      text-align: center;
+      line-height: 1;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    
+        }
     #separator{
       background: #252525;
       
       }
       #location{
-         background: black; border:black; color: white;  width: 100%; height: 4vh;  border-radius: 20px;font-family: 'Poppins', sans-serif; text-align: left; padding-left: 2%;
+          border:black; color: white;  width: 80%; height: 4vh;  border-radius: 8px;font-family: 'Poppins', sans-serif; text-align: center; padding-left: 2%;
         
         }
-        button {
+        input {
+          background-color: rgba(117, 115, 115, 0.3);
+          border-radius: 5px;
+         
+          text-align: center;
+          line-height: 1;
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+ 
+        }
+        
+        html,
+        body {
+          height: 100%;
+          width: 100%;
+        }
+        
+        body {
+         
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        
+        .container {
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          height: 100%;
+          width: 100%;
+        }
+     
+       button {
             width: 220px;
             height: 50px;
             border: none;
             outline: none;
             color: #fff;
-            background: #111;
+   
             cursor: pointer;
             position: relative;
             z-index: 0;
@@ -47,7 +98,7 @@ body {
             border: none;
             outline: none;
             color: #fff;
-            background: #111;
+ 
             cursor: pointer;
             position: relative;
             z-index: 0;
@@ -88,11 +139,11 @@ body {
             position: absolute;
             width: 100%;
             height: 100%;
-            background: #111;
+
             left: 0;
             top: 0;
             border-radius: 10px;
-        }
+        } 
         
         @keyframes button {
             0% { background-position: 0 0; }
@@ -104,7 +155,7 @@ body {
         }
         
         #search {
-            width: 40%; background: black; border: black; color: white;
+            width: 40%; b
         }
         
 
@@ -145,3 +196,10 @@ body {
           border: 1px solid #ccc;
           border-top: none;
         }
+       #megacontrol {
+        background: #1e130c;  /* fallback for old browsers */
+       
+        background: linear-gradient(to right, #494747, #554c4c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        }
+        
