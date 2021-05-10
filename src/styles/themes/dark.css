@@ -39,7 +39,74 @@ body {
       -webkit-backdrop-filter: blur(10px);
     
         }
-    #separator{
+        .divblur{
+          background-color: rgba(105, 104, 104, 0.3);
+          border-radius: 5px;
+         
+          text-align: center;
+          line-height: 1;
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+        
+          
+            }
+            .divblur2{
+              background-color: rgba(105, 104, 104, 0.3);
+              border-radius: 30px;
+             
+              text-align: center;
+              line-height: 1;
+              backdrop-filter: blur(10px);
+              -webkit-backdrop-filter: blur(10px);
+            
+                }
+                .buttonkit{
+                  background-color: rgba(105, 104, 104, 0.3);
+                  border-radius: 5px;
+                 height: 5vh;
+                  text-align: center;
+                  line-height: 1;
+                  backdrop-filter: blur(10px);
+                  -webkit-backdrop-filter: blur(10px);
+                
+                    }     textarea{
+                      background-color: rgba(105, 104, 104, 0.3);
+                      border-radius: 5px;
+                     height: 5vh;
+                      text-align: center;
+                      line-height: 1;
+                      backdrop-filter: blur(10px);
+                      -webkit-backdrop-filter: blur(10px);
+                      color: white;
+                    
+                        }
+                     nav{
+                      background-color: rgba(105, 104, 104, 0.3);
+                      border-radius: 5px;
+                     height: 10vh;
+                      text-align: center;
+                      line-height: 1;
+                      backdrop-filter: blur(10px);
+                      -webkit-backdrop-filter: blur(10px);
+                    
+                        }
+            .containerbutton{
+          background-color: rgba(105, 104, 104, 0.3);
+         
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+        
+            }
+        .morebutton{
+         
+          border-radius: 5px;
+       
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+        
+            }
+
+        #separator{
       background: #252525;
       
       }
@@ -55,6 +122,8 @@ body {
           line-height: 1;
           backdrop-filter: blur(10px);
           -webkit-backdrop-filter: blur(10px);
+          border:black; color: white;  width: 80%; height: 4vh;  border-radius: 8px;font-family: 'Poppins', sans-serif; text-align: center; padding-left: 2%;
+          text-decoration: none;
  
         }
         
@@ -202,4 +271,12 @@ body {
         background: linear-gradient(to right, #494747, #554c4c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         
         }
-        
+        h1{
+      color: white;
+          }
+          .containerbody{
+            background: #000000;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #434343, #303030); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                }
+                

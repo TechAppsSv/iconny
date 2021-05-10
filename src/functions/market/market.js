@@ -46,8 +46,9 @@ function getTasks() {
     let title = tasks[i].title;
     let description = tasks[i].description;
 
-    tasksView.innerHTML += `<div class="card mb-3">
-        <div class="card-body" ">
+    tasksView.innerHTML += `<div class="divblur">
+        <div>
+        <br>
           <p ><h4 style="text-align:center; ">${title}</h4> 
           <br>
          <p style="text-align:center; "> ${description}</p>
@@ -56,9 +57,10 @@ function getTasks() {
           </p>
         </div>
         <br>
-        <a href="#" onclick="deleteTask('${title}')" class="btn btn-danger  ">Eliminar</a>
-     
-        <a href="${description}" class="btn btn-primary ml-10" >Si es un link su nota presione aqui  </a>
+        <a href="#" class="buttonkit"onclick="deleteTask('${title}')" >Eliminar</a>
+        <br>
+        <br>
+        <a href="${description}" class="buttonkit" >Si es un link su nota presione aqui  </a>
       </div>`;
   }
 }

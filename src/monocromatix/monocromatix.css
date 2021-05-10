@@ -13,7 +13,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-nav {
+/* nav {
   display: block;
   width: 100%;
   height: 30px;
@@ -67,7 +67,7 @@ nav #buttons #maximize:hover {
 }
 nav #buttons #quit:hover {
   background-color: #333333aa;    
-}
+} */
 
 main {
   padding-top: 30px;
