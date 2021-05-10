@@ -1,7 +1,7 @@
 {
 	"name": "iconny",
 	"productName": "Iconny Browser",
-	"version": "16.2.7",
+	"version": "16.3.7",
 	"description": "Maxima rapidez y ligereza y minimalismo",
 	"main": "src/wdk/wdk-init-webvi/index.js",
 	"scripts": {
