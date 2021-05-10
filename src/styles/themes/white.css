@@ -1,214 +1,311 @@
 
-
 * {
 
+  color: black;
+border-color:   rgba(199, 193, 193, 0.3);
 
-    color:black;
 
-  }
-    
+}
 body {
+background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #b3afaf, #a09c9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: black;
+border-color:   rgba(105, 104, 104, 0.3);
 
 
-    color:black;
-
-    background: #ADA996;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #e2e2e2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    
 }
 .darkmode--activated p, .darkmode--activated li {
-    color: #000;
-  }
-   
-  .button {
-    isolation: isolate;
-  }
-   
-  .darkmode--activated .logo {
-    mix-blend-mode: difference;
-  }
+  color: #000;
+}
+ 
+.button {
+  isolation: isolate;
+}
+ 
+.darkmode--activated .logo {
+  mix-blend-mode: difference;
+}
 #controls{
-  background-color: rgba(116, 112, 112, 0.39);
-  border-radius: 5px;
- color: black;
-  text-align: center;
-  line-height: 1;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+background-color: rgba(204, 203, 203, 0.3);
+border-radius: 5px;
 
-    }
-    button{
-      background-color: rgba(255, 255, 255, 0.486);
-      border-radius: 5px;
+text-align: center;
+line-height: 1;
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+
+  }
+  button{
+    background-color: rgba(185, 173, 173, 0.226);
+    border-radius: 5px;
+   
+    text-align: center;
+    line-height: 1;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  
+      }
+      .divblur{
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 5px;
+       
+        text-align: center;
+        line-height: 1;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+      
+        
+          }
+          .tab{
+              background-color: rgba(105, 104, 104, 0.3);
+              border-radius: 5px;
+            
+              text-align: center;
+              line-height: 1;
+              backdrop-filter: blur(10px);
+              -webkit-backdrop-filter: blur(10px);
+          
+            
+              }
+          .divblur2{
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 30px;
+           
+            text-align: center;
+            line-height: 1;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+          
+              }
+              .buttonkit{
+                background-color: rgba(255, 255, 255, 0.3);
+                border-radius: 5px;
+               height: 5vh;
+                text-align: center;
+                line-height: 1;
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+              
+                  }     textarea{
+                    background-color: rgba(255, 255, 255, 0.3);
+                    border-radius: 5px;
+                   height: 5vh;
+                    text-align: center;
+                    line-height: 1;
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(10px);
+                    color: white;
+                  
+                      }
+                      .textareakit{
+                        background-color: rgba(255, 255, 255, 0.3);
+                        border-radius: 5px;
+                       height: 5vh;
+                        text-align: center;
+                        line-height: 1;
+                        backdrop-filter: blur(10px);
+                        -webkit-backdrop-filter: blur(10px);
+                        color: white;
+                      
+                          }
+                   nav{
+                    background-color: rgba(255, 255, 255, 0.3);
+                    border-radius: 5px;
+                   height: 10vh;
+                    text-align: center;
+                    line-height: 1;
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(10px);
+                  
+                      }
+          .containerbutton{
+        background-color: rgba(255, 255, 255, 0.3);
+       
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+      
+          }
+      .morebutton{
+       
+        border-radius: 5px;
      color: black;
-      text-align: center;
-      line-height: 1;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
+      
+      
+          }
+
+      #separator{
+    background: #252525;
     
-        }
-    #separator{
-      background: #252525;
+    }
+    #location{
+        border:black; color: black;  width: 80%; height: 4vh;  border-radius: 8px;font-family: 'Poppins', sans-serif; text-align: center; padding-left: 2%;
       
       }
-      #location{
-          border:black; color:black;  width: 80%; height: 4vh;  border-radius: 8px;font-family: 'Poppins', sans-serif; text-align: center; padding-left: 2%;
-        
-        }
-        input {
-            background-color: rgba(255, 255, 255, 0.459);
-          border-radius: 5px;
-         color: black;
-          text-align: center;
-          line-height: 1;
-          backdrop-filter: blur(10px);
-          -webkit-backdrop-filter: blur(10px);
- 
-        }
-        
-        html,
-        body {
-          height: 100%;
-          width: 100%;
-        }
-        
-        body {
-         
-          background-position: center center;
-          background-repeat: no-repeat;
-          background-size: cover;
-        }
-        
-        .container {
-          align-items: center;
-          display: flex;
-          justify-content: center;
-          height: 100%;
-          width: 100%;
-        }
-     
-       button {
-            width: 220px;
-            height: 50px;
-            border: none;
-            outline: none;
-     color: black;
+      input {
+        background-color: rgba(190, 190, 190, 0.3);
+        border-radius: 5px;
+       
+        text-align: center;
+        line-height: 1;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border:black; color: black;  width: 80%; height: 4vh;  border-radius: 8px;font-family: 'Poppins', sans-serif; text-align: center; padding-left: 2%;
+        text-decoration: none;
+
+      }
+      
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      
+      body {
+       
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      
+      .container {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+      }
    
-            cursor: pointer;
-            position: relative;
-            z-index: 0;
-            border-radius: 10px;
-        }
-        
-          button:focus {
-            width: 220px;
-            height: 50px;
-            border: none;
-            outline: none;
-color: black;
- 
-            cursor: pointer;
-            position: relative;
-            z-index: 0;
-            border-radius: 10px;
-          }
-        button:before {
-            content: '';
-            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-            position: absolute;
-            top: -2px;
-            left:-2px;
-            background-size: 400%;
-            z-index: -1;
-            filter: blur(5px);
-            width: calc(100% + 4px);
-            height: calc(100% + 4px);
-            animation: glowing 20s linear infinite;
-            opacity: 0;
-            transition: opacity .3s ease-in-out;
-            border-radius: 10px;
-       color: black;
-        }
-        
-        button:active {
-            color: #000
-        }
-        
-        button:active:after {
-            background: transparent;
-        }
-        
-        button:hover:before {
-            opacity: 1;
-        }
-        
-        button:after {
-            z-index: -1;
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-
-            left: 0;
-            top: 0;
-            border-radius: 10px;
-        } 
-        
-        @keyframes button {
-            0% { background-position: 0 0; }
-            50% { background-position: 400% 0; }
-            100% { background-position: 0 0; }
-        }
-        #clock {
-             color: black; height: 130px; width: 70%; font-size: 80px; border-radius: 50px;
-        }
-        
-        #search {
-            width: 40%;
-        }
-        
-
-
-        /* Style the tab */
-        .tab {
-          overflow: hidden;
-          border: 1px solid #ccc;
-          background-color: #f1f1f1;
-        }
-        
-        /* Style the buttons inside the tab */
-        .tab button {
-          background-color: inherit;
-          float: left;
+     button {
+          width: 220px;
+          height: 50px;
           border: none;
           outline: none;
+          color: #fff;
+ 
           cursor: pointer;
-          padding: 14px 16px;
-          transition: 0.3s;
-          font-size: 17px;
-        }
-        
-        /* Change background color of buttons on hover */
-        .tab button:hover {
-          background-color: #ddd;
-        }
-        
-        /* Create an active/current tablink class */
-        .tab button.active {
-          background-color: #ccc;
-        }
-        
-        /* Style the tab content */
-        .tabcontent {
-          display: none;
-          padding: 6px 12px;
-          border: 1px solid #ccc;
-          border-top: none;
-        }
-       #megacontrol {
-           background: rgb(255, 255, 255);
+          position: relative;
+          z-index: 0;
+          border-radius: 10px;
+      }
+      
+        button:focus {
+          width: 220px;
+          height: 50px;
+          border: none;
+          outline: none;
+          color: #fff;
 
+          cursor: pointer;
+          position: relative;
+          z-index: 0;
+          border-radius: 10px;
         }
-        
+      button:before {
+          content: '';
+          background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+          position: absolute;
+          top: -2px;
+          left:-2px;
+          background-size: 400%;
+          z-index: -1;
+          filter: blur(5px);
+          width: calc(100% + 4px);
+          height: calc(100% + 4px);
+          animation: glowing 20s linear infinite;
+          opacity: 0;
+          transition: opacity .3s ease-in-out;
+          border-radius: 10px;
+      }
+      
+      button:active {
+          color: #000
+      }
+      
+      button:active:after {
+          background: transparent;
+      }
+      
+      button:hover:before {
+          opacity: 1;
+      }
+      
+      button:after {
+          z-index: -1;
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+
+          left: 0;
+          top: 0;
+          border-radius: 10px;
+      } 
+      
+      @keyframes button {
+          0% { background-position: 0 0; }
+          50% { background-position: 400% 0; }
+          100% { background-position: 0 0; }
+      }
+      #clock {
+           color: white; height: 130px; width: 70%; font-size: 80px; border-radius: 50px;
+      }
+      
+      #search {
+          width: 40%; 
+      }
+      
+
+
+      /* Style the tab */
+      .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+      }
+      
+      /* Style the buttons inside the tab */
+      .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+      }
+      
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+        background-color: #ddd;
+      }
+      
+      /* Create an active/current tablink class */
+      .tab button.active {
+        background-color: #ccc;
+      }
+      
+      /* Style the tab content */
+      .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+      }
+     #megacontrol {
+      background: #1e130c;  /* fallback for old browsers */
+     
+      background: linear-gradient(to right, #494747, #554c4c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
+      }
+      h1{
+    color: black;
+        }
+        .containerbody{
+          background: #000000;  /* fallback for old browsers */
+          background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(to right, #b3afaf, #a09c9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+              }
+              

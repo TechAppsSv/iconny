@@ -1,10 +1,18 @@
 
+* {
+
+    color: white;
+  border-color:   rgba(105, 104, 104, 0.3);
+
+
+}
 body {
   background: #000000;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #434343, #303030); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
     color: white;
+  border-color:   rgba(105, 104, 104, 0.3);
 
 
 }
@@ -50,6 +58,17 @@ body {
         
           
             }
+            .tab{
+                background-color: rgba(105, 104, 104, 0.3);
+                border-radius: 5px;
+              
+                text-align: center;
+                line-height: 1;
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+            
+              
+                }
             .divblur2{
               background-color: rgba(105, 104, 104, 0.3);
               border-radius: 30px;
@@ -80,6 +99,17 @@ body {
                       color: white;
                     
                         }
+                        .textareakit{
+                          background-color: rgba(105, 104, 104, 0.3);
+                          border-radius: 5px;
+                         height: 5vh;
+                          text-align: center;
+                          line-height: 1;
+                          backdrop-filter: blur(10px);
+                          -webkit-backdrop-filter: blur(10px);
+                          color: white;
+                        
+                            }
                      nav{
                       background-color: rgba(105, 104, 104, 0.3);
                       border-radius: 5px;
