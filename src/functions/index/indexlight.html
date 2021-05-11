@@ -18,80 +18,93 @@
       
     </style>
 </header>
-<div style="height: 5px;" id="separator"></div>
-
+<!-- <div style="height: 0.5vh;" id="separator" class="darkmode-ignore"></div> -->
+<script>
+</script>
 
             <script src="browser.js"></script>
           <body onclick="reloj()" >
-            
-       <!-- control -->
-       <div id="controls" style="width: 100%; height: 5vh;">
-      
-        <button id="back" style="width: 3%; height: 4vh;" title="Go Back" disabled="true"><i class="bi bi-chevron-left"></i></button>
-        <button id="forward"style="width: 3%; height: 4vh;" title="Go Forward" disabled="true"><i class="bi bi-chevron-right"></i></button>
-
-        <button id="reload"style="width: 3%; height: 4vh;" title="Reload"><i class="bi bi-arrow-clockwise"></i></button>
-        <button id="home"style="width: 3%; height: 4vh;" title="Go Home"><i class="bi bi-house-door"></i></button>
-        <!-- <a href="javascript:mostrar();" style="width: 5%; height: 4vh;" onclick="mostrar2()"><i style="font-size:25px; text-align: center;" class="bi bi-toggles"></i></a>  -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-       
-        <form id="location-form">
-          <div id="center-column">
             <script>
-              function insertText(elemID, first, second) {
-   var elem = document.getElementById("location");
-   elem.value = second ? first + elem.value + second : first + elem.value;
+                  var webview = document.getElementById('view');
+    webview.addEventListener('dom-ready', function () {
+        webview.insertCSS(' body{color:white; background-color: black !important;},h3{color:white; background-color: black !important;},.sfbgg{color:white; background-color: black !important;}')
+    });
+  
+            </script>
+       <!-- control -->
+   <div id="megacontrol">
+    <div id="controls"class="darkmode-ignore" style="width: 100%; height: 5vh;">
+      
+      <button id="back" class="darkmode-ignore"style="width: 3%; height: 4vh;" title="Go Back" disabled="true"><i class="bi bi-chevron-left"></i></button>
+      <button id="forward"class="darkmode-ignore"style="width: 3%; height: 4vh;" title="Go Forward" disabled="true"><i class="bi bi-chevron-right"></i></button>
+
+
+      <button id="home"class="darkmode-ignore"style="width: 3%; height: 4vh;" title="Go Home"><i class="bi bi-house-door"></i></button>
+      <!-- <a href="javascript:mostrar();" style="width: 5%; height: 4vh;" onclick="mostrar2()"><i style="font-size:25px; text-align: center;" class="bi bi-toggles"></i></a>  -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+     
+      <form id="location-form">
+        <div id="center-column">
+          
+          <script>
+            function insertText(elemID, first, second) {
+ var elem = document.getElementById("location");
+ elem.value = second ? first + elem.value + second : first + elem.value;
 }
 
-            </script>
-             <script type="text/javascript">
-              $(document).ready(function() {
-                  $('#borrador').click(function() {
-                      $('#location').val('https://duckduckgo.com/?q=');
-                  });
-              });
-              $(document).ready(function() {
-                  $('#borrador1').click(function() {
-                      $('#location').val('http:/');
-                  });
-              });
           </script>
-            <input id="location"  type="text"  value="iconny://newtab">
+           <script type="text/javascript">
+            $(document).ready(function() {
+                $('#borrador').click(function() {
+                    $('#location').val('https://duckduckgo.com/?q=');
+                });
+            });
+            $(document).ready(function() {
+                $('#borrador1').click(function() {
+                    $('#location').val('http:/');
+                });
+            });
+        </script>
+    <div style="padding-left: 20%;" >      <input id="location"  type="text" placeholder="Escribe el link o toca los botones de busqueda y http"  value="iconny://newtab"></div>
 
+        </div>
+    
+   
+            
+      </form>
+      <button id="reload"class="darkmode-ignore"style="width: 3%; height: 4vh;" title="Reload"><i class="bi bi-arrow-clockwise"></i></button>
+
+      <button id="borrador" style="width: 2%; height: 4vh;" onclick="insertText('txt1', 'http:/');"><i class="bi bi-search"></i></button>
+      <button id="borrador1" style="width: 2%; height: 4vh;" onclick="insertText('txt1', 'http:/');"><i class="bi bi-cursor-text"></i></button>
+  
+<button style="width: 2%; height: 4vh;">
+<a href="more.html"    onclick="window.open(this.href, this.target, 'width=1366,height=1000'); return false;"
+style="width: 10%; height: 8vh;" ><i class="bi bi-plus-circle" style="text-align: center;"></i></a> 
+</button>   
+      <button style="width: 2%; height: 4vh;"> <a href="../../wdk/wdk-init-webvi/init.html"><i class="bi bi-arrow-right"> </i></a></button>
+    </div>
+      <!-- control -->
+          <div id="zoom-box">
+            <form id="zoom-form">
+              <input id="zoom-text" type="text">
+              <input type="submit" value="&#128270;">
+              <button id="zoom-in">&#10133;</button>
+              <button id="zoom-out">&#10134;</button>
+            </form>
           </div>
       
-     
-              
-        </form>
-        <button id="borrador" style="width: 2%; height: 4vh;" onclick="insertText('txt1', 'http:/');"><i class="bi bi-search"></i></button>
-        <button id="borrador1" style="width: 2%; height: 4vh;" onclick="insertText('txt1', 'http:/');"><i class="bi bi-cursor-text"></i></button>
-    
-<button style="width: 2%; height: 4vh;">
-  <a href="more.html" target="_blank" style="width: 2%; height: 4vh;" ><h3 class="bi bi-plus-circle" style="text-align: center;"></h3></a> 
-</button>   
-        <button style="width: 2%; height: 4vh;"> <a href="../../wdk/wdk-init-webvi/init.html"><i class="bi bi-arrow-right"> </i></a></button>
-      </div>
-        <!-- control -->
-            <div id="zoom-box">
-              <form id="zoom-form">
-                <input id="zoom-text" type="text">
-                <input type="submit" value="&#128270;">
-                <button id="zoom-in">&#10133;</button>
-                <button id="zoom-out">&#10134;</button>
-              </form>
-            </div>
-        
-            <div id="find-box">
-              <form id="find-form">
-                <input id="find-text" type="text">
-                <div id="find-results"></div>
-                <input type="submit" style="position:absolute; visibility:hidden">
-                <button id="match-case">aA</button>
-                <button id="find-backward">&#60;</button>
-                <button id="find-forward">&#62;</button>
-              </form>
-            </div>
-        
+          <div id="find-box">
+            <form id="find-form">
+              <input id="find-text" type="text">
+              <div id="find-results"></div>
+              <input type="submit" style="position:absolute; visibility:hidden">
+              <button id="match-case">aA</button>
+              <button id="find-backward">&#60;</button>
+              <button id="find-forward">&#62;</button>
+            </form>
+          </div>
+      
+   </div>
 
   <div id="flotante" style="  display: none; width:30%; background: #000000;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #1c1c1c, #000000);  /* Chrome 10-25, Safari 5.1-6 */
@@ -181,7 +194,23 @@ background: linear-gradient(to right, #1c1c1c, #000000); /* W3C, IE 10+/ Edge, F
 
 </body>
 </html>
+<!-- <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  const options = {
+  
+  saveInCookies: true, // default: true,
 
+  autoMatchOsTheme: true // default: true
+}
+
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+    
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+</script>  -->
   
 <script src="../webpanels/webpanel.js"></script>
 <script src="../clock/clock.js"></script>
@@ -231,12 +260,171 @@ compared to the back/forward buttons */
   font-size: 18px;
 }
 
-#location {
+/* #location {
   border: solid 1px #ccc;
   padding: 2px;
-  width: 100%;
+  width: 90%;
   -webkit-box-sizing: border-box;
+} */
+
+#controls {
+  display: -webkit-flex;
+  -webit-flex-direction: column;
 }
+
+#controls #location-form {
+  -webkit-flex: 1;
+  display: -webkit-flex;
+  -webit-flex-direction: column;
+}
+
+#controls #center-column {
+  -webkit-flex: 1;
+}
+
+#zoom-box,
+#find-box {
+  background-color: #eee;
+  border: solid 1px #ccc;
+  border-top: solid 1px #eee;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  padding: 2px;
+
+  position: fixed;
+  top: 36px;
+  height: 25px;
+
+  display: none;
+}
+
+#zoom-box #zoom-form,
+#find-box #find-form {
+  -webkit-flex: 1;
+  display: -webkit-flex;
+  -webit-flex-direction: row;
+}
+
+#zoom-box input,
+#zoom-box button,
+#find-box button {
+  border-radius: 2px;
+}
+
+#zoom-box #zoom-text,
+#find-box #find-text {
+  border: solid 1px #ccc;
+  margin-right: 0px;
+  padding: 2px;
+  -webkit-box-sizing: border-box;
+  -webkit-flex: 1;
+}
+
+#zoom-box {
+  left: 5px;
+  width: 125px;
+  z-index: 1;
+}
+
+#zoom-box input[type="submit"] {
+  font-size: 14px;
+  margin: 2px 0px;
+  padding: 0 2px 3px 2px;
+  width: 22px;
+}
+
+#zoom-box button {
+  font-size: 12px;
+  margin: 2px 0px;
+  padding: 0px 1px 0px 0px;
+  width: 20px;
+}
+
+#find-box {
+  right: 5px;
+  width: 280px;
+  z-index: 2;
+}
+
+#find-box #find-text {
+  border-right-style: none;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+#find-box #find-results {
+  color: #888;
+  background-color: #fff;
+  border: solid 1px #ccc;
+  border-left-style: none;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  margin: 2px 0px;
+  padding: 3px 4px 2px 0;
+  text-align: center;
+}
+
+#find-box #match-case {
+  margin: 2px 0px;
+  font-size: 10px;
+  width: 28px;
+}
+
+#find-box #find-backward,
+#find-box #find-forward {
+  font-size: 14px;
+  width: 24px;
+}
+      * {
+  color: white;  border: #1c1c1c;}
+    #container {
+  height: 100vh;}
+  .tabsdemoDynamicTabs md-content {
+  background-color: transparent !important; }
+  .tabsdemoDynamicTabs md-content md-tabs {
+    border: 1px solid  #1c1c1c; }
+    .tabsdemoDynamicTabs md-content md-tabs md-tab-content {
+      background: #1c1c1c; height: 1000000vh; }
+    .tabsdemoDynamicTabs md-content md-tabs md-tabs-canvas {
+      background: black;
+     }
+  .tabsdemoDynamicTabs md-content h1:first-child {
+    margin-top: 0; }
+.tabsdemoDynamicTabs md-input-container {
+  padding-bottom: 0; }
+.tabsdemoDynamicTabs .remove-tab {
+  margin-bottom: 40px; }
+.tabsdemoDynamicTabs .demo-tab > div > div {
+  padding: 25px;
+  box-sizing: border-box; }
+.tabsdemoDynamicTabs .edit-form input {
+  width: 100%; }
+.tabsdemoDynamicTabs md-tabs {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
+.tabsdemoDynamicTabs md-tab[disabled] {
+  opacity: 0.5; }
+.tabsdemoDynamicTabs label {
+  text-align: left; }
+.tabsdemoDynamicTabs .long > input {
+  width: 264px; }
+.tabsdemoDynamicTabs .md-button.add-tab {
+  transform: translateY(5px); }
+
+</style>
+<script>
+
+</script>
+
+<script src="js/controller.js"></script>
+<script src="js/"></script>
+<link rel="stylesheet" href="../../WebVI/WebVi(1.0).css">
+
+<link rel="stylesheet" href="../../monocromatix/monocromatix.css">
+<link rel="stylesheet" href="../../styles/themes/dark.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/angular/bower-material/v0.9.8/angular-material.css">
+<link rel="stylesheet" href="../../styles/icons/all.css">
+<script src="../icons/all.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 
 #controls {
   display: -webkit-flex;
