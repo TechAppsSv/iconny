@@ -28,7 +28,7 @@ border-color:   rgba(105, 104, 104, 0.3);
   mix-blend-mode: difference;
 }
 #controls{
-background-color: rgba(204, 203, 203, 0.3);
+background-color: rgba(255, 255, 255, 0.685);
 border-radius: 5px;
 
 text-align: center;
@@ -38,7 +38,7 @@ backdrop-filter: blur(10px);
 
   }
   button{
-    background-color: rgba(185, 173, 173, 0.226);
+    background-color: rgba(238, 238, 238, 0.671);
     border-radius: 5px;
    
     text-align: center;
@@ -144,7 +144,7 @@ backdrop-filter: blur(10px);
       
       }
       input {
-        background-color: rgba(190, 190, 190, 0.3);
+        background-color: rgba(255, 255, 255, 0.349);
         border-radius: 5px;
        
         text-align: center;

@@ -1,7 +1,7 @@
 {
 	"name": "iconny",
 	"productName": "Iconny Browser",
-	"version": "16.4.7",
+	"version": "16.5.7",
 	"description": "Maxima rapidez y ligereza y minimalismo",
 	"main": "src/wdk/wdk-init-webvi/index.js",
 	"scripts": {
@@ -36,7 +36,7 @@
 		"linux": {
 			"category": "Browser",
 			"target": [
-				"snap"
+				"AppImage"
 			],
 			"icon": "build/background.png"
 		},
