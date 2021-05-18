@@ -5,8 +5,11 @@
 ## NUEVO LANZAMIENTO Pagina Web Oficial
 ###  https://techappssv.github.io/iconnybrowser/
 
-## Ultima Version  15 Stable
-###  https://github.com/TechAppsSv/iconny/releases/tag/15-stable
+## Ultima Version Stable
+###  https://github.com/TechAppsSv/iconny/releases/tag/17-stable
+
+## Iconny 17 "Stone" LTS Workstation 
+### https://github.com/TechAppsSv/iconny-lts/releases/tag/17
 
 ## Blog de lanzamientos
 ### https://techappssv.github.io/iconnybrowser/html/blog.html
