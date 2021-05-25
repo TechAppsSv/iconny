@@ -27,15 +27,17 @@
     </header> -->
     <!-- <style>
        body {
+
 background: #ee0979;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
     </style> -->
     <link rel="stylesheet" href="../../styles/navbar/navbar.css">
   </head>
 <link rel="stylesheet" href="../../monocromatix/monocromatix.css ">
-<body class="bodytab" style="overflow: hidden;" >
+<body  >
   <div class="d-flex align-items-start" >
     <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" style="       background-color: rgba(105, 104, 104, 0.3);
     border-radius: 5px;
@@ -50,7 +52,7 @@ background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, F
       <!-- <br>
       <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button> -->
      <br>
-      <button class="" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Acerca De Iconny</button>
+      <!-- <button class="" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Acerca De Iconny</button> -->
       <br>
       <!-- <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button> -->
     </div>
@@ -58,18 +60,76 @@ background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, F
       <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"> <div style="padding-left: 30%; border-radius: 30%;  text-align: center;">
      
   
-        <div style="width: 50%; border-radius:0%;">
-         
+        <div style="width: 50%; border-radius:0%; text-align: left;">        <h1>Preferencia de interfaz</h1>
+       
+        
+        <h5>Dark</strong>
+          <br><a href="../../functions/index/indexdark.html" target="_blank"class="btn btn-dark">Probar</a></h5>
+
+        <br>
+        <!-- <h5>Iniciar con interfaz WhitePink : <strong>../../styles/themes/whitepink.css</strong>
+          <br>
+          <a href="../../functions/index/indexwhitepink.html" target="_blank"class="btn btn-dark">Probar</a></h5>
+        <br>
+        <h5>Iniciar con interfaz Darkred : <strong>../../styles/themes/darkred.css</strong>
+          <br>
+          <a href="../../functions/index/indexred.html " target="_blank"class="btn btn-dark">Probar</a></h5>
+        <br>
+        <h5>Iniciar con interfaz Lowdark : <strong>../../styles/themes/lowdark.css</strong>
+          <br>
+          <a href="../../functions/index/indexlow.html" target="_blank"class="btn btn-dark">Probar</a></h5>
+        <br> -->
+        <br>
         </div>
       </div>
-  <iframe src="config2.html" width="100%" style="height: 100vh;" frameborder="0"></iframe>
+  
    
+        <form id="formTask2">
+          <div class="form-group">
+<h5>Toque el boton para guardar su Preferencia</h5>
+            <input type="submit" id="title" placeholder="Buscador" style="width: 100%; text-align: center;" value="../../styles/themes/dark.css" class="">
+          </div>
+        <br>
         
+         <div class="form-group">
+            <input type="text" id="description" hidden placeholder="Link de la pagina" class="form-control">
+        
+         
+          </div> 
+    <div style="padding-left: 10%;">
+
+    
+    </div>    </form>
+    <a href="config2.html" class="btn buttonkit" style="color: white;">Volver a la configuracion inicial</a>
+
+        <br>
+        <div class="col-md-8">
+                  <div id="tasks2" style="padding-left: 40%;"></div>
+                </div>
+            <br>
+            <br>
+
           <br>
-          
           <br>
+          <script>
+            function insertText(elemID, first, second) {
+ var elem = document.getElementById("location");
+ elem.value = second ? first + elem.value + second : first + elem.value;
+}
+
+          </script>
+           <script type="text/javascript">
+            $(document).ready(function() {
+                $('#borrador').click(function() {
+                    $('#title4').val('https://duckduckgo.com/?q=');
+                });
+            });
+         
+        </script>
+  
     
           <script src="../config/config.js"></script></div>
+
    <link rel="stylesheet" href="../../styles/themes/dark.css">
                   
           <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>

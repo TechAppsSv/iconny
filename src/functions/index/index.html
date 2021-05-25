@@ -53,18 +53,7 @@
 }
 
           </script>
-           <script type="text/javascript">
-            $(document).ready(function() {
-                $('#borrador').click(function() {
-                    $('#location').val('https://duckduckgo.com/?q=');
-                });
-            });
-            $(document).ready(function() {
-                $('#borrador1').click(function() {
-                    $('#location').val('http:/');
-                });
-            });
-        </script>
+       
     <div style="padding-left: 20%;" >      <input id="location"  type="text" placeholder="Escribe el link o toca los botones de busqueda y http"  value="iconny://newtab"></div>
 
         </div>
@@ -73,8 +62,8 @@
             
       </form>
       <button id="reload"class="darkmode-ignore"style="width: 3%; height: 4vh;" title="Reload"><i class="bi bi-arrow-clockwise"></i></button>
-
-      <button id="borrador" style="width: 2%; height: 4vh;" onclick="insertText('txt1', 'http:/');"><i class="bi bi-search"></i></button>
+  
+      <div id="tasks4" ></div> 
       <button id="borrador1" style="width: 2%; height: 4vh;" onclick="insertText('txt1', 'http:/');"><i class="bi bi-cursor-text"></i></button>
   
 <button style="width: 2%; height: 4vh;">
@@ -243,6 +232,15 @@ button[disabled]:hover {
 }
 
 
+.loading #reload {
+  -webkit-animation: spinner-animation .5s infinite linear;
+  -webkit-transform-origin: 50% 55.5%;
+}
+
+@-webkit-keyframes spinner-animation {
+  0% { -webkit-transform: rotate(0deg); }
+  100% {-webkit-transform: rotate(360deg); }
+}
 
 /* These glyphs are on the small side, make them look more natural when
 compared to the back/forward buttons */
@@ -426,6 +424,15 @@ compared to the back/forward buttons */
 
          <div id="tasks2" ></div> 
          <script src="../../wdk/config/config2.js"></script>
+         <form id="formTask4">
+     
+        </form>
+      
+                 <script src="../../wdk/config/search/cleaner.js"></script>
+                 <script src="../../wdk/config/config4-1.js"></script>
+                 <script src="../../wdk/config/search/duckduckgo.js"></script>
+                 <script src="../../wdk/config/search/google.js"></script>
+<script src="../../wdk/config/search/bing.js"></script>
         
 <link rel="stylesheet" href="https://cdn.rawgit.com/angular/bower-material/v0.9.8/angular-material.css">
 <link rel="stylesheet" href="../../styles/icons/all.css">

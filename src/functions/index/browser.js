@@ -4,7 +4,6 @@ var isLoading = false;
 
 onload = function() {
   var webview = document.querySelector('webview');
-
   doLayout();
 
   document.querySelector('#back').onclick = function() {
@@ -18,16 +17,7 @@ onload = function() {
   document.querySelector('#home').onclick = function() {
     navigateTo('../../wdk/newtab/newtab.html');
   };
-  
-//   $('body').on("keydown", function(e) { 
-//     if (e.ctrlKey  && e.which === 82) {
-//       webview.reload();
-//         e.preventDefault();
-//     }
-// });
-// $("#button").on("click", function(e) { 
-//     alert("You clicked button");
-// }); 
+
   document.querySelector('#reload').onclick = function() {
     if (isLoading) {
       webview.stop();
