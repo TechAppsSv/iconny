@@ -52,7 +52,7 @@ function getTasks2() {
 
           <br>
         
-          <a href="#" onclick="deleteTask2('${title}')" style="color:white;" class="btn ml-5">Toca aqui para eliminar Preferencia</a>
+          <a href="#" onclick="deleteTask2('${title}')" style="color:white;" class="btn ml-5">Toca aqui para eliminar ${title} theme</a>
          
           </p>
         </div>

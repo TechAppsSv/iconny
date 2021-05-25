@@ -48,15 +48,25 @@ backdrop-filter: blur(10px);
 
   }
   button{
-    background-color: rgba(238, 238, 238, 0.671);
+    /* background-color: rgba(238, 238, 238, 0.671); */
     border-radius: 5px;
    
     text-align: center;
     line-height: 1;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
+    /* -webkit-backdrop-filter: blur(10px); */
   
       }
+      .buttonkit{
+        background-color: rgba(238, 238, 238, 0.671);
+        border-radius: 5px;
+       
+        text-align: center;
+        line-height: 1;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+      
+          }
       .divblur{
         background-color: rgba(255, 255, 255, 0.3);
         border-radius: 5px;

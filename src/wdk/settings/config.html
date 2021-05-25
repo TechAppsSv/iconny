@@ -35,34 +35,86 @@ background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, F
     <link rel="stylesheet" href="../../styles/navbar/navbar.css">
   </head>
 <link rel="stylesheet" href="../../monocromatix/monocromatix.css ">
+<div class="tab" style=" border-radius: 10px;           background-color: rgba(105, 104, 104, 0.3);
+border-radius: 5px;
+text-align: center;
+
+border-color: rgba(105, 104, 104, 0.3);
+padding: 0.5%;
+"
+
+>
+<h1 style="text-align: left; padding-left: 3%;">Panel de control</h1>  
+</div>
 <body class="bodytab" style="overflow: hidden;" >
   <div class="d-flex align-items-start" >
     <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" style="       background-color: rgba(105, 104, 104, 0.3);
     border-radius: 5px;
+    width: 12%;
    height: 5vh;
     text-align: center;
     line-height: 1;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     color: white; height: 100vh; padding-right: 1%; padding-left: 1%;" aria-orientation="vertical">
-   <br>
-      <button class=" " id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Seleccionar interfaz</button>
-      <!-- <br>
-      <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button> -->
-     <br>
-      <button class="" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Acerca De Iconny</button>
-      <br>
-      <!-- <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button> -->
+<button class="tablinks buttonmono" style="width: 98%;" onclick="openCity(event, 'London')">
+  <i class="bi bi-sliders"></i> Preferencias
+</button>
+<br>
+
+<button class="tablinks buttonmono"style="width: 100%;"  onclick="openCity(event, 'Paris')"> <i style="" class="bi bi-stickies"></i> Notely </button>
+<br>
+<button class="tablinks buttonmono"style="width: 100%;" onclick="openCity(event, 'Tokyo')"><i class="bi bi-info-circle"></i> Acerca De</button>
+<br>
+<button class="tablinks buttonmono"style="width: 100%;" onclick="openCity(event, 'Tokyo1')"><i class="bi bi-journal-bookmark"></i> Blog de Iconny </button>
+<br>
+<button class="tablinks buttonmono"style="width: 100%;" onclick="openCity(event, 'Tokyo3')"><i class="bi bi-back"></i> Themes Center </button>
+<!-- <button class="tablinks"style="width: 5%;" onclick="openCity(event, 'Tokyo4')"><i class="bi bi-file-earmark-music"></i></button>
+<button class="tablinks"style="width: 5%;" onclick="openCity(event, 'Tokyo5')"><i class="bi bi-whatsapp"></i></button> -->
     </div>
-    <div class="tab-content" id="v-pills-tabContent" style="width: 100%;">
-      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"> <div style="padding-left: 30%; border-radius: 30%;  text-align: center;">
-     
+   
+<div id="London" class="tabcontent " style="width: 1000%; height: 100vh;">
+  <iframe src="config2.html" width="100%" style="height: 100vh;" frameborder="0"></iframe>
+
+
+</div>
+
+<div id="Paris" class="tabcontent " style="width: 1000%; height: 100vh;">
+  <iframe src="../../functions/market/add.html" width="100%" style="height: 100vh;" frameborder="0"></iframe>
+
+</div>
+
+<div id="Tokyo" class="tabcontent" style="width: 1000%; height: 100vh;">
+  <iframe src="about.html" width="100%" style="height: 100vh;" frameborder="0"></iframe>
+</div>
+
+<div id="Tokyo1" class="tabcontent" style="width: 1000%; height: 100vh;">
+  <iframe src="https://techappssv.github.io/iconnybrowser/html/blog.html" width="100%" style="height: 100vh;" frameborder="0"></iframe>
+
+</div>
+<div id="Tokyo2" class="tabcontent">
+  <webview src="messenger.html"  style="background: white; width: 100%; height: 93vh; border-radius: 10px;" preload="../contextual.js"   useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  " allowpopups id="view" ></webview>
+
+</div>
+<div id="Tokyo3" class="tabcontent">
+  <webview src="telegramselect.html"  style="background: white; width: 100%;height: 93vh; border-radius: 10px;" preload="../contextual.js"   useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  " allowpopups id="view" ></webview>
+
+</div>
+<div id="Tokyo4" class="tabcontent">
+  <webview src="music.html"  style="background: white; width: 100%; height: 93vh;  border-radius: 10px;" preload="../contextual.js"   useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  " allowpopups id="view" ></webview>
+
+</div>
+<div id="Tokyo5" class="tabcontent">
+<webview src="whatssap.html"  style="background: white; width: 100%; height: 93vh;  border-radius: 10px;" preload="../contextual.js"   useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  " allowpopups id="view" ></webview>
+
+</div>
+
   
         <div style="width: 50%; border-radius:0%;">
-         
+      
+                 
         </div>
       </div>
-  <iframe src="config2.html" width="100%" style="height: 100vh;" frameborder="0"></iframe>
    
         
           <br>
@@ -72,47 +124,14 @@ background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, F
           <script src="../config/config.js"></script></div>
    <link rel="stylesheet" href="../../styles/themes/dark.css">
                   
-          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
-      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-        <h1 style="padding-left: 5%; text-align: left; font-size: 500%;">Iconny Browser </h1>
-        <h2 style="padding-left: 5%; text-align: left;" id="codename"></h2>
-        <br>
-        <br>
- <h4 style="padding-left: 5%; text-align: left;" id="electron-version">         <i class='fas fa-atom'></i>  </h4>
-        
-        <h4 style="padding-left: 5%; text-align: left;" id="wdk-version"> <strong style="font-size: 10px;">WDK</strong></h4>
-              
-        <h4 style="padding-left: 5%; text-align: left;" id="version"><i class="fas fa-code-branch"></i> </h4>
-        <button><a href="https://github.com/TechAppsSv/iconny/issues" target="_blank"><i class="fas fa-bug"></i>  Reportar Bugs</a></button>
-        
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-              
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-              
-      <br>
-      <br>
-      <br>
-    
-<button style="width: 80%;"> 
-  <p style="color:red;">This browser is made thanks to the open source project Electron and Google Chromium and TechAppsSv WDK</p>
 
-</button>      </div>
+       
 
       <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...dede</div>
       <script src="../../functions/icons/all.js"></script>
 <link rel="stylesheet" href="../../styles/icons/all.css">
 <script src="../../wdk/setdates/codename.js"></script>
+<script src="../../functions/MonocromatixTM/monocromatixtm.js"></script>
     </div>
   </div>
 </div>

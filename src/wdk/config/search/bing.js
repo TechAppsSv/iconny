@@ -1,7 +1,7 @@
 
             $(document).ready(function() {
                 $('#borradorbing').click(function() {
-                    $('#location').val('https://bing.com/?q=');
+                    $('#location').val('https://www.bing.com/search?q=');
                 });
             });
     

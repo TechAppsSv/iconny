@@ -2,15 +2,15 @@
 * {
 
 
-    color:#FF007C;
+color: black;
 
 }
 body {
 
 
-    color:#FF007C;
 
-
+    color: black;
+background: rgb(224, 224, 224);
 }
 #controls{
     background: #EBE7E5;
@@ -19,8 +19,8 @@ body {
         background: #EBE7E5;
       }
       #location{
-         background: white; border:white;  color:#FF007C;  width: 100%; height: 4vh;  border-radius: 20px;font-family: 'Poppins', sans-serif; text-align: left; padding-left: 2%;
-        
+        border:white;  background: white; color:black;  width: 80%; height: 4vh;  border-radius: 20px;font-family: 'Poppins', sans-serif; text-align: center; padding-left: 2%;
+
         }
         button {
             width: 220px;

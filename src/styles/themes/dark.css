@@ -6,6 +6,24 @@
 
 
 }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 body {
   background: #000000;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
@@ -19,7 +37,8 @@ body {
 .bodytab {
   background: #000000;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #070707ce, #000000dc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #434343, #303030); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   
     color: white;
   border-color:   rgba(105, 104, 104, 0.3);
@@ -48,15 +67,25 @@ body {
 
     }
     button{
-      background-color: rgba(105, 104, 104, 0.3);
+      /* background-color: rgba(105, 104, 104, 0.3); */
       border-radius: 5px;
      
       text-align: center;
       line-height: 1;
-      backdrop-filter: blur(10px);
+      /* backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
-    
+     */
         }
+        .buttonmono{
+          background-color: rgba(105, 104, 104, 0.3);
+          border-radius: 5px;
+         
+          text-align: center;
+          line-height: 1;
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+        
+            }
         .divblur{
           background-color: rgba(105, 104, 104, 0.3);
           border-radius: 5px;
