@@ -1,7 +1,7 @@
 {
 	"name": "iconny",
 	"productName": "Iconny Browser",
-	"version": "17.1.1",
+	"version": "17.5.5",
 	"description": "Maxima rapidez y ligereza y minimalismo",
 	"main": "src/wdk/wdk-init-webvi/index.js",
 	"scripts": {
@@ -58,11 +58,10 @@
 		"cross-fetch": "^3.0.6",
 		"draggabilly": "^2.3.0",
 		"electron-context-menu": "^2.5.0",
-		"electron-tabs": "^0.15.0",
-		"fsevents": "^2.3.2"
+		"electron-tabs": "^0.15.0"
 	},
 	"devDependencies": {
-		"electron": "^12.0.9",
+		"electron": "^13.0.0",
 		"electron-builder": "^22.9.1",
 		"electron-installer-dmg": "^3.0.0",
 		"electron-packager": "^15.2.0"
