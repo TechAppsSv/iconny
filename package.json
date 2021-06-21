@@ -1,7 +1,7 @@
 {
 	"name": "iconny",
 	"productName": "Iconny Browser",
-	"version": "18.0.0",
+	"version": "18.1.1",
 	"description": "Maxima rapidez y ligereza y minimalismo",
 	"main": "src/wdk/wdk-init-webvi/index.js",
 	"scripts": {
@@ -36,8 +36,8 @@
 		"linux": {
 			"category": "Browser",
 			"target": [
-				"AppImage",
-				"snap"
+				"AppImage"
+				
 			],
 			"icon": "build/background.png"
 		},
@@ -61,7 +61,7 @@
 		"electron-tabs": "^0.15.0"
 	},
 	"devDependencies": {
-		"electron": "^13.0.1",
+		"electron": "^13.1.2",
 		"electron-builder": "^22.9.1",
 		"electron-installer-dmg": "^3.0.0",
 		"electron-packager": "^15.2.0"

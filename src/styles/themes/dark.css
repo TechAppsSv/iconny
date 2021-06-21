@@ -3,6 +3,7 @@
 
     color: white;
   border-color:   rgba(105, 104, 104, 0.3);
+  
 
 
 }
@@ -79,6 +80,10 @@ body {
       -webkit-backdrop-filter: blur(10px);
      */
         }
+        .close {
+          width: 1%;
+          height: 1%;
+        }
         .buttonmono{
           background-color: rgba(105, 104, 104, 0.3);
           border-radius: 5px;
@@ -153,7 +158,7 @@ body {
                         
                             }
                      nav{
-                      background-color: rgba(105, 104, 104, 0.3);
+                      /* background-color: rgba(105, 104, 104, 0.3); */
                       border-radius: 5px;
                      height: 10vh;
                       text-align: center;
@@ -198,7 +203,87 @@ body {
           text-decoration: none;
  
         }
+        li{
+          background-color: rgba(117, 115, 115, 0.3);
+          border-radius: 10px;
+         
+          text-align: center;
+          line-height: 1;
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          border:black; color: white;  width: 10%; height: 2.8vh;  border-radius: 7px;font-family: 'Poppins', sans-serif; text-align: center; 
+          text-decoration: none;
+ 
+        }
+        nav {
+          display: block;
+          width: 100%;
+          height: 30px;
+ 
+          -webkit-app-region: drag;
+          -webkit-user-select: none;
+          position: fixed;
+          z-index: 1;
+          border: #A10000;
+        }
+        .navbar {
+          overflow: hidden;
+    
+          height: 33px;
+        }
+        nav #titleshown {
+          width: 83%;
+          height: 100%;
         
+          color: #f7f7f7;
+          float: left;
+          padding: 0 0 0 1em;
+        }
+        
+        nav #buttons {
+          float: right;
+          width: 150px;
+          height: 130%;
+          line-height: 30px;
+
+          -webkit-app-region: no-drag;
+        }
+        
+        nav #buttons #minimize,
+        nav #buttons #maximize,
+        nav #buttons #quit {
+          float: left;
+          height: 100%;
+          width: 33%;
+          text-align: center;
+          color: #f7f7f7;
+          cursor: default;
+        }
+        
+        nav #buttons #minimize:hover {
+
+        }
+        nav #buttons #maximize:hover {
+
+        }
+        nav #buttons #quit:hover {
+
+        }
+        
+        main {
+          padding-top: 30px;
+          overflow: auto;
+          height: calc(100vh - 30px);
+          position: absolute;
+          top: 30px;
+          left: 0;
+          padding: 0;
+          width: 100%;
+        }
+        ul{
+       height: 3.8vh;
+ 
+        }
         html,
         body {
           height: 100%;
@@ -219,19 +304,34 @@ body {
           height: 100%;
           width: 100%;
         }
-     
+     .close {
+       width: 1%;
+       height: 1%;
+     }
        button {
             width: 220px;
             height: 50px;
             border: none;
             outline: none;
             color: #fff;
-   
+
             cursor: pointer;
             position: relative;
             z-index: 0;
             border-radius: 10px;
         }
+        .buttoncontrol {
+          width: 220px;
+          height: 50px;
+          border: none;
+          outline: none;
+          color: #fff;
+          background-color: rgba(105, 104, 104, 0.3);
+          cursor: pointer;
+          position: relative;
+          z-index: 0;
+          border-radius: 10px;
+      }
         
           button:focus {
             width: 220px;
@@ -338,9 +438,7 @@ body {
           border-top: none;
         }
        #megacontrol {
-        background: #1e130c;  /* fallback for old browsers */
        
-        background: linear-gradient(to right, #070707a6, #303030); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
         }
         h1{

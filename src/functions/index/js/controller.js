@@ -6,7 +6,8 @@
   
         function AppCtrl ($scope, $log) {
           var tabs = [
-                { title: 'One', content:"xd"}
+                { title: 'One', content:`xd`},
+                { title: 'Two', content:`xd`}
                 
               ],
           selected = null,

@@ -1,14 +1,14 @@
-# ![Esta es una imagen de ejemplo](https://github.com/TechAppsSv/iconnybrowser/blob/gh-pages/logo%20de%20iconny.png)
-# Iconny Browser
+# ![Esta es una imagen de ejemplo](Iconny_white_png.png)
+
 ### Goodbye spying and welcome privacy
 
 ## NUEVO LANZAMIENTO Pagina Web Oficial
 ###  https://techappssv.github.io/iconnybrowser/
 
 ## Ultima Version Stable
-###  https://github.com/TechAppsSv/iconny/releases/tag/17-stable
+###  https://github.com/TechAppsSv/iconny/releases
 
-## Iconny 17 "Stone" LTS Workstation 
+## Ultima LTS : Iconny 17 "Stone" LTS Workstation 
 ### https://github.com/TechAppsSv/iconny-lts/releases/tag/17
 
 ## Blog de lanzamientos
@@ -39,9 +39,7 @@
 ### Codigo Abierto 
 #### Iconny a pesar de ser muy basico siempre es codigo abierto que puede servir para mejorar el navegador o servir de base para otros
 ### Multiplataforma 
-#### A pesar que solo proveemos una version en AppImage para linux se puede compilar facilmente para Mac y Windows
-### Modo Oscuro para las paginas
-#### Iconny gracias a darkmode-js puedes cambiar las paginas con un solo boton entre Light y Dark Mode
+#### Iconny esta presente en las tres principales plataformas Mac, Linux y Windows 
 
 ### Modo Secundario
 #### Iconny posee una sesion para usarlo como un perfil diferente al inicial
@@ -59,8 +57,7 @@
 #### npm run build-linux
 ### Compilar para Windows en .exe
 #### npm run build-win
-### Compilar para Mac en dmg
-#### npm run build-mac
+
 
 #### Ultima Actualizacion de este documento
-##### 18 de mayo del 2021
+##### 21 de junio del 2021
