@@ -1,4 +1,4 @@
-# ![Esta es una imagen de ejemplo](Iconny_white_png.png)
+# ![Esta es una imagen de ejemplo](iconny_banner.png)
 
 ### Goodbye spying and welcome privacy
 
