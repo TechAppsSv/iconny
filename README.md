@@ -2,7 +2,7 @@
 
 ### Goodbye spying and welcome privacy
 
-## NUEVO LANZAMIENTO Pagina Web Oficial
+##Pagina Web Oficial
 ###  https://techappssv.github.io/iconnybrowser/
 
 ## Ultima Version Stable
