@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de control</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <!-- <header>
+      <nav>
+          <div id="titleshown">Iconny </div>
+          <div id="buttons">
+              <div id="minimize"></div>
+              <div id="maximize"></div>
+              <a href="#" onclick="window.close()" >      <div id="quit">X</div></a>
+          </div>
+        </nav>
+        <br> 
+    
+    </header> -->
+    <!-- <style>
+       body {
+
+background: #ee0979;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+    </style> -->
+    <link rel="stylesheet" href="../../styles/navbar/navbar.css">
+  </head>
+<link rel="stylesheet" href="../../monocromatix/monocromatix.css ">
+<body >
+  <div class="d-flex align-items-start" >
+    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" style="       background-color: rgba(105, 104, 104, 0.3);
+    border-radius: 5px;
+   height: 5vh;
+    text-align: center;
+    line-height: 1;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white; height: 100vh; padding-right: 1%; padding-left: 1%;" aria-orientation="vertical">
+   <br>
+      <button class=" " id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" style="color: black;">Seleccionar interfaz</button>
+      <!-- <br>
+      <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button> -->
+     <br>
+      <!-- <button class=""  style="color: black;" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Acerca De Iconny</button> -->
+      <br>
+      <!-- <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button> -->
+    </div>
+    <div class="tab-content" id="v-pills-tabContent" style="width: 100%;">
+      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"> <div style="padding-left: 30%; border-radius: 30%;  text-align: center;">
+     
+  
+        <div style="width: 50%; border-radius:0%; text-align: left;">        <h1>Preferencia de interfaz</h1>
+       
+        
+        <h5>White</strong>
+          <!-- <br><a href="../../functions/index/indexlight.html" target="_blank"class="btn btn-dark">Probar</a></h5> -->
+
+        <br>
+        <!-- <h5>Iniciar con interfaz WhitePink : <strong>../../styles/themes/whitepink.css</strong>
+          <br>
+          <a href="../../functions/index/indexwhitepink.html" target="_blank"class="btn btn-dark">Probar</a></h5>
+        <br>
+        <h5>Iniciar con interfaz Darkred : <strong>../../styles/themes/darkred.css</strong>
+          <br>
+          <a href="../../functions/index/indexred.html " target="_blank"class="btn btn-dark">Probar</a></h5>
+        <br>
+        <h5>Iniciar con interfaz Lowdark : <strong>../../styles/themes/lowdark.css</strong>
+          <br>
+          <a href="../../functions/index/indexlow.html" target="_blank"class="btn btn-dark">Probar</a></h5>
+        <br> -->
+        <br>
+        </div>
+      </div>
+  
+   
+        <form id="formTask2">
+          <div class="form-group">
+<h5>Toque el boton para guardar su Preferencia</h5>
+            <input type="submit" id="title" placeholder="Buscador" style="width: 100%; text-align: center;" value="../../styles/themes/classicwhite.css" class="">
+          </div>
+        <br>
+        
+         <div class="form-group">
+            <input type="text" id="description" hidden placeholder="Link de la pagina" class="form-control">
+        
+         
+          </div> 
+    <div style="padding-left: 10%;">
+
+    
+    </div>    </form>
+    <a href="config2.html" class="btn buttonkit" style="color: black;">Volver a la configuracion inicial</a>
+
+        <br>
+        <div class="col-md-8">
+                  <div id="tasks2" style="padding-left: 40%;"></div>
+                </div>
+            <br>
+            <br>
+
+          <br>
+          <br>
+          <script>
+            function insertText(elemID, first, second) {
+ var elem = document.getElementById("location");
+ elem.value = second ? first + elem.value + second : first + elem.value;
+}
+
+          </script>
+           <script type="text/javascript">
+            $(document).ready(function() {
+                $('#borrador').click(function() {
+                    $('#title4').val('https://duckduckgo.com/?q=');
+                });
+            });
+         
+        </script>
+  
+    
+  <script src="../../munich/config/config.js"></script></div>
+
+   <link rel="stylesheet" href="../../styles/themes/classicwhite.css">
+                  
+          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+        <h1 style="padding-left: 5%; text-align: left; font-size: 500%;">Iconny Browser </h1>
+        <h2 style="padding-left: 5%; text-align: left;" id="codename"></h2>
+        <br>
+        <br>
+ <h4 style="padding-left: 5%; text-align: left;" id="electron-version">         <i class='fas fa-atom'></i>  </h4>
+        
+        <h4 style="padding-left: 5%; text-align: left;" id="wdk-version"> <strong style="font-size: 10px;">WDK</strong></h4>
+              
+        <h4 style="padding-left: 5%; text-align: left;" id="version"><i class="fas fa-code-branch"></i> </h4>
+        <button><a href="https://github.com/TechAppsSv/iconny/issues" target="_blank"><i class="fas fa-bug"></i>  Reportar Bugs</a></button>
+        
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+              
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+              
+      <br>
+      <br>
+      <br>
+    
+<button style="width: 80%;"> 
+  <p style="color:red;">This browser is made thanks to the open source project Electron and Google Chromium and TechAppsSv WDK</p>
+
+</button>      </div>
+
+      <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...dede</div>
+      <script src="../../functions/icons/all.js"></script>
+<link rel="stylesheet" href="../../styles/icons/all.css">
+<script src="../../wdk/setdates/codename.js"></script>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

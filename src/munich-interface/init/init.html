@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../../monocromatix/monocromatix.css">
+  <link rel="stylesheet" href="../../styles/themes/dark.css">
+  <header>
+    <nav>
+        <div id="titleshown">Iconny </div>
+        <div id="buttons">
+            <div id="minimize"></div>
+            <div id="maximize"></div>
+      <a href="#" onclick="window.close()" >      <div id="quit">X</div></a>
+        </div>
+      </nav>
+      <br> 
+      <style>
+        
+      </style>
+      </nav> 
+      <br> 
+      <style>
+        
+      </style>
+  </header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iconny</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
+</head>
+<link rel="stylesheet" href="../styles/icons/all.css">
+<script src="../wdk-core/icons/"></script>
+<style>
+    body {
+      background: #ee0979;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #383635, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+overflow: auto;
+
+    }
+    body::-webkit-scrollbar-track {
+display: none;
+}
+    * {
+       
+ color: white;
+ font-family: 'Poppins', sans-serif;
+ text-align: center;
+
+    }
+</style>
+<body  style="width: 500; height: 320;">
+   <br>
+   <br>
+   <br>
+   <br>
+
+   <svg viewbox="0 0 100 20">
+    <defs>
+      <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="5%" stop-color="white"/>
+        <stop offset="95%" stop-color="white"/>
+      </linearGradient>
+      <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+          <animateTransform
+              attributeName="transform"
+              begin="0s"
+              dur="1.5s"
+              type="translate"
+              from="0,0"
+              to="40,0"
+              repeatCount="indefinite" />
+        </path>
+      </pattern>
+    </defs>
+    <text text-anchor="middle" x="50" y="15" font-size="10" fill="url(#wave)"  fill-opacity="0.6">Iconny</text>
+    <text text-anchor="middle" x="50" y="15" font-size="10" fill="url(#gradient)" fill-opacity="0.1">Iconny</text>
+  </svg>
+  
+    <h5>Goodbye spying and welcome privacy</h5>
+   
+              <button style="border-radius:10px;" class="buttonkit" onclick="createNewProductWindow();">  <a href="../../functions/index/index.html" class="btn "  style="color:white; width: 100%;" >Iniciar </a></button>
+    <br>
+ <br>
+
+  <button style="border-radius:10px;" class="buttonkit">  <a href="../../munich-interface/settingssecure/config.html" class="btn "  style="color:white; width: 100%;"  onclick="window.open(this.href, this.target, 'width=1366,height=768'); return false;">Panel de control en modo Seguro </a></button>
+
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <a href="welcome/index.html" class="btn btn-danger buttonmono" style="width: 80%; color: white;"  >¡Si es primera vez que abres iconny toca aca! </a>
+<script src="../config/config2.js"></script>
+
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<script>
+  const { ipcRenderer } = require('electron');
+
+// Some data that will be sent to the main process
+let Data = {
+    message: "Hi",
+    someData: "Let's go"
+};
+
+// Send information to the main process
+// if a listener has been set, then the main process
+// will react to the request !
+ipcRenderer.send('request-mainprocess-action', Data);
+const contextMenu = require('electron-context-menu');
+("web-contents-created", (e, contents) => {
+  contextMenu({
+     window: contents,
+     showSaveImageAs: true,
+     showInspectElement: false
+  });
+})
+
+
+
+
+contextMenu({
+  prepend: (params, WebViewTag) => [
+      {
+          role: "zoomIn"
+      },
+      {
+          role: "zoomOut"
+      },
+  ],
+});
+
+
+</script>
+<footer style="text-align: right
+;">Controlador de Webview de esta sesion : WebVi </footer>
+</html>

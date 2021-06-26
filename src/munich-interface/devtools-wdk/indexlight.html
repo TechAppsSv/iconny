@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <nav>
+    <div id="titleshown" style="color: black;">Iconny </div>
+    <div id="buttons">
+        <div id="minimize"></div>
+        <div id="maximize"></div>
+        <a href="#" onclick="window.close()" >      <div id="quit" style="color: black;">X</div></a>
+    </div>
+  </nav>
+  <br> 
+
+</header> -->
+<link rel="stylesheet" href="../../styles/navbar/navbarlight.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDK Developer Tools</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
+<link href="https://techappssv.github.io/upaint/upaint/upaint.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="../../styles/icons/all.css">
+<link rel="stylesheet" href="../../styles/navbarlight.css">
+<script src="../../functions/icons/all.js"></script>
+<style>
+    body {
+        overflow: hidden;
+        color: black;
+
+        
+    }
+    * {
+
+font-family: 'Poppins', sans-serif;
+
+}
+</style>
+<!-- NAVBAR -->
+<nav>
+  <div id="titleshown" style="color: black;"> </div>
+  <div id="buttons">
+      <div id="minimize"></div>
+      <div id="maximize"></div>
+      <a href="#" onclick="window.close()" >      <div id="quit" style="color: black;"></div></a>
+  </div>
+</nav>
+<br> 
+
+</header>
+<link rel="stylesheet" href="../../styles/navbar/navbarlight.css">
+<!-- NAVBAR -->
+
+</head>
+<body style="background:#D8D1CF; height: 90vh;">
+    <div class="container-dark" style="width: 100%; background: #D8D1CF;" >
+        <ul class="nav nav-tabs" id="myTab" role="tablist" style="width: 100%;">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">GitHub</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Buscadores</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Web Panels</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="home-tab2" data-toggle="tab" href="#home2" role="tab" aria-controls="contact" aria-selected="false">CSS(Bootstrap)</a>
+              </li>
+          </ul>
+          <div class="tab-content" id="myTabContent" style="width: 100%;">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+<webview  id="wv1" src="https://github.com/"  useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4261.0 Safari/537.36"style=" height:92vh; display:inline-flex; width:100%;"height="625px"></webview>
+
+            </div>
+            <div class="tab-pane fade" id="profile" style="background: white;" role="tabpanel" aria-labelledby="profile-tab">
+              <button class="btn btn-primary btn-block" onclick="reboot()"><p class="fas fa-home"></p></button>
+
+              <webview  id="reboot" src="searchlight.html"  useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4261.0 Safari/537.36"style=" height:85vh; display:inline-flex; width:100%;"height="625px"></webview>
+<script src="reboot.js"></script>
+            </div>
+            <div class="tab-pane fade" style="background: white;" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+              <button class="btn btn-primary btn-block" onclick="reboot2()"><p class="fas fa-home"></p></button>
+                <webview  id="reboot2" src="sociallight.html"  useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4261.0 Safari/537.36"style=" height:85vh; display:inline-flex; width:100%;"height="625px"></webview>
+ 
+
+            </div>
+            <br>
+         
+            <div class="tab-pane fade show active" id="home2" role="tabpanel" aria-labelledby="home-tab2">
+
+                <webview  id="wv1" src="https://getbootstrap.com/"  useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4261.0 Safari/537.36"style=" height:92vh; display:inline-flex; width:100%;"height="625px"></webview>
+                
+                            </div>
+          </div>
+    </div>
+</body>
+</html>

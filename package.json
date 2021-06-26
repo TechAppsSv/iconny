@@ -3,7 +3,7 @@
 	"productName": "Iconny Browser",
 	"version": "18.1.1",
 	"description": "Maxima rapidez y ligereza y minimalismo",
-	"main": "src/wdk/wdk-init-webvi/index.js",
+	"main": "src/munich/init/init.js",
 	"scripts": {
 		"pack": "build --dir",
 		"dist": "build",
@@ -11,7 +11,7 @@
 		"build-win": "electron-builder --win --publish always",
 		"build-mac": "electron-builder --mac --publish always",
 		"package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=build/icon.icns --prune=true --out=release-mac-app",
-		"start": "electron src/wdk/wdk-init-webvi/index.js",
+		"start": "electron src/munich/init/init.js",
 		"create-installer-mac": "electron-installer-dmg ./release-builds/Electron\\ tutorial\\ app-darwin-x64/Electron\\ tutorial\\ app.app iconny-mac --out=release-builds --overwrite --icon=build/icon.icns"
 	},
 	"author": "Iconny <techappsv@hotmail.com>",
