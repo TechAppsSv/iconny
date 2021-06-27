@@ -4,116 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
-    <link rel="stylesheet" href="../../styles/index/indexoverflow.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="../../styles/icons/all.css">
 <script src="../../functions/icons/all.js"></script>
+<link rel="stylesheet" href="../../styles/themes/dark.css">
 <link rel="stylesheet" href="../../monocromatix/monocromatix.css">
-
+<script src="../../functions/clock/clock.js"></script>
 </head>
 <style>
-    button{
-      background-color: rgba(105, 104, 104, 0.3);
-      border-radius: 5px;
-     
-      text-align: center;
-      line-height: 1;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-    
-        }
-        body::-webkit-scrollbar {
-    width: 8px;     /* Tamaño del scroll en vertical */
-    height: 8px;    /* Tamaño del scroll en horizontal */
-    display: none;  /* Ocultar scroll */
+  body {
+background-image: url("https://images.unsplash.com/photo-1618298672493-05c0d4d28887?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=779&q=80");
+backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          overflow: hidden;
+}
+.divclass {
+  background-color: rgba(105, 104, 104, 0.3);
+          border-radius: 5px;
+         
+          text-align: center;
+          line-height: 1;
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+}
+div{
+ 
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 </style>
-<body  class="bodytab" onload="reloj()">
-
-    <br>
-    <br>
-    <form name="form_reloj" style="padding-left: 1%;">
-   <input id="clock" type="text" name="reloj" size="5" style="width: 30%;">
-        </form>
-   
-    <h1 style="text-align: left; font-size: 120px; padding-left: 40%; " class="namebrowser" >Iconny <script src="../setdates/codename-newtab.js"></script> <h1 id="codename"></h1> </h1>
-    <h5 style="text-align:left; padding-left: 40%; " class="namebrowser" >Goodbye spying and welcome privacy</h5>  
+<body onload="reloj()">
+  <br>
+<div style="padding-left: 3%;" id="fade" >
+  <div class="divclass" style="width: 10%;">
+    <h1 style="padding-left: 2%; height: 7vh; font-size: 200%;"  >Iconny</h1> 
   
-   
-    <br>
-    <br>
- 
+  </div>
+<br>
+<br>
 
+<div style="padding-left:20%;">
 
-   <!-- <div style="padding-left:38%;">
-    <FORM method=GET action="https://duckduckgo.com/?q="  >
+<div style="width: 100%;">
+  <div style="float: left; width: 50%;">
+    <div style="width: 31%;" ><div class="divblur" style="padding: 1%;"><h2>Welcome </h2></div></div>
+  </div>
+<div style="float: right; width: 50%;">
+  <div style="width: 31%;" ><div  style="padding: 1%;"> <form name="form_reloj" >
+    <input id="clock" type="text" name="reloj" style="height: 7vh; font-family: 'Montserrat', sans-serif; width: 150%;" size="5">
+         </form></div></div>
 
-
-        <INPUT type="text" id="search" placeholder="Search With DuckDuckGo"  name=q size=31 maxlength=255 value="">
-            
-        </FORM>
-        <br>
-    
-    <FORM method=GET action="https://www.google.com/search" >
-
-
-        <INPUT type="text" id="search"  placeholder="Search With Google" name=q size=31 maxlength=255 value="">
-        
-        </FORM> -->
-      <br>
-      <br>
-      <br>
-   <div style="padding-left: 30%;">
-    <div style=" width: 60%; border-radius: 20px; text-align: center;">
-        <table class="table">
-           
-            <tbody>
-              <tr>
-       
-                <td><a href="https://es-la.facebook.com/"  onclick="window.open(this.href, this.target, 'width=1366,height=1000'); return false;"><button style="background: #2E77F2;">Facebook <i class="bi bi-facebook"></i></button></a></td>
-                <td><a href="https://www.youtube.com/" onclick="window.open(this.href, this.target, 'width=1366,height=1000'); return false;"><button style="background: #F40103;">YouTube <i class="bi bi-youtube"></i></button></a></td>
-                <td><a href="../../functions/socialcenter/telegramselect.html" onclick="window.open(this.href, this.target, 'width=1366,height=1000'); return false;"><button style="background: #399FFA;">Telegram <i class="bi bi-telegram"></i></button></a></td>
-              </tr>
-              <tr>
-           
-                <td><a href="https://github.com/" onclick="window.open(this.href, this.target, 'width=1366,height=1000'); return false;"><button style="background: #161B22;">Github <i class="bi bi-github"></i></button></a></td>
-           
-                <td><a href="https://mail.google.com/mail/" onclick="window.open(this.href, this.target, 'width=1366,height=1000'); return false;"><button style="background: #EA4335;">Gmail <i class="bi bi-google"></i></button></a></td>
-                <td><a href="https://discord.com/login" onclick="window.open(this.href, this.target, 'width=1366,height=1000'); return false;"><button style="background: #5865F2;">Discord <i class="bi bi-discord"></i></button></a></td>
-              </tr>
-              <!-- <tr>
-        
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-              </tr> -->
-            </tbody>
-          </table>
-
-    </div>
-    
-   
-   </div>
-           <!-- <div style="padding-right: 10%;"> <a href="../about/c.html" target="_blank" class="btn " style=" float: right; color: white;">About <i class="fas fa-exclamation-circle"></i></a></div> -->
-           <br>
-           <br>
-           <div style="padding-right: 10%;"> <a href="../../functions/market/market.html" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;"target="_blank" class="btn " style=" float: right; color: white;">Notely <i class="far fa-sticky-note"></i></a></div>
-           <br>
-           <br>
-           <div style="padding-right: 10%;"> <a href="../settings/config.html" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;"target="_blank" class="btn " style=" float: right; color: white;">Panel De Control <i class="fas fa-cog"></i></a></div>
-           <br>
-           <br>
-           <div style="padding-right: 10%;"> <a href="https://techappssv.github.io/iconnybrowser/html/blog.html" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;"target="_blank" class="btn " style=" color: white; float: right;">Blog de Iconny  <i class="fas fa-blog"></i></a></div>
-           <form id="formTask2">
-     
-        </form>
-           <script src="../../functions/clock/clock.js"></script>
-           
-         <div id="tasks2" ></div> 
-         <script src="../../munich/config/config3.js"></script>
-        
 </div>
+</div>
+  <br>
+  <br>
+  <br>
+  
+  <FORM method=GET action="https://duckduckgo.com/?q="  >
+
+
+      <input type="text" id="search" placeholder="Search With DuckDuckGo" style="  font-family: 'Montserrat', sans-serif; font-size: 85%; width: 75%; height: 7vh; text-align: left; padding-left: 2%;" name=q size=21 maxlength=255 value="">
+          
+      </FORM>
+      <br>
+      <br>
+
+  <FORM method=GET action="https://www.google.com/search" >
+
+
+    <input type="text" id="search" placeholder="Search With Google" style="   font-family: 'Montserrat', sans-serif; font-size: 85%; width: 75%; height: 7vh; text-align: left; padding-left: 2%;" name=q size=21 maxlength=255 value="">
+
+    
+      </FORM>
+    <br>
+    <br>
+    <button class="buttonkit" ><a href="" style="color: white;" > <i class="far fa-sticky-note"></i> Notely </a></button>
+    <br>
+    <br>
+    <button class="buttonkit" ><a href="" style="color: white;" ><i class="fas fa-cog"></i> Panel de control</a></button>
+<br>
+<br>
+<button class="buttonkit" ><a href="" style="color: white;" >  <i class="fas fa-blog"></i> Blog </a></button>
+
+</div>  
 </body>
 </html>

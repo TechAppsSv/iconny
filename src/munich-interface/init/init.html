@@ -32,20 +32,28 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
 </head>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+<script src="../../munich/image/img.js"></script>
 <link rel="stylesheet" href="../styles/icons/all.css">
 <script src="../wdk-core/icons/"></script>
 <style>
-    body {
-      background: #ee0979;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #383635, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-overflow: auto;
-
-    }
+    
     body::-webkit-scrollbar-track {
 display: none;
+
+background-image: url("https://images.unsplash.com/photo-1531512073830-ba890ca4eba2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=844&q=80");
 }
+body {
+background-image: url("https://images.unsplash.com/photo-1615044484665-b28d6be56285?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          overflow: hidden;
+}
+
     * {
        
  color: white;
@@ -54,13 +62,13 @@ display: none;
 
     }
 </style>
-<body  style="width: 500; height: 320;">
+<body   >
    <br>
    <br>
    <br>
    <br>
 
-   <svg viewbox="0 0 100 20">
+   <svg viewbox="0 0 100 20" class="svgblur" >
     <defs>
       <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
         <stop offset="5%" stop-color="white"/>
@@ -89,7 +97,7 @@ display: none;
     <br>
  <br>
 
-  <button style="border-radius:10px;" class="buttonkit">  <a href="../../munich-interface/settingssecure/config.html" class="btn "  style="color:white; width: 100%;"  onclick="window.open(this.href, this.target, 'width=1366,height=768'); return false;">Panel de control en modo Seguro </a></button>
+  <button style="border-radius:10px;" class="buttonkit">  <a href="../../munich-interface/settingssecure/config.html" class="btn "  style="color:white; width: 100%;"  onclick="window.open(this.href, this.target, 'width=1366,height=768'); return false;">Modo Seguro </a></button>
 
 
 
