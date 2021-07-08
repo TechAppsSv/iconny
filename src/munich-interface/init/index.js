@@ -70,7 +70,7 @@ contextMenu({
   ],
 });
 
-app.disableHardwareAcceleration ();
+
 function createWindow () {
   
   const win = new BrowserWindow({

@@ -6,7 +6,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<script src="Sortable.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
 <title>Iconny</title>   <header>
 	<!-- <style type="text/css">
 	#tab-list .close{
@@ -18,7 +19,7 @@
             var tabID = 1;
             $('#btn-add-tab').click(function () {
                 tabID++;
-                $('#tab-list').append($('<li><a href="#tab' + tabID + '" role="tab" data-toggle="tab">New Tab ' + tabID + '<button style="width: 1px; height: 1px;" type="button"class="close" title="Remove this page">×</button></a></li>'));
+                $('#tab-list').append($('<li style="height:30px;"><a href="#tab' + tabID + '" role="tab" data-toggle="tab">New Tab ' + tabID + '<button style="width: 1px; height: 1px;" type="button"class="close" title="Remove this page">×</button></a></li>'));
                 $('#tab-content').append($('<div class="tab-pane fade" id="tab' + tabID + '">   <webview src="newoptions.html"  style="background: white;" preload="../contextual.js"   useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  " allowpopups id="viewtab" ></webview></div>'));
             });
             $('#tab-list').on('click','.close',function(){
@@ -37,24 +38,26 @@
         });
     </script>
 </head>
-<body class="bodytab">
+<body class="bodytab" onmousemove="reloj()" >
 
-
+<script src="../clock/clock.js"></script>
             <!-- Nav tabs -->
-            <ul id="tab-list" class="nav nav-pills" role="tablist">
+            <ul id="tab-list" class="nav nav-pills" role="tablist" style="overflow: scroll; height: 40px;" >
                 <div style="height: 0.5vh;"></div>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#tab1" role="tab" data-toggle="tab">Iconny</a>
+                <li class="nav-item" style="height: 30px;">
+                    <a class="nav-link active" href="#tab1" id="tabname" role="tab" data-toggle="tab">Iconny</a>
 
                   </li>
- 
+                  <button style="width: 3%; height: 4vh;"  id="btn-add-tab">
+                    <i class="bi bi-plus-circle" style="text-align: center;"></i>
+                      </button>   
             </ul>
 
             <!-- Tab panes -->
             <div id="tab-content" class="tab-content" style="height: 100vh;">
                   <div class="tab-pane fade in active" id="tab1" style="height: 100vh;">
                     <div id="megacontrol">
-                        <div id="controls"class="darkmode-ignore" style="width: 100%; height: 5vh;">
+                        <div id="controls"class="darkmode-ignore" style="width: 100%; height: 50px;">
                           
                           <button id="back" class="darkmode-ignore"style="width: 3%; height: 4vh;" title="Go Back" disabled="true"><i class="bi bi-chevron-left"></i></button>
                           <button id="forward"class="darkmode-ignore"style="width: 3%; height: 4vh;" title="Go Forward" disabled="true"><i class="bi bi-chevron-right"></i></button>
@@ -86,13 +89,11 @@
                       
                           <div id="tasks4" ></div> 
                           <button id="borrador1" style="width: 2%; height: 4vh;" onclick="insertText('txt1', 'http:/');"><i class="bi bi-cursor-text"></i></button>
-                          <button style="width: 2%; height: 4vh;"> <a href="../../munich-interface/settings/config.html" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;"><i class="bi bi-gear"> </i></a></button>
-                          <button style="width: 2%; height: 4vh;"> <a href="more.html" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;"y ><i class="bi bi-file-diff"></i></a></button>
+                          <button style="width: 2%; height: 4vh;"> <a href="../../munich-interface/settings/config.html" onclick="window.open(this.href, this.target, 'width=1020,height=700'); return false;"><i class="bi bi-zoom-in"></i></a></button>
+                          <!-- <button style="width: 2%; height: 4vh;"> <a href="more.html" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;"y ><i class="bi bi-file-diff"></i></a></button> -->
                       
-                    <button style="width: 3%; height: 4vh;"  id="btn-add-tab">
-                  <i class="bi bi-plus-circle" style="text-align: center;"></i>
-                    </button>   
-                          <button style="width: 2%; height: 4vh;"> <a href="#" onclick="window.close()" ><i class="bi bi-x-circle"> </i></a></button>
+                  
+                          <button style="width: 2%; height: 4vh;"> <a href="../../munich-interface/init/init.html"><i class="bi bi-arrow-bar-right"></i></a></button>
                           
                         </div>
                           <!-- control -->
@@ -117,6 +118,10 @@
                               </div>
                           
                        </div>
+                <!-- <div style="height: 2vh;"><form name="form_reloj" >
+                  <input id="clock" type="text" name="reloj" style="height: 2vh; font-family: 'Montserrat', sans-serif; width: 7%;" size="5">
+                       </form> </div> -->
+                       
                   <webview src="../../munich-interface/newtab/newtab.html"  style="background: white;" preload="../contextual.js"   useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  " allowpopups id="view" ></webview>
 
                   </div>
@@ -135,7 +140,7 @@
     <style>
         * {
       overflow: hidden;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     }
       controls {
 

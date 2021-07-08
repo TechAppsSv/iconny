@@ -1,0 +1,79 @@
+.divclass {
+    background-color: rgba(105, 104, 104, 0.3);
+            border-radius: 5px;
+           
+            text-align: center;
+            line-height: 1;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+  }
+  body{
+   
+      animation: fadein 2s;
+      -moz-animation: fadein 2s; /* Firefox */
+      -webkit-animation: fadein 2s; /* Safari and Chrome */
+      -o-animation: fadein 2s; /* Opera */
+  }
+  @keyframes fadein {
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+  }
+  @-moz-keyframes fadein { /* Firefox */
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+  }
+  @-webkit-keyframes fadein { /* Safari and Chrome */
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+  }
+  @-o-keyframes fadein { /* Opera */
+      from {
+          opacity:0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+
+  body {
+
+
+    background-repeat: no-repeat;
+	background-size: 100% 150%;
+    }
+    .wrapper {
+       
+    }
+    .bodyphone {
+        background-image: url("../desert-dark-by-mike-yukhtenko.jpg");
+    
+        background-repeat: no-repeat;
+        background-size: 300% 250%;
+        }
+        .wrapper {
+           
+        }
+    
+    #slide {
+        position: absolute;
+        left: -100px;
+       
+        transition: 1s;
+    }
+    
+    .wrapper:hover #slide {
+        transition: 1s;
+        left: 0;
+    }

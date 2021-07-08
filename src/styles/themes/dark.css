@@ -2,10 +2,13 @@
 * {
 
     color: white;
-  border-color:   rgba(105, 104, 104, 0.3);
+
   
 
 
+}
+.fas fa-code-branch {
+  color: black;
 }
 .dropdown {
   position: relative;
@@ -29,24 +32,31 @@
   display: block;
 }
 body {
-  background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #434343, #303030); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background: #000000;  /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to right, #434343, #000000); 
+  background: linear-gradient(to right, #434343, #303030);
+    color: white;
+  border-color:   rgba(105, 104, 104, 0.3); */
+  background-image: url("../desert-dark-by-mike-yukhtenko.jpg");
+
+}
+#clock {
+  background: black;
+  color: white;
+}
+.bodytab {
+background: rgb(22, 21, 21);
   
     color: white;
   border-color:   rgba(105, 104, 104, 0.3);
 
 
 }
-.bodytab {
-  background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #434343, #303030); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+#tab-list::-webkit-scrollbar {
 
-  
-    color: white;
-  border-color:   rgba(105, 104, 104, 0.3);
-
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    display: none;  /* Ocultar scroll */
 
 }
 .darkmode--activated p, .darkmode--activated li {
@@ -63,7 +73,7 @@ body {
 #controls{
   background-color: rgba(19, 0, 0, 0.3);
   border-radius: 5px;
- 
+  
   text-align: center;
   line-height: 1;
   backdrop-filter: blur(10px);
@@ -73,7 +83,7 @@ body {
     button{
       /* background-color: rgba(105, 104, 104, 0.3); */
       border-radius: 5px;
-     
+      font-family: 'Montserrat', sans-serif;
       text-align: center;
       line-height: 1;
       /* backdrop-filter: blur(10px);
@@ -87,7 +97,7 @@ body {
         .buttonmono{
           background-color: rgba(105, 104, 104, 0.3);
           border-radius: 5px;
-         
+          font-family: 'Montserrat', sans-serif;
           text-align: center;
           line-height: 1;
           backdrop-filter: blur(10px);
@@ -105,6 +115,18 @@ body {
         
           
             }
+            td{
+              background-color: rgba(105, 104, 104, 0.3);
+              border-radius: 5px;
+             
+              text-align: center;
+              line-height: 1;
+              backdrop-filter: blur(10px);
+              -webkit-backdrop-filter: blur(10px);
+            
+              
+                }
+         
             .tab{
                 background-color: rgba(105, 104, 104, 0.3);
                 border-radius: 5px;
@@ -188,7 +210,7 @@ body {
       
       }
       #location{
-          border:black; color: white;  width: 80%; height: 4vh;  border-radius: 10px;font-family: 'Poppins', sans-serif; text-align: center; padding-left: 2%;
+          border:black; color: white;  width: 80%; height: 37px;  border-radius: 10px;font-family: 'Montserrat', sans-serif; text-align: center; padding-left: 2%;
         
         }
         input {
@@ -199,9 +221,11 @@ body {
           line-height: 1;
           backdrop-filter: blur(10px);
           -webkit-backdrop-filter: blur(10px);
-          border:black; color: white;  width: 80%; height: 4vh;  border-radius: 10px;font-family: 'Poppins', sans-serif; text-align: center; padding-left: 2%;
+          border:black; color: white;  width: 80%; height: 40px;  border-radius: 10px;
+          font-family: 'Montserrat', sans-serif; text-align: center; padding-left: 2%;
           text-decoration: none;
- 
+          outline: none;
+
         }
         li{
           background-color: rgba(117, 115, 115, 0.3);
@@ -211,7 +235,7 @@ body {
           line-height: 1;
           backdrop-filter: blur(10px);
           -webkit-backdrop-filter: blur(10px);
-          border:black; color: white;  width: 10%; height: 2.8vh;  border-radius: 7px;font-family: 'Poppins', sans-serif; text-align: center; 
+          border:black; color: white;  width: 10%; height: 2.8vh;  border-radius: 7px;font-family: 'Montserrat', sans-serif; text-align: center; 
           text-decoration: none;
  
         }

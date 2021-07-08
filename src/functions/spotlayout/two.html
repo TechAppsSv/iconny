@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpotLayout Two</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="../../munich/rebooter/rebooter.js"></script>
+    <form id="formTask2">
+     
+    </form>
+    
+             <div id="tasks2" ></div> 
+             <script src="../../munich/config/config2.js"></script>
+</head>
+<body style="background: rgb(6, 1, 24); overflow: hidden;">
+    <div style="width: 100%;">
+    <div style="width: 50%; float: left; " >
+        <button onclick="reboot()" style="height: 40px; width: 100%;" class="buttonmono" ><i class="bi bi-house"></i></button>
+        <webview src="../../munich-interface/newtab/newtabspot.html"  id="view1" style="background: white; height: 100vh; width: 100%;" preload="../contextual.js"   useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  "   allowpopups ></webview>
+    
+    </div>
+<div style="width: 50%; float: right; " >
+    <button onclick="reboot2()" style="height: 40px; width: 100%;" class="buttonmono" ><i class="bi bi-house"></i></button>
+
+    <webview src="../../munich-interface/newtab/newtabspot.html" id="view2"  style="background: white; height: 100vh; width: 100%;" preload="../contextual.js"   useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  "   allowpopups ></webview>
+
+</div> 
+</div>
+</body>
+</html>

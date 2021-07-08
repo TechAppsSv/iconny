@@ -5,25 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
     <link rel="stylesheet" href="../../styles/index/indexoverflow.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="../../styles/icons/all.css">
 <script src="../../functions/icons/all.js"></script>
 <link rel="stylesheet" href="../../monocromatix/monocromatix.css">
-
+<link rel="stylesheet" href="../../styles/themes/dark.css">
+<link rel="stylesheet" href="../../styles/effects/effects2.css">
 </head>
 <style>
  body {
-    background: #ee0979;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 
 
   }
 </style>
-<body style="color: white;" onload="reloj()">
+<body style="color: white;" class="bodyphone" onload="reloj()">
 
     <br>
     <br>
@@ -45,18 +43,16 @@ background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, F
    <div style="padding-left:1%;">
     <FORM method=GET action="https://duckduckgo.com/?q="  >
 
+        <input type="text" id="search" placeholder="Search With DuckDuckGo" style="  font-family: 'Montserrat', sans-serif; font-size: 85%; width: 75%; height: 7vh; text-align: left; padding-left: 2%;" name=q size=21 maxlength=255 value="">
 
-        <INPUT type="text" id="search" placeholder="Search With DuckDuckGo"  name=q size=31 maxlength=255 value="">
             
         </FORM>
         <br>
         <br>
 
     <FORM method=GET action="https://www.google.com/search" >
+        <input type="text" id="search" placeholder="Search With Google" style="  font-family: 'Montserrat', sans-serif; font-size: 85%; width: 75%; height: 7vh; text-align: left; padding-left: 2%;" name=q size=21 maxlength=255 value="">
 
-
-        <INPUT type="text" id="search"  placeholder="Search With Google" name=q size=31 maxlength=255 value="">
-        
         </FORM>
       
         
