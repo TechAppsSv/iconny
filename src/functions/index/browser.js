@@ -15,7 +15,7 @@ onload = function() {
   };
 
   document.querySelector('#home').onclick = function() {
-    navigateTo('../../wdk/newtab/newtab.html');
+    navigateTo('../../munich-interface/newtab/newtab.html');
   };
 
   document.querySelector('#reload').onclick = function() {

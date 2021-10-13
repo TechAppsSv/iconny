@@ -20,7 +20,7 @@
             $('#btn-add-tab').click(function () {
                 tabID++;
                 $('#tab-list').append($('<li style="height:30px;"><a href="#tab' + tabID + '" role="tab" data-toggle="tab">New Tab ' + tabID + '<button style="width: 1px; height: 1px;" type="button"class="close" title="Remove this page">×</button></a></li>'));
-                $('#tab-content').append($('<div class="tab-pane fade" id="tab' + tabID + '">   <webview src="newoptions.html"  style="background: white;" preload="../contextual.js"   useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  " allowpopups id="viewtab" ></webview></div>'));
+                $('#tab-content').append($('<div class="tab-pane fade" id="tab' + tabID + '">   <webview src="newoptions.html"  style="background: white;" preload="../contextual.js"   useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0" allowpopups id="viewtab" ></webview></div>'));
             });
             $('#tab-list').on('click','.close',function(){
                 var tabID = $(this).parents('a').attr('href');
@@ -89,7 +89,7 @@
                       
                           <div id="tasks4" ></div> 
                           <button id="borrador1" style="width: 2%; height: 4vh;" onclick="insertText('txt1', 'http:/');"><i class="bi bi-cursor-text"></i></button>
-                          <button style="width: 2%; height: 4vh;"> <a href="../../munich-interface/settings/config.html" onclick="window.open(this.href, this.target, 'width=1020,height=700'); return false;"><i class="bi bi-zoom-in"></i></a></button>
+                          <!-- <button style="width: 2%; height: 4vh;"> <a href="../../munich-interface/settings/config.html" onclick="window.open(this.href, this.target, 'width=1020,height=700'); return false;"><i class="bi bi-zoom-in"></i></a></button> -->
                           <!-- <button style="width: 2%; height: 4vh;"> <a href="more.html" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;"y ><i class="bi bi-file-diff"></i></a></button> -->
                       
                   
@@ -122,7 +122,7 @@
                   <input id="clock" type="text" name="reloj" style="height: 2vh; font-family: 'Montserrat', sans-serif; width: 7%;" size="5">
                        </form> </div> -->
                        
-                  <webview src="../../munich-interface/newtab/newtab.html"  style="background: white;" preload="../contextual.js"   useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 Edge/88.0.705.50  " allowpopups id="view" ></webview>
+                  <webview src="../../munich-interface/newtab/newtab.html"  style="background: white;" preload="../contextual.js"   useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0 " allowpopups id="view" ></webview>
 
                   </div>
             </div>
