@@ -30,6 +30,8 @@ function createNewProductWindow() {
   newProductWindow = new BrowserWindow({
     width: 1920,
     height: 1080,
+    minWidth: 800,
+    minHeight:600,
     title: 'Nuevo',
     frame: false,
     

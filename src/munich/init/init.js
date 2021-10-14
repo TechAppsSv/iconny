@@ -48,7 +48,8 @@ function createWindow () {
   const mainWindow = new BrowserWindow({
     width: 1280,
     height: 720,
-    
+    minWidth: 1280,
+    minHeight:800,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       webviewTag: true
@@ -66,6 +67,8 @@ function createNewProductWindow() {
   newProductWindow = new BrowserWindow({
     width: 1020,
     height: 700,
+    minWidth: 1280,
+    minHeight:800,
     title: 'SpotFinder',
   
     
@@ -98,6 +101,8 @@ function createNewProductWindow2() {
   newProductWindow2 = new BrowserWindow({
     width: 1020,
     height: 700,
+    minWidth: 1280,
+    minHeight:800,
     title: 'About',
   
     
@@ -129,6 +134,8 @@ function createNewProductWindow3() {
   newProductWindow3 = new BrowserWindow({
     width: 1280,
     height: 720,
+    minWidth: 1280,
+    minHeight:800,
     title: 'New Window',
   
     
