@@ -2,62 +2,60 @@
 
 ### Goodbye spying and welcome privacy
 
-## Pagina Web Oficial
-###  https://techappssv.github.io/iconnybrowser/
+## Official Website
+### https://techappssv.github.io/iconnybrowser/
 
-## Ultima Version Stable
-###  https://github.com/TechAppsSv/iconny/releases
+## Latest Version Stable
+### https://github.com/TechAppsSv/iconny/releases
 
-## Ultima LTS : Iconny 17 "Stone" LTS Workstation 
+## Ultima LTS: Iconny 17 "Stone" LTS Workstation
 ### https://github.com/TechAppsSv/iconny-lts/releases/tag/17
 
-## Blog de lanzamientos
+## Release blog
 ### https://techappssv.github.io/iconnybrowser/html/blog.html
 
-#### Iconny es un navegador de codigo abierto construido de a partir de ElectronJS Y WDK como controlador y nucleo
-#### Hecho para ser un navegador ligero y rapido 
+#### Iconny is an open source browser built from ElectronJS AND Munich as the core
+#### Made to be a light and fast browser
 
-## Caracteristicas de Iconny
-### Siempre en Incognito
-#### Iconny esta hecho para que no se guarde tu historial pero sin perder tu informacion al cerrar el navegador
-### Bloqueador de anuncios
-#### Iconny posee un bloqueador de anuncios integrado 
-###  Notely WDK
-#### Gracias al codigo de WDK Iconny posee Notely que un sistema muy basico de notas y que si estas son links puedes abrirlas todo esto guardado en LocalStorage
-###  Devtools WDK 
-####  Gracias al codigo de WDK Iconny posee Devtools WDK que es una serie de pestañas webs para el desarrollo ademas de herramientas como abrir paginas para 
-#### el desarrollo web habitual , buscadores y todo esto administrado mediantes pestañas de Boostrap
-### Interfaz Dark 
-#### La interfaz en modo dark de Iconny gracias a los estilos CSS de Monocromatix que esta diseñada para no cansar la vista y ser agradable
-#### durante el dia y la noches ademas de ser ligera
-### Rapido y Ligero
-#### Iconny tiene un rendimiento a la altura de los mejores navegadores y ser mas ligero que los demas 
-### Nada de telemetria
-#### Iconny respeta la privacidad del usuario y no posee ninguna telenmetria ni si quiera telemetria opcional
-### Bloqueador de Pop Ups
-#### Iconny posee un bloqueador de pop ups + bloqueador de anuncios para que estes seguro
-### Codigo Abierto 
-#### Iconny a pesar de ser muy basico siempre es codigo abierto que puede servir para mejorar el navegador o servir de base para otros
-### Multiplataforma 
-#### Iconny esta presente en las tres principales plataformas Mac, Linux y Windows 
+## Iconny Features
+### Always in Incognito
+#### Iconny is made so that your history is not saved but without losing your information when closing the browser
+### Ad blocker
+#### Iconny has a built-in ad blocker
+### Notely
+#### Thanks to the Iconny code, Notely has a very basic system of notes and that if these are links you can open them all saved in LocalStorage
 
-### Modo Secundario
-#### Iconny posee una sesion para usarlo como un perfil diferente al inicial
+### Dark interface
+#### Iconny's dark mode interface thanks to the Monocromatix CSS styles that is designed not to tire the eyes and to be pleasant
 
-## Instrucciones de compilacion y desarrollo 
-### Clonar el repositorio
+#### during the day and at night besides being light
+### Fast and Light
+#### Iconny has a performance at the level of the best browsers and is lighter than the others
+### No telemetry
+#### Iconny respects the privacy of the user and does not have any telemetry or even optional telemetry
+
+### Open Source
+#### Iconny despite being very basic is always open source that can be used to improve the browser or serve as a basis for others
+### Multi platform
+#### Iconny is present on the three main platforms Mac, Linux and Windows
+
+### Secondary Mode
+#### Iconny has a session to use it as a different profile than the initial one
+
+## Build and development instructions
+### Clone the repository
 #### git clone https://github.com/TechAppsSv/iconny.git
-### Ir al directorio
+### Go to directory
 #### cd iconny
-### Instalar las dependencias con NPM
-#### npm i  
-### Iniciar en modo desarrollo
+### Install dependencies with NPM
+#### npm i
+### Start in development mode
 #### npm run start
-### Compilar para linux en AppImage y snap
+### Compile for linux in AppImage and snap
 #### npm run build-linux
-### Compilar para Windows en .exe
+### Compile for Windows into .exe
 #### npm run build-win
 
 
-#### Ultima Actualizacion de este documento
-##### 21 de junio del 2021
+#### Last Update of this document
+##### October 19, 2021

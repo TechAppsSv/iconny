@@ -16,7 +16,7 @@ onload = function() {
   };
 
   document.querySelector('#home').onclick = function() {
-    navigateTo('../../wdk/newtab/newtab.html');
+    navigateTo('../../munich-interface/newtab/newtabphone.html');
   };
   
 
