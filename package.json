@@ -1,7 +1,7 @@
 {
 	"name": "iconny",
 	"productName": "Kaihatsu Iconny Browser",
-	"version": "20.1.8",
+	"version": "20.1.9",
 	"description": "Maxima rapidez y ligereza y minimalismo",
 	"main": "src/munich/init/init.js",
 	"scripts": {
@@ -37,6 +37,7 @@
 		"linux": {
 			"category": "Browser",
 			"target": [
+				"AppImage",
 				"snap"
 			],
 			"icon": "build/background.png"
