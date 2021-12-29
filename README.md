@@ -8,12 +8,19 @@
 ## Latest Version Stable
 ### https://github.com/TechAppsSv/iconny/releases
 
-## Ultima LTS: Iconny 17 "Stone" LTS Workstation
-### https://github.com/TechAppsSv/iconny-lts/releases/tag/17
 
 ## Release blog
 ### https://techappssv.github.io/iconnybrowser/html/blog.html
-
+#
+## Snap Version
+[![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/iconny)
+#
+## Editions
+### Iconny Workstation LTS
+https://github.com/TechAppsSv/iconny-workstation
+### Iconny Arcade
+https://github.com/TechAppsSv/iconny-arcade
+#
 #### Iconny is an open source browser built from ElectronJS AND Munich as the core
 #### Made to be a light and fast browser
 
