@@ -2,9 +2,9 @@
 
 
 
-var text2 = document.createTextNode("Electron 15.3.2 y Electron 12.0.9 (Solo MacOs)");                                    
+var text2 = document.createTextNode("Electron 16.0.2");                                    
 document.getElementById("electron-version-munich").appendChild(text2); 
-var text3 = document.createTextNode("1.2 Stable");                                    
+var text3 = document.createTextNode("1.3 Stable");                                    
 document.getElementById("munich-version").appendChild(text3); 
-var text5 = document.createTextNode(" 20.3 Windows");                                    
+var text5 = document.createTextNode(" 21 (Alpha 03291221)");                                    
 document.getElementById("version").appendChild(text5); 

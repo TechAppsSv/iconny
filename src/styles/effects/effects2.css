@@ -56,11 +56,17 @@
     .wrapper {
        
     }
-    .bodyphone {
-        background-image: url("../desert-dark-by-mike-yukhtenko.jpg");
+    .bodyphone2 {
+        background-image: url("../benjamin-voros-phIFdC6lA4E-unsplash.jpg");
     
         background-repeat: no-repeat;
-        background-size: 300% 250%;
+        background-size: 500% 250%;
+        }
+    .bodyphone {
+        background-image: url("../benjamin-voros-phIFdC6lA4E-unsplash.jpg");
+    
+        background-repeat: no-repeat;
+        background-size: 420% 250%;
         }
         .wrapper {
            

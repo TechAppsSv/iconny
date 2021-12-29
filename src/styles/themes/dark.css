@@ -37,7 +37,7 @@ body {
   background: linear-gradient(to right, #434343, #303030);
     color: white;
   border-color:   rgba(105, 104, 104, 0.3); */
-  background-image: url("../desert-dark-by-mike-yukhtenko.jpg");
+  background-image: url("../benjamin-voros-phIFdC6lA4E-unsplash.jpg");
 
 }
 #clock {
@@ -474,3 +474,11 @@ background: rgb(22, 21, 21);
             background: linear-gradient(to right, #434343, #303030); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
                 }
                 
+                #tabsecond {
+                  background: #1c1c1c;
+                  }              
+                
+                  #tabname {
+                    background: #010101;
+                    
+                    }              
