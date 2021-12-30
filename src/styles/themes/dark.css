@@ -37,8 +37,8 @@ body {
   background: linear-gradient(to right, #434343, #303030);
     color: white;
   border-color:   rgba(105, 104, 104, 0.3); */
-  background-image: url("../benjamin-voros-phIFdC6lA4E-unsplash.jpg");
-
+  background-image: url("../kevin-brunet-fBiBSkcplMo-unsplash.jpg");
+/* filter: brightness(1%); */
 }
 #clock {
 
@@ -228,13 +228,13 @@ background: rgb(22, 21, 21);
 
         }
         li{
-          background-color: rgba(117, 115, 115, 0.3);
+          /* background-color: rgba(117, 115, 115, 0.3); */
           border-radius: 10px;
          
           text-align: center;
           line-height: 1;
-          backdrop-filter: blur(10px);
-          -webkit-backdrop-filter: blur(10px);
+          /* backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px); */
           border:black; color: white;  width: 10%; height: 2.8vh;  border-radius: 7px;font-family: 'Montserrat', sans-serif; text-align: center; 
           text-decoration: none;
  

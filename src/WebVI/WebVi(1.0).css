@@ -178,3 +178,16 @@
       height: 83vh;
       }
       }
+
+
+     
+      @media all and (max-width: 1920px){
+        #appsnew{
+       padding-left: 40%;
+        }
+        }
+        @media all and (max-width: 1280px){
+        #appsnew{
+       padding-left: 35%;
+        }
+        }

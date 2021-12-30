@@ -58,7 +58,7 @@ background: black;
 #controls{
 
   border-radius: 5px;
- background: rgb(32, 31, 31);
+ background: black;
   text-align: center;
   line-height: 1;
 
@@ -332,4 +332,24 @@ background: black;
             background: #000000;  /* fallback for old browsers */
      
                 }
+                li{
+                  /* background-color: rgba(255, 255, 255, 0.3); */
+          
+                  border-radius: 10px;
+                 
+                  text-align: center;
+                  line-height: 1;
+                  /* backdrop-filter: blur(10px);
+                  -webkit-backdrop-filter: blur(10px); */
+                  border:black; color: black;  width: 10%; height: 2.8vh;  border-radius: 7px;font-family: 'Montserrat', sans-serif; text-align: center; 
+                  text-decoration: none;
+          
+                }
+                #tabsecond {
+                  background: #1c1c1c;
+                  }              
                 
+                  #tabname {
+                    background: #010101;
+                    
+                    }              

@@ -376,4 +376,23 @@
           #tabname{
     color: black;
           }
+          #tabsecond {
+            background: #a8a7a7;
+            }              
+          
+            #tabname {
+              background: #d1cfcf;
               
+              }              
+              li{
+                /* background-color: rgba(117, 115, 115, 0.3); */
+                border-radius: 10px;
+               
+                text-align: center;
+                line-height: 1;
+                /* backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px); */
+                border:black; color: white;  width: 10%; height: 2.8vh;  border-radius: 7px;font-family: 'Montserrat', sans-serif; text-align: center; 
+                text-decoration: none;
+       
+              }
