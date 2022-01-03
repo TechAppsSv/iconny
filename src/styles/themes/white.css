@@ -241,6 +241,21 @@ color: black;
         outline: none;
 
       }
+      #bodynew{
+        background-color: rgba(255, 255, 255, 0.3);
+
+        border-radius: 10px;
+       
+       
+        line-height: 1;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border:black; color: black;   border-radius: 10px;
+        font-family: 'Montserrat', sans-serif; 
+        text-decoration: none;
+        outline: none;
+
+      }
       li{
         /* background-color: rgba(255, 255, 255, 0.3); */
 

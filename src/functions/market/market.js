@@ -46,7 +46,11 @@ function getTasks() {
     let title = tasks[i].title;
     let description = tasks[i].description;
 
-    tasksView.innerHTML += `<div class="divblur">
+    tasksView.innerHTML += `
+    <br>
+    <br>
+   
+    <div class="divblur">
         <div>
         <br>
           <p ><h4 style="text-align:center; ">${title}</h4> 
