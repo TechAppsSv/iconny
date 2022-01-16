@@ -1,7 +1,7 @@
 {
 	"name": "iconny",
 	"productName": "Kaihatsu Iconny Browser",
-	"version": "21.4.4",
+	"version": "21.7.4",
 	"description": "Maxima rapidez y ligereza y minimalismo",
 	"main": "src/munich/init/init.js",
 	"scripts": {
@@ -63,7 +63,7 @@
 		"electron-tabs": "^0.15.0"
 	},
 	"devDependencies": {
-		"electron": "^16.0.2",
+		"electron": "^16.0.5",
 		"electron-builder": "^22.9.1",
 		"electron-installer-dmg": "^3.0.0",
 		"electron-packager": "^15.2.0"

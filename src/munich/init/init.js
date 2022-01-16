@@ -67,7 +67,7 @@ function createNewProductWindow() {
   newProductWindow = new BrowserWindow({
     width: 1020,
     height: 700,
-    minWidth: 1280,
+    minWidth: 1280,     
     minHeight:800,
     title: 'SpotFinder',
   
@@ -212,7 +212,34 @@ const template = [
           { role: 'togglefullscreen' }
         ]
       },
-
+      {
+        label: 'ActionsBasic',
+        submenu: [
+          { role: 'undo' },
+          { role: 'redo' },
+          { type: 'separator' },
+          { role: 'cut' },
+          { role: 'copy' },
+          { role: 'paste' },
+          ...(isMac ? [
+            { role: 'pasteAndMatchStyle' },
+            { role: 'delete' },
+            { role: 'selectAll' },
+            { type: 'separator' },
+            {
+              label: 'Speech',
+              submenu: [
+                { role: 'startSpeaking' },
+                { role: 'stopSpeaking' }
+              ]
+            }
+          ] : [
+            { role: 'delete' },
+            { type: 'separator' },
+            { role: 'selectAll' }
+          ])
+        ]
+      },
       {
         label: 'About',
         accelerator: 'Ctrl+M',

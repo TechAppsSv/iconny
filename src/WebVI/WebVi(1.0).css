@@ -61,6 +61,12 @@
               height: 95vh;
               }
               }
+              @media all and (max-width: 1659px){
+                #viewtab{
+                 width:100%; 
+                height: 95vh;
+                }
+                }
 
   @media all and (max-width: 1920px){
     #nav-body-views{
