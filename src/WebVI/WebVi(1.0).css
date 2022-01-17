@@ -1,199 +1,200 @@
-@media screen and (min-width: 600px) {
-  #cambio button {
-  top: 25;
+  /* WEBVI 6.5 By TechApps */
+  @media screen and (min-width: 600px) {
+    #cambio button {
+    top: 25;
+    }
   }
-}
-@media all and (max-width: 1920px){
-  #view{
-  width:100%;
-  height: 89vh;
-  }
-  }
-
-  @media all and (max-width: 1366px){
+  @media all and (max-width: 1920px){
     #view{
     width:100%;
-    height: 86vh;
+    height: 89vh;
     }
     }
-    
-    @media all and (max-width: 1600px){
+
+    @media all and (max-width: 1366px){
       #view{
-       width:100%; 
+      width:100%;
       height: 86vh;
       }
       }
-    @media all and (max-width: 1440px){
-      #view{
-       width:100%; 
-      height: 91vh;
-      }
-      }
-      /* TABS */
-      @media all and (max-width: 1920px){
-        #viewtab{
-        width:100%;
-        height: 95vh;
-        }
-        }
       
-        @media all and (max-width: 1366px){
+      @media all and (max-width: 1600px){
+        #view{
+        width:100%; 
+        height: 86vh;
+        }
+        }
+      @media all and (max-width: 1440px){
+        #view{
+        width:100%; 
+        height: 91vh;
+        }
+        }
+        /* TABS */
+        @media all and (max-width: 1920px){
           #viewtab{
           width:100%;
-          height: 86vh;
+          height: 95vh;
           }
           }
-          @media all and (max-width: 1600px){
+        
+          @media all and (max-width: 1366px){
             #viewtab{
-             width:100%; 
+            width:100%;
             height: 86vh;
             }
             }
-          @media all and (max-width: 1440px){
-            #viewtab{
-             width:100%; 
-            height: 86vh;
-            }
-            }
-            @media all and (max-width: 1280px){
+            @media all and (max-width: 1600px){
               #viewtab{
-               width:100%; 
-              height: 95vh;
+              width:100%; 
+              height: 86vh;
               }
               }
-              @media all and (max-width: 1659px){
+            @media all and (max-width: 1440px){
+              #viewtab{
+              width:100%; 
+              height: 86vh;
+              }
+              }
+              @media all and (max-width: 1280px){
                 #viewtab{
-                 width:100%; 
+                width:100%; 
                 height: 95vh;
                 }
                 }
+                @media all and (max-width: 1659px){
+                  #viewtab{
+                  width:100%; 
+                  height: 95vh;
+                  }
+                  }
 
-  @media all and (max-width: 1920px){
-    #nav-body-views{
-     width:100%; 
-    height: 89.5vh;
-    }
-    }
-    
-    @media all and (max-width: 1600px){
-      #nav-body-views{
-       width:100%; 
-      height: 86vh;
-      }
-      }
-    @media all and (max-width: 1440px){
-      #nav-body-views{
-       width:100%; 
-      height: 86vh;
-      }
-      }
     @media all and (max-width: 1920px){
-      #devtools{
-       width:100%; 
-      height: 87vh;
+      #nav-body-views{
+      width:100%; 
+      height: 89.5vh;
       }
       }
-      @media all and (max-width: 1366px){
+      
+      @media all and (max-width: 1600px){
+        #nav-body-views{
+        width:100%; 
+        height: 86vh;
+        }
+        }
+      @media all and (max-width: 1440px){
+        #nav-body-views{
+        width:100%; 
+        height: 86vh;
+        }
+        }
+      @media all and (max-width: 1920px){
         #devtools{
-         width:100%; 
-        height: 83vh;
+        width:100%; 
+        height: 87vh;
         }
         }
-        @media all and (max-width: 1920px){
-          #devtools2{
-       width: 1px;
-          height: 91.5vh;
+        @media all and (max-width: 1366px){
+          #devtools{
+          width:100%; 
+          height: 83vh;
           }
           }
-          @media all and (max-width: 1600px){
+          @media all and (max-width: 1920px){
             #devtools2{
-             width:100%; 
-            height: 79.5vh;
+        width: 1px;
+            height: 91.5vh;
             }
             }
-    @media all and (max-width: 1920px){
-      #flotante{
-       width:10%; 
-      height: 95vh;
-      float: right;
-    
-      }
-      }
-      @media all and (max-width: 1366px){
+            @media all and (max-width: 1600px){
+              #devtools2{
+              width:100%; 
+              height: 79.5vh;
+              }
+              }
+      @media all and (max-width: 1920px){
         #flotante{
-         width:50%; 
-        height: 83vh;
+        width:10%; 
+        height: 95vh;
         float: right;
-       
+      
         }
         }
-        @media all and (max-width: 1440px){
+        @media all and (max-width: 1366px){
           #flotante{
-           width:50%; 
-          height: 85vh;
-          float: right;
-       
-          }
-          }
-          @media all and (max-width: 1600px){
-            #flotante{
-             width:50%; 
-            height: 90vh;
-            float: right;
-         
-            }
-            }
-        @media all and (max-width: 1920px){
-          #flotante2{
-           width:50%; 
-          height: 100vh;
+          width:50%; 
+          height: 83vh;
           float: right;
         
           }
           }
-          @media all and (max-width: 1366px){
+          @media all and (max-width: 1440px){
+            #flotante{
+            width:50%; 
+            height: 85vh;
+            float: right;
+        
+            }
+            }
+            @media all and (max-width: 1600px){
+              #flotante{
+              width:50%; 
+              height: 90vh;
+              float: right;
+          
+              }
+              }
+          @media all and (max-width: 1920px){
             #flotante2{
-             width:50%; 
-            height: 83vh;
+            width:50%; 
+            height: 100vh;
             float: right;
           
             }
             }
-            @media all and (max-width: 1440px){
+            @media all and (max-width: 1366px){
               #flotante2{
-               width:50%; 
-              height: 85vh;
+              width:50%; 
+              height: 83vh;
               float: right;
             
               }
               }
-              @media all and (max-width: 1600px){
+              @media all and (max-width: 1440px){
                 #flotante2{
-                 width:50%; 
+                width:50%; 
                 height: 85vh;
                 float: right;
               
                 }
                 }
-        
+                @media all and (max-width: 1600px){
+                  #flotante2{
+                  width:50%; 
+                  height: 85vh;
+                  float: right;
+                
+                  }
+                  }
+          
+      
     
-  
-    @media all and (max-width: 1366px){
-      #nav-body-views{
-         width:100%; 
-      height: 83vh;
-      }
-      }
+      @media all and (max-width: 1366px){
+        #nav-body-views{
+          width:100%; 
+        height: 83vh;
+        }
+        }
 
 
-     
-      @media all and (max-width: 1920px){
-        #appsnew{
-       padding-left: 40%;
-        }
-        }
-        @media all and (max-width: 1280px){
-        #appsnew{
-       padding-left: 35%;
-        }
-        }
+      
+        @media all and (max-width: 1920px){
+          #appsnew{
+        padding-left: 40%;
+          }
+          }
+          @media all and (max-width: 1280px){
+          #appsnew{
+        padding-left: 35%;
+          }
+          }
