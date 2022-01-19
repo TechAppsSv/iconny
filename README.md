@@ -51,18 +51,29 @@ https://github.com/TechAppsSv/iconny-arcade
 
 ## Build and development instructions
 ### Clone the repository
-#### git clone https://github.com/TechAppsSv/iconny.git
+~~~ 
+git clone https://github.com/TechAppsSv/iconny.git 
+~~~
 ### Go to directory
-#### cd iconny
+~~~
+cd iconny
+~~~
 ### Install dependencies with NPM
-#### npm i
+~~~
+ npm i
+ ~~~
 ### Start in development mode
-#### npm run start
+~~~
+npm run start
+~~~
 ### Compile for linux in AppImage and snap
-#### npm run build-linux
+~~~
+ npm run build-linux
+~~~
 ### Compile for Windows into .exe
-#### npm run build-win
-
+~~~
+ npm run build-win
+~~~
 
 #### Last Update of this document
-##### December 29, 2021
+##### Janaury 19, 2022

@@ -36,8 +36,8 @@
 		"linux": {
 			"category": "Browser",
 			"target": [
-				"AppImage",
-				"snap"
+				"AppImage"
+				
 			],
 			"icon": "build/background.png"
 		},
