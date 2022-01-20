@@ -50,7 +50,7 @@ function getTasks4() {
     tasks4View.innerHTML += `
 
 
-    <button id="borrador${title4}" style="width: 30px; height: 4vh;" onclick="insertText('txt1', 'http:/');"><i class="bi bi-search"></i></button>
+    <button id="borrador${title4}" style="width: 30px; font-family: 'Jost', sans-serif; height: 4vh;" onclick="insertText('txt1', 'http:/');"><i class="bi bi-search"></i></button>
    
          `;
   }

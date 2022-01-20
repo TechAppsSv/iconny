@@ -2,9 +2,9 @@
 
 
 
-var text2 = document.createTextNode("Electron 16.0.5");                                    
+var text2 = document.createTextNode("Electron 16.0.7");                                    
 document.getElementById("electron-version-munich").appendChild(text2); 
 var text3 = document.createTextNode("1.3 Stable");                                    
 document.getElementById("munich-version").appendChild(text3); 
-var text5 = document.createTextNode(" 21 (Stable 01170122)");                                    
+var text5 = document.createTextNode(" 22 (Alpha 02200122)");                                    
 document.getElementById("version").appendChild(text5); 

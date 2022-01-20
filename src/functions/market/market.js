@@ -49,23 +49,34 @@ function getTasks() {
     tasksView.innerHTML += `
     <br>
     <br>
+ 
    
-    <div class="divblur">
-        <div>
-        <br>
-          <p ><h4 style="text-align:center; ">${title}</h4> 
-          <br>
-         <p style="text-align:center; "> ${description}</p>
-         
+    <table class="table"  style="font-family: 'Jost', sans-serif;">
+    <thead>
+      <tr>
+ 
+        <th scope="col">Title</th>
+        <th scope="col">Note</th>
+        <th scope="col">URL</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
 
-          </p>
-        </div>
-        <br>
-        <a href="#" class="buttonkit"onclick="deleteTask('${title}')" >Eliminar</a>
-        <br>
-        <br>
-        <a href="${description}" class="buttonkit" >Si es un link su nota presione aqui  </a>
-      </div>`;
+        <td>${title}</td>
+        <td>${description}</td>
+        <td><a href="${description}" class="btn btn-dark" >Open Link</a></td>
+        <td>
+        <a href="#" class="btn btn-danger "onclick="deleteTask('${title}')" >Delete Notely</a>
+        </td>
+
+      </tr>
+
+    </tbody>
+  </table>
+      </div>  
+ `;
   }
 }
 

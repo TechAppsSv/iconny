@@ -49,10 +49,10 @@ function getTasks2() {
 
     tasks2View.innerHTML += `<div >
         <div class="card-body" style="background:white;border:white; border-radius:10px;">
-          <p ><p style="text-align:center;">${title}</h4> 
+          <p ><p style="text-align:center;  font-family: 'Jost', sans-serif; ">${title}</h4> 
           <br>
         
-          <a href="#" onclick="deleteTask2('${title}')" style="color:black;" class="btn ml-5">Eliminar Preferencia</a>
+          <a href="#" onclick="deleteTask2('${title}')" style="color:black; font-family: 'Jost', sans-serif; " class="btn ml-5">Eliminar Preferencia</a>
          
           </p>
         </div>

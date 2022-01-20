@@ -52,7 +52,7 @@ function getTasks4() {
 
           <br>
         
-          <a href="#" onclick="deleteTasks4('${title4}')" style="color:white;" class="btn ml-5">Toca aqui para eliminar ${title4} </a>
+          <a href="#" onclick="deleteTasks4('${title4}')" style="color:white; font-family: 'Jost', sans-serif; " class="btn ml-5">Toca aqui para eliminar ${title4} </a>
          
           </p>
         </div>

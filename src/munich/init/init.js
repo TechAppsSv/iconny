@@ -198,20 +198,20 @@ const template = [
       },
       // Only enable for Iconny Developer Version or mode test 
       // PLease NOT Activate for production
-      // {
-      //    label: 'DevMode',
-      //  submenu: [
-      //    { role: 'reload' },
+      {
+    label: 'DevMode',
+    submenu: [
+       { role: 'reload' },
       //     { role: 'forceReload' },
-      //    { role: 'toggleDevTools' },
+       { role: 'toggleDevTools' },
       //     { type: 'separator' },
       //     { role: 'resetZoom' },
       //    { role: 'zoomIn' },
       //    { role: 'zoomOut' },
       //    { type: 'separator' },
       //     { role: 'togglefullscreen' }
-      //   ]
-      // },
+       ]
+      },
       {
         label: 'ActionsBasic',
         submenu: [
