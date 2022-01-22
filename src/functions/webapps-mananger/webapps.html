@@ -1,0 +1,371 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="Sortable.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet"><title>Iconny</title>   <header>
+	<!-- <style type="text/css">
+	#tab-list .close{
+		margin-left: 7px;
+	}
+	</style> -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var tabID = 1;
+            $('#btn-add-tab').click(function () {
+                tabID++;
+                $('#tab-list').append($('<li style="height:30px;"><a href="#tab' + tabID + '" role="tab" data-toggle="tab" id="tabsecond" >New Tab ' + tabID + '<button style="width: 1px; height: 1px;" type="button"class="close" title="Remove this page">×</button></a></li>'));
+                
+                $('#tab-content').append($('<div class="tab-pane fade" id="tab' + tabID + '">   <webview src="newoptions.html"  style="background: white;" preload="contextual.js"   useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0" allowpopups id="viewtab" ></webview></div>'));
+            });
+            $('#tab-list').on('click','.close',function(){
+                var tabID = $(this).parents('a').attr('href');
+                $(this).parents('li').remove();
+                $(tabID).remove();
+
+                //display first tab
+                var tabFirst = $('#tab-list a:first');
+                tabFirst.tab('show');
+            });
+			
+			var list = document.getElementById("tab-list");
+			new Sortable(list);
+	
+        });
+    </script>
+</head>
+<body class="bodytab" onmousemove="reloj()" >
+
+<script src="../clock/clock.js"></script>
+            <!-- Nav tabs -->
+            <ul id="tab-list" class="nav nav-pills" role="tablist" style="overflow: scroll; height: 40px;" hidden >
+                <div style="height: 0.5vh;"></div>
+                <li class="nav-item" style="height: 30px;">
+                    <a class="nav-link active" href="#tab1" id="tabname" role="tab" data-toggle="tab">Iconny</a>
+
+                  </li>
+                  <button style="width: 3%; height: 4vh;"  id="btn-add-tab">
+                    <i class="bi bi-plus-circle" style="text-align: center;"></i>
+                      </button>   
+            </ul>
+
+            <!-- Tab panes -->
+            <div id="tab-content" class="tab-content" style="height: 100vh;">
+              <div class="tab-pane fade in active" id="tab1" style="height: 100vh;">
+                    <div id="megacontrol">
+                        <div id="controls"class="darkmode-ignore" style="width: 100%; height: 48px; float: left;">
+                      <div style="height: 0.5vh;"></div>
+                          
+                          <button id="back" class="darkmode-ignore"style="width: 2%; height: 4vh; float: left; " title="Go Back" disabled="true"><i class="bi bi-chevron-left"></i></button>
+                          <button id="forward"class="darkmode-ignore"style="width: 1%; height: 4vh; float: left; " title="Go Forward" disabled="true"><i class="bi bi-chevron-right"></i></button>
+                          <button id="reload"class="darkmode-ignore"style="width: 3%; height: 4vh; float:left;" title="Reload"><i class="bi bi-arrow-clockwise"></i></button>
+                  
+                          <button id="home"class="darkmode-ignore"style="width: 3%; height: 4vh; float: left;" hidden title="Go Home"><i class="bi bi-house"></i></button>
+                          <!-- <a href="javascript:mostrar();" style="width: 5%; height: 4vh;" onclick="mostrar2()"><i style="font-size:25px; text-align: center;" class="bi bi-toggles"></i></a>  -->
+                  <!-- <iframe src="updater/update.html" frameborder="0" style="width: 4%; float: right;"></iframe> -->
+                  <!-- <button style="width: 2%; height: 4vh;"> <a href="../../munich-interface/settings/config.html" onclick="window.open(this.href, this.target, 'width=1020,height=700'); return false;"><i class="bi bi-zoom-in"></i></a></button> -->
+                 
+                  <button style="width: 2%; height: 4vh; float: right;"> <a href="index.html"><i class="bi bi-arrow-bar-right"></i></a></button>
+                       
+                                
+                         
+                           
+                          <!-- Please enable only dev -->
+                          <!-- <button style="width: 2%; height: 4vh;"> <a href="../../functions/spotlayout/two.html"><i class="bi bi-zoom-in"></i></a></button> -->
+                          
+                          <!-- <button style="width: 2%; height: 4vh;"> <a href="more.html" onclick="window.open(this.href, this.target, 'width=1280,height=720'); return false;"y ><i class="bi bi-file-diff"></i></a></button> -->
+                      
+                  
+                          
+                          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+                         <form id="location-form">
+                            <div id="center-column">
+                               <script>
+                                function insertText(elemID, first, second) {
+                     var elem = document.getElementById("location");
+                     elem.value = second ? first + elem.value + second : first + elem.value;
+                    }
+                  </script>
+                  <div style="height: 1.2px;"></div>
+                           <div style="padding-left: 15%;" >  
+                         
+                          <input id="location"  readonly  type="text" placeholder="Escribe el link o toca los botones de busqueda y http"  value="iconny://newtab"></div>
+                    </div>
+                  </form>
+                  
+                        </div>
+                          <!-- control -->
+                              <div id="zoom-box">
+                                <form id="zoom-form">
+                                  <input id="zoom-text" type="text">
+                                  <input type="submit" value="&#128270;">
+                                  <button id="zoom-in">&#10133;</button>
+                                  <button id="zoom-out">&#10134;</button>
+                                </form>
+                              </div>
+                          
+                              <div id="find-box">
+                                <form id="find-form">
+                                  <input id="find-text" type="text">
+                                  <div id="find-results"></div>
+                                  <input type="submit" style="position:absolute; visibility:hidden">
+                                  <button id="match-case">aA</button>
+                                  <button id="find-backward">&#60;</button>
+                                  <button id="find-forward">&#62;</button>
+                                </form>
+                              </div>
+                          
+                       </div>                <!-- <div style="height: 2vh;"><form name="form_reloj" >
+                  <input id="clock" type="text" name="reloj" style="height: 2vh; font-family: 'Montserrat', sans-serif; width: 7%;" size="5">
+                       </form> </div> -->
+                       
+                  <webview src="notely-frame.html"  style="background: white;" preload="contextual.js"   useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0 " allowpopups id="view" ></webview>
+
+                  </div>
+            </div>
+                    
+            <div id="sad-webview" style="display: none;">
+                <div id="sad-webview-icon">&#9762;</div>
+                <h2 id="crashed-label"></h2>
+                <h2 id="killed-label"></h2>
+          
+                <p>
+                </p>
+              </div>
+        </div>
+    </div>
+    <style>
+      * {
+    overflow: hidden;
+ 
+    font-family: 'Jost', sans-serif;
+  }
+    controls {
+
+  
+  }
+  
+  #controls button,
+  #controls input {
+    font-size: 14px;
+    line-height: 24px;
+  
+    padding: 0 6px;
+  }
+  
+  button,
+  input[type="submit"],
+  button[disabled]:hover {
+    border: solid 1px transparent;
+    background: transparent;
+  }
+  
+  
+  .loading #reload {
+    -webkit-animation: spinner-animation .5s infinite linear;
+    -webkit-transform-origin: 50% 55.5%;
+  }
+  
+  @-webkit-keyframes spinner-animation {
+    0% { -webkit-transform: rotate(0deg); }
+    100% {-webkit-transform: rotate(360deg); }
+  }
+  
+  /* These glyphs are on the small side, make them look more natural when
+  compared to the back/forward buttons */
+  #controls #home,
+  #controls #terminate {
+    font-size: 24px;
+  }
+  
+  #controls #reload {
+    font-size: 20px;
+  }
+  
+  #controls #zoom,
+  #controls #find {
+    font-size: 18px;
+  }
+  
+  /* #location {
+    border: solid 1px #ccc;
+    padding: 2px;
+    width: 90%;
+    -webkit-box-sizing: border-box;
+  } */
+  
+  #controls {
+    /* display: -webkit-flex; */
+    -webit-flex-direction: column;
+  }
+  
+  #controls #location-form {
+    -webkit-flex: 1;
+    display: -webkit-flex;
+    -webit-flex-direction: column;
+  }
+  
+  #controls #center-column {
+    -webkit-flex: 1;
+  }
+  
+  #zoom-box,
+  #find-box {
+    background-color: #eee;
+    border: solid 1px #ccc;
+    border-top: solid 1px #eee;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding: 2px;
+  
+    position: fixed;
+    top: 36px;
+    height: 25px;
+  
+    display: none;
+  }
+  
+  #zoom-box #zoom-form,
+  #find-box #find-form {
+    -webkit-flex: 1;
+    display: -webkit-flex;
+    -webit-flex-direction: row;
+  }
+  
+  #zoom-box input,
+  #zoom-box button,
+  #find-box button {
+    border-radius: 2px;
+  }
+  
+  #zoom-box #zoom-text,
+  #find-box #find-text {
+    border: solid 1px #ccc;
+    margin-right: 0px;
+    padding: 2px;
+    -webkit-box-sizing: border-box;
+    -webkit-flex: 1;
+  }
+  
+  #zoom-box {
+    left: 5px;
+    width: 125px;
+    z-index: 1;
+  }
+  
+  #zoom-box input[type="submit"] {
+    font-size: 14px;
+    margin: 2px 0px;
+    padding: 0 2px 3px 2px;
+    width: 22px;
+  }
+  
+  #zoom-box button {
+    font-size: 12px;
+    margin: 2px 0px;
+    padding: 0px 1px 0px 0px;
+    width: 20px;
+  }
+  
+  #find-box {
+    right: 5px;
+    width: 280px;
+    z-index: 2;
+  }
+  
+  #find-box #find-text {
+    border-right-style: none;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+  
+  #find-box #find-results {
+    color: #888;
+    background-color: #fff;
+    border: solid 1px #ccc;
+    border-left-style: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    margin: 2px 0px;
+    padding: 3px 4px 2px 0;
+    text-align: center;
+  }
+  
+  #find-box #match-case {
+    margin: 2px 0px;
+    font-size: 10px;
+    width: 28px;
+  }
+  
+  #find-box #find-backward,
+  #find-box #find-forward {
+    font-size: 14px;
+    width: 24px;
+  }
+        * {
+    color: white;  border: #1c1c1c;}
+      #container {
+    height: 100vh;}
+    .tabsdemoDynamicTabs md-content {
+    background-color: transparent !important; }
+    .tabsdemoDynamicTabs md-content md-tabs {
+      border: 1px solid  #1c1c1c; }
+      .tabsdemoDynamicTabs md-content md-tabs md-tab-content {
+        background: #1c1c1c; height: 1000000vh; }
+      .tabsdemoDynamicTabs md-content md-tabs md-tabs-canvas {
+        background: black;
+       }
+    .tabsdemoDynamicTabs md-content h1:first-child {
+      margin-top: 0; }
+  .tabsdemoDynamicTabs md-input-container {
+    padding-bottom: 0; }
+  .tabsdemoDynamicTabs .remove-tab {
+    margin-bottom: 40px; }
+  .tabsdemoDynamicTabs .demo-tab > div > div {
+    padding: 25px;
+    box-sizing: border-box; }
+  .tabsdemoDynamicTabs .edit-form input {
+    width: 100%; }
+  .tabsdemoDynamicTabs md-tabs {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
+  .tabsdemoDynamicTabs md-tab[disabled] {
+    opacity: 0.5; }
+  .tabsdemoDynamicTabs label {
+    text-align: left; }
+  .tabsdemoDynamicTabs .long > input {
+    width: 264px; }
+  .tabsdemoDynamicTabs .md-button.add-tab {
+    transform: translateY(5px); }
+  
+  </style>
+</div>
+</body>
+<script src="js/controller.js"></script>
+<script src="js/"></script>
+<link rel="stylesheet" href="../../WebVI/WebVi(1.0).css">
+
+<link rel="stylesheet" href="../../monocromatix/monocromatix.css">
+<form id="formTask2">
+     
+</form>
+
+         <div id="tasks2" ></div> 
+         <script src="../../munich/config/config2.js"></script>
+         <form id="formTask4">
+     
+        </form>
+      
+                 <script src="../../munich/config/search/cleaner.js"></script>
+                 <script src="../../munich/config/config4-1.js"></script>
+                 <script src="../../munich/config/search/duckduckgo.js"></script>
+                 <script src="../../munich/config/search/google.js"></script>
+<script src="../../munich/config/search/bing.js"></script>
+        
+<link rel="stylesheet" href="https://cdn.rawgit.com/angular/bower-material/v0.9.8/angular-material.css">
+<link rel="stylesheet" href="../../styles/icons/all.css">
+<script src="../icons/all.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+<script src="browser.js"></script>
