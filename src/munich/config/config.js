@@ -47,16 +47,15 @@ function getTasks2() {
     let title = tasks2[i].title;
     let description = tasks2[i].description;
 
-    tasks2View.innerHTML += `<div >
-        <div class="card-body" style="background:#1c1c1c  ;border:black; border-radius:10px;">
+    tasks2View.innerHTML += `
+    <div class="alert alert-dark" role="alert">
+Your theme has been set
 
-          <br>
-        
-          <a href="#" onclick="deleteTask2('${title}')" style="color:white;font-family: 'Jost', sans-serif;" class="btn ml-5">Toca aqui para eliminar ${title} theme</a>
-         
-          </p>
-        </div>
-      </div>`;
+<a href="#" onclick="deleteTask2('${title}')"  class="btn btn-danger">Delete</a>
+
+</div>
+
+    `;
   }
 }
 

@@ -49,7 +49,7 @@ function getTasks2() {
 
     tasks2View.innerHTML += `
 
-    <link rel="stylesheet" href="${title}">
+    <link rel="stylesheet" href="../../styles/themes/${title}.css">
 `;
   }
 }

@@ -47,16 +47,14 @@ function getTasks4() {
     let title4 = tasks4[i].title4;
     let description4 = tasks4[i].description4;
 
-    tasks4View.innerHTML += `<div >
-        <div class="card-body" style="background:#1c1c1c  ;border:black; border-radius:10px;">
-
-          <br>
-        
-          <a href="#" onclick="deleteTasks4('${title4}')" style="color:white; font-family: 'Jost', sans-serif; " class="btn ml-5">Toca aqui para eliminar ${title4} </a>
-         
-          </p>
-        </div>
-      </div>`;
+    tasks4View.innerHTML += `
+    <div class="alert alert-dark" role="alert">
+    Your engine has been set
+    
+    <a href="#" onclick="deleteTasks4('${title4}')"  class="btn btn-danger">Delete</a>
+    
+    </div>
+    `;
   }
 }
 
