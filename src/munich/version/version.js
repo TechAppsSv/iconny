@@ -6,5 +6,5 @@ var text2 = document.createTextNode("Electron 16.0.7");
 document.getElementById("electron-version-munich").appendChild(text2); 
 var text3 = document.createTextNode("1.5 Stable");                                    
 document.getElementById("munich-version").appendChild(text3); 
-var text5 = document.createTextNode(" 22 (Alpha 02220122)");                                    
+var text5 = document.createTextNode(" 22 (Alpha 01240122)");                                    
 document.getElementById("version").appendChild(text5); 
