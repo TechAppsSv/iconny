@@ -6,6 +6,16 @@
 
 
 }
+#secondcontrol {
+  background-color: rgba(245, 245, 245);
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  line-height: 1;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  
+}
 #hrefa {
   color: black;
 }
@@ -522,10 +532,38 @@ color: black;
                 background-color: rgba(245, 245, 245);
               font-size: 15px;
               color: black;
-                }              
+                }   
+                #tabsecond:active {
+                  background-color: rgb(202, 202, 202);
+                font-size: 15px;
+                color: black;
+                  }       
+                  #tabsecond:visited{
+                    background-color: rgb(202, 202, 202);
+
+
+                    font-size: 15px;
+                    color: black;
+                  }
+                  #tabsecond:focus{
+                    background-color: rgb(202, 202, 202);
+
+
+                    font-size: 15px;
+                    color: black;
+  
+                  }
+                  #tabsecond:hover{
+                    background-color: rgb(202, 202, 202);
+
+                    font-size: 15px;
+                    color: black;
+  
+                  }
+                
               
                 #tabname {
-                  background-color: rgba(245, 245, 245);
+                  background-color: rgb(226, 226, 226);
                   color: black;
                   }              
 /* 

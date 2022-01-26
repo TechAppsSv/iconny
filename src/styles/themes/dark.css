@@ -9,6 +9,16 @@
 .fas fa-code-branch {
 color: black;
 }
+#secondcontrol {
+  background-color: rgba(19, 0, 0, 0.3);
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  line-height: 1;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  
+}
 .dropdown {
 position: relative;
 display: inline-block;
@@ -42,7 +52,19 @@ border-color:   rgba(105, 104, 104, 0.3); */
 background: #1c1c1c;
 }
 #clock {
+  font-family: 'Jost', sans-serif;
 
+color: white;
+}
+#clock2 {
+  font-family: 'Jost', sans-serif;
+background: none;
+  border-radius: 5px;
+  
+
+  line-height: 1;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 color: white;
 }
 .bodytab {
@@ -122,7 +144,7 @@ backdrop-filter: blur(10px);
               }
        
           .tab{
-              background-color: rgba(105, 104, 104, 0.3);
+ 
               border-radius: 5px;
             
               text-align: center;
@@ -507,8 +529,23 @@ background: black;
               #tabsecond {
                 background: #1c1c1c;
               font-size: 15px;
-                }              
-              
+                }  
+                         
+                #tabsecond:visited{
+                  background: #313131;
+                }
+                #tabsecond:focus{
+                  background: #313131;
+
+                }
+                #tabsecond:hover{
+                  background: #313131;
+
+                }
+                #tabsecond:active{
+                  background: #313131;
+    
+                }
                 #tabname {
                   background: #010101;
                   
