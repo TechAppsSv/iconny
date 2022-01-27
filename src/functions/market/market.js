@@ -65,7 +65,7 @@ function getTasks() {
       <tr>
 
         <td>${title}</td>
-        <td>${description}</td>
+        <td>       <textarea name="" id="" cols="30" rows="90" style="height:9vh;" disabled>${description}</textarea></td>
         <td><a href="${description}" class="btn btn-dark" >Open Link</a></td>
         <td>
         <a href="#" class="btn btn-danger "onclick="deleteTask('${title}')" >Delete Notely</a>
