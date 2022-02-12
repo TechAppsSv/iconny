@@ -201,9 +201,9 @@ const template = [
       {
     label: 'DevMode',
     submenu: [
-       { role: 'reload' },
-      //     { role: 'forceReload' },
-       { role: 'toggleDevTools' },
+      // { role: 'reload' },
+        { role: 'forceReload' },
+      // { role: 'toggleDevTools' },
       //     { type: 'separator' },
       //     { role: 'resetZoom' },
       //    { role: 'zoomIn' },

@@ -25,7 +25,7 @@ font-family: 'Jost', sans-serif;
                 tabID++;
                 $('#tab-list').append($('<li style="height:30px;"><a href="#tab' + tabID + '" role="tab" data-toggle="tab" id="tabsecond" >New Tab ' + tabID + '<button style="width: 1px; height: 1px;" type="button"class="close" title="Remove this page">×</button></a></li>'));
                 
-                $('#tab-content').append($('<div class="tab-pane fade" id="tab' + tabID + '">   <webview src="newtab.html"  partition="persist:webviewsession"  style="background: white;" preload="contextual.js"   useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0" allowpopups id="viewtab" ></webview></div>'));
+                $('#tab-content').append($('<div class="tab-pane fade" id="tab' + tabID + '">   <webview src="newtab.html"  partition="persist:webviewsession"  style="background: white;" preload="contextual.js"   useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0" allowpopups class="viewtaboculto" id="viewtab" ></webview></div>'));
             });
             $('#tab-list').on('click','.close',function(){
                 var tabID = $(this).parents('a').attr('href');

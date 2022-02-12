@@ -68,6 +68,45 @@
                   height: 90vh;
                   }
                   }
+                  /* UI OCULTO */
+
+                  @media all and (max-width: 1920px){
+                    .viewtaboculto{
+                    width:100%;
+                    height: 95vh;
+                    }
+                    }
+                  
+                    @media all and (max-width: 1366px){
+                      .viewtab{
+                      width:100%;
+                      height: 80vh;
+                      }
+                      }
+                      @media all and (max-width: 1600px){
+                        .viewtab{
+                        width:100%; 
+                        height: 80vh;
+                        }
+                        }
+                      @media all and (max-width: 1440px){
+                        .viewtab{
+                        width:100%; 
+                        height: 80vh;
+                        }
+                        }
+                        @media all and (max-width: 1280px){
+                          .viewtab{
+                          width:100%; 
+                          height: 90vh;
+                          }
+                          }
+                          @media all and (max-width: 1659px){
+                            .viewtab{
+                            width:100%; 
+                            height: 90vh;
+                            }
+                            }
 
     @media all and (max-width: 1920px){
       #nav-body-views{
