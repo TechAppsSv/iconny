@@ -201,8 +201,8 @@ const template = [
       {
     label: 'DevMode',
     submenu: [
-      // { role: 'reload' },
-        { role: 'forceReload' },
+      { role: 'reload' },
+        // { role: 'forceReload' },
       // { role: 'toggleDevTools' },
       //     { type: 'separator' },
       //     { role: 'resetZoom' },
