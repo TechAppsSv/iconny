@@ -19,7 +19,7 @@
             var tabID = 1;
             $('#btn-add-tab').click(function () {
                 tabID++;
-                $('#tab-list').append($('<li style="height:30px; margin:2px;"><a href="#tab' + tabID + '" role="tab" data-toggle="tab" id="tabsecond" >New Tab ' + tabID + '<button style="width: 1px; height: 1px; :relative;" class="close" type="button" title="Remove this page"><i class="bi bi-x" style="font-size:12px; padding-right:9px;"></i></button></a></a></li>'));
+                $('#tab-list').append($('<li style="height:30px; margin:2px;"><a href="#tab' + tabID + '" role="tab" data-toggle="tab" id="tabsecond" > Tab ' + tabID + '<button style="width: 1px; height: 1px; :relative;" class="close" type="button" title="Remove this page"><i class="bi bi-x" style="font-size:12px; padding-right:9px;"></i></button></a></a></li>'));
                 
                 $('#tab-content').append($('<div class="tab-pane fade" id="tab' + tabID + '"> <div style="height:5vh; display:inline-flex;" id="secondcontrol" ><button id="theButton'+tabID+'" value="click me!" style="width:50px; height:5vh;"  onclick="viewchange'+tabID+'()"><i class="bi bi-house"></i></button><div style="height:5vh"></div><iframe src="clock.html" style="height:5vh:" ></iframe></div>  <webview src="newoptions.html"  style="background: white;" preload="contextual.js"  onmousemove="reloj()" useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0" allowpopups id="viewtab'+tabID+'" class="viewtab" ></webview></div>'));
             });

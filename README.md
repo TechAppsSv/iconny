@@ -15,6 +15,11 @@
 ## Iconny Themes
 ### https://github.com/TechAppsSv/monocromatix/tree/themes/iconny
 #
+## IconnyDevBlog
+### https://techappssv.github.io/iconnydevblog/
+
+
+#
 ## Snap Version
 [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/iconny)
 #
@@ -79,4 +84,4 @@ npm run start
 ~~~
 
 #### Last Update of this document
-##### Janaury 19, 2022
+##### April 30, 2022
