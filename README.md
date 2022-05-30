@@ -1,4 +1,4 @@
-# ![Esta es una imagen de ejemplo](iconny_banner.png)
+# ![](iconny_banner.png)
 
 ### Goodbye spying and welcome privacy
 
@@ -11,6 +11,9 @@
 
 ## Release blog
 ### https://techappssv.github.io/iconnybrowser/html/blog.html
+#
+## Iconny Themes
+### https://github.com/TechAppsSv/monocromatix/tree/themes/iconny
 #
 ## Snap Version
 [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/iconny)
