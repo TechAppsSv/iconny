@@ -47,21 +47,22 @@ function getTasksstar() {
     let descriptionstar = tasksstar[i].descriptionstar;
 
     tasksstarView.innerHTML += `
-
+    <table class="table">
+   
+    <tbody>
       <tr>
-
-        <td>
-        <input type="text" readonly class="input-mono" style="width:40%; height:4vh;" value="${titlestar}">
-        
-       </td>
-     
-        <td><button id="buttonkit"><a href="${descriptionstar}" >Open Star <i class="bi bi-box-arrow-up-right"></i></a></button></td>
- 
       
-
+        <td>        <input type="text" readonly class="input-mono" style="width:40%; height:4vh;" value="${titlestar}">
+        </td>
+        <td>
+        <button id="buttonkit"><a href="${descriptionstar}" >Open Star <i class="bi bi-box-arrow-up-right"></i></a></button>
+        </td>
+        <td><button id="buttonkit" onclick="deleteTaskstar('${titlestar}')" > Delete Star<i class="bi bi-file-earmark-x"></i></button></td>
       </tr>
-
-  
+     
+    </tbody>
+  </table>
+     
  `;
   }
 }
